@@ -1,39 +1,67 @@
 #include <pthread.h>
+#include <sys/time.h>
 #include <stdio.h>
 
+#define EAT 1
+#define SLEEP 2
+#define THINK 3
 
-void *routine(void *value)
+typedef struct s_philo {
+
+	int id;
+	int state;
+
+
+
+
+
+} t_philo;
+
+void *routine_philosopher(void *philo)
 {
-	int *cpy_ptr_value = value;
-	int cpy_value;
+	
 
-	cpy_value = *cpy_ptr_value;
-
-	printf("Une citation quelconque  %d\n", *value);
-	return (NULL);
 
 }
 
 
-
-int main()
+int main ()
 {
-	pthread_t	tid1;
-	pthread_t	tid2;
+	int	number_of_philo;
+	int time_to_die;
+	int time_to_eat;
+	int time_to_sleep;
+	int	number_of_eat;
+	int	i;
 
-	int	thread_1;
-	int	thread_2;
+	struct timeval StartTime;
+	time_t start_time_sec;
 
-	thread_1 = 1;
-	thread_2 = 2;
+	struct timeval CurrentTime;
+	time_t current_time_sec;
 
+	time_t	execution_time_sec;
 
-	pthread_create(&tid1, NULL, routine, &thread_1);
-	pthread_create(&tid2, NULL, routine, &thread_2);
+	gettimeofday(&StartTime, NULL);
+	start_time_sec = StartTime.tv_sec;
+	printf("start_time_sec = %ld\n", start_time_sec);
 
+	i = 0;
+	while (i < 10000000)
+	{
+		gettimeofday(&CurrentTime, NULL);
+		execution_time_sec = CurrentTime.tv_sec - StartTime.tv_sec;
+		printf("current_time_sec = %ld\n", execution_time_sec);
+		i++;
+	}
 
-	pthread_join(tid1, NULL);
-	pthread_join(tid2, NULL);
+	t_philo philo1;
+	philo1.id = 1;
+	philo1.state = THINK;
+
+	t_philo philo2;
+	philo2.id = 2;
+	philo2.state = THINK;
 
 
 	return 0;
