@@ -47,7 +47,7 @@ void *routine_thread2 (void *test_philo)
 
 
 	printf("Le thread 2 veut bloquer le lock2\n");
-	pthread_mutex_lock(&(cpy_test_philo->lock_02));
+	pthread_mutex_lock(&(cpy_test_philo->lock_02)); //le script  attendra jusqu' a ce que le mutex soit blocable
 	printf("Le thread 2 bloque le lock2\n");
 
 	printf("Le thread 2 veut bloquer le lock1\n");

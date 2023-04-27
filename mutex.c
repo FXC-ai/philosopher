@@ -30,8 +30,6 @@ void *routine(void *test_philo)
 	return (NULL);
 }
 
-
-
 int main()
 {
 	pthread_t	tid1;
@@ -42,9 +40,6 @@ int main()
 	pthread_mutex_init(&(test_philo.count_mutex), NULL);
 
 	pthread_create(&tid1, NULL, routine, &test_philo);
-
-
-
 	pthread_create(&tid2, NULL, routine, &test_philo);
 
 	pthread_join(tid1, NULL);
