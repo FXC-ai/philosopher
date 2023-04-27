@@ -58,6 +58,7 @@ time_t	calculate_current_time_ms (time_t start_time_ms)
 
 void	take_right_fork(t_philo *philo)
 {
+	printf("\033[1;31m");
 	printf("%ld ms : Philosopher %d try to take the right fork [%p].\n", calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick0);
 	pthread_mutex_lock(philo->chopstick0);
 	printf("%ld ms : Philosopher %d has taken the right fork [%p].\n", calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick0);
@@ -65,6 +66,7 @@ void	take_right_fork(t_philo *philo)
 
 void	take_left_fork(t_philo *philo)
 {
+	printf("\033[1;32m");
 	printf("%ld ms : Philosopher %d try to take the left fork [%p].\n", calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick1);
 	pthread_mutex_lock(philo->chopstick1);	
 	printf("%ld ms : Philosopher %d has taken take the left fork [%p].\n", calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick1);
@@ -72,7 +74,7 @@ void	take_left_fork(t_philo *philo)
 
 void	eat(t_philo *philo)
 {
-	
+	printf("\033[1;33m");
 	printf("%ld ms : Philosopher %d start to eat.\n", calculate_current_time_ms(philo->start_time), philo->id);
 	usleep(philo->time_to_eat);
 	philo->last_eat = calculate_current_time_ms(philo->start_time);
@@ -82,6 +84,7 @@ void	eat(t_philo *philo)
 
 void	leave_right_fork(t_philo *philo)
 {
+	printf("\033[1;34m");
 	pthread_mutex_unlock(philo->chopstick0);
 	printf("%ld ms : Philosopher %d leave the right fork.\n", calculate_current_time_ms(philo->start_time), philo->id);
 
@@ -89,13 +92,14 @@ void	leave_right_fork(t_philo *philo)
 
 void	leave_left_fork(t_philo *philo)
 {
+	printf("\033[1;35m");
 	pthread_mutex_unlock(philo->chopstick1);
 	printf("%ld ms : Philosopher %d leave the left fork.\n", calculate_current_time_ms(philo->start_time), philo->id);
 }
 
 void	have_a_nape(t_philo *philo)
 {
-
+	printf("\033[1;36m");
 	printf("%ld ms : Philosopher %d is sleeping.\n", calculate_current_time_ms(philo->start_time),philo->id);
 	usleep(philo->time_to_sleep);
 }
