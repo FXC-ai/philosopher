@@ -1,204 +1,65 @@
-0 ms : Philosopher 0 take the right fork.
-0 ms : Philosopher 0 take the left fork.
-0 ms : Philosopher 0 start to eat.
-0 ms : Philosopher 1 take the right fork.
-102 ms : Philosopher 0 finish to eat.
-102 ms : Philosopher 0 leave the right fork.
-102 ms : Philosopher 0 leave the left fork.
-102 ms : Philosopher 0 is sleeping.
-102 ms : Philosopher 1 take the left fork.
-102 ms : Philosopher 1 start to eat.
-202 ms : Philosopher 1 finish to eat.
-202 ms : Philosopher 1 leave the right fork.
-202 ms : Philosopher 1 leave the left fork.
-202 ms : Philosopher 1 is sleeping.
-302 ms : Philosopher 0 is thinking.
-302 ms : Philosopher 0 is dead.
-302 ms : Philosopher 0 take the right fork.
-302 ms : Philosopher 0 take the left fork.
-302 ms : Philosopher 0 start to eat.
-405 ms : Philosopher 0 finish to eat.
-405 ms : Philosopher 0 leave the right fork.
-405 ms : Philosopher 0 leave the left fork.
-405 ms : Philosopher 0 is sleeping.
-405 ms : Philosopher 1 is thinking.
-405 ms : Philosopher 1 is dead.
-405 ms : Philosopher 1 take the right fork.
-405 ms : Philosopher 1 take the left fork.
-405 ms : Philosopher 1 start to eat.
-510 ms : Philosopher 1 finish to eat.
-510 ms : Philosopher 1 leave the right fork.
-510 ms : Philosopher 1 leave the left fork.
-510 ms : Philosopher 1 is sleeping.
-610 ms : Philosopher 0 is thinking.
-610 ms : Philosopher 0 is dead.
-610 ms : Philosopher 0 take the right fork.
-610 ms : Philosopher 0 take the left fork.
-610 ms : Philosopher 0 start to eat.
-715 ms : Philosopher 0 finish to eat.
-715 ms : Philosopher 0 leave the right fork.
-715 ms : Philosopher 0 leave the left fork.
-715 ms : Philosopher 0 is sleeping.
-715 ms : Philosopher 1 is thinking.
-715 ms : Philosopher 1 is dead.
-715 ms : Philosopher 1 take the right fork.
-715 ms : Philosopher 1 take the left fork.
-715 ms : Philosopher 1 start to eat.
-819 ms : Philosopher 1 finish to eat.
-819 ms : Philosopher 1 leave the right fork.
-819 ms : Philosopher 1 leave the left fork.
-819 ms : Philosopher 1 is sleeping.
-919 ms : Philosopher 0 is thinking.
-919 ms : Philosopher 0 is dead.
-919 ms : Philosopher 0 take the right fork.
-919 ms : Philosopher 0 take the left fork.
-919 ms : Philosopher 0 start to eat.
-1019 ms : Philosopher 0 finish to eat.
-1019 ms : Philosopher 0 leave the right fork.
-1019 ms : Philosopher 0 leave the left fork.
-1019 ms : Philosopher 0 is sleeping.
-1019 ms : Philosopher 1 is thinking.
-1019 ms : Philosopher 1 is dead.
-1019 ms : Philosopher 1 take the right fork.
-1019 ms : Philosopher 1 take the left fork.
-1019 ms : Philosopher 1 start to eat.
-1120 ms : Philosopher 1 finish to eat.
-1120 ms : Philosopher 1 leave the right fork.
-1120 ms : Philosopher 1 leave the left fork.
-1120 ms : Philosopher 1 is sleeping.
-1219 ms : Philosopher 0 is thinking.
-1219 ms : Philosopher 0 is dead.
-1219 ms : Philosopher 0 take the right fork.
-1219 ms : Philosopher 0 take the left fork.
-1219 ms : Philosopher 0 start to eat.
-1323 ms : Philosopher 0 finish to eat.
-1323 ms : Philosopher 0 leave the right fork.
-1323 ms : Philosopher 0 leave the left fork.
-1323 ms : Philosopher 0 is sleeping.
-1323 ms : Philosopher 1 is thinking.
-1323 ms : Philosopher 1 is dead.
-1323 ms : Philosopher 1 take the right fork.
-1323 ms : Philosopher 1 take the left fork.
-1323 ms : Philosopher 1 start to eat.
-1423 ms : Philosopher 1 finish to eat.
-1423 ms : Philosopher 1 leave the right fork.
-1423 ms : Philosopher 1 leave the left fork.
-1423 ms : Philosopher 1 is sleeping.
-1528 ms : Philosopher 0 is thinking.
-1528 ms : Philosopher 0 is dead.
-1528 ms : Philosopher 0 take the right fork.
-1528 ms : Philosopher 0 take the left fork.
-1528 ms : Philosopher 0 start to eat.
-1628 ms : Philosopher 1 is thinking.
-1628 ms : Philosopher 1 is dead.
-1628 ms : Philosopher 1 take the right fork.
-1628 ms : Philosopher 0 finish to eat.
-1628 ms : Philosopher 0 leave the right fork.
-1628 ms : Philosopher 0 leave the left fork.
-1628 ms : Philosopher 0 is sleeping.
-1628 ms : Philosopher 1 take the left fork.
-1628 ms : Philosopher 1 start to eat.
-1731 ms : Philosopher 1 finish to eat.
-1731 ms : Philosopher 1 leave the right fork.
-1731 ms : Philosopher 1 leave the left fork.
-1731 ms : Philosopher 1 is sleeping.
-1834 ms : Philosopher 0 is thinking.
-1834 ms : Philosopher 0 is dead.
-1834 ms : Philosopher 0 take the right fork.
-1834 ms : Philosopher 0 take the left fork.
-1834 ms : Philosopher 0 start to eat.
-1936 ms : Philosopher 1 is thinking.
-1936 ms : Philosopher 1 is dead.
-1936 ms : Philosopher 1 take the right fork.
-1936 ms : Philosopher 0 finish to eat.
-1936 ms : Philosopher 0 leave the right fork.
-1936 ms : Philosopher 0 leave the left fork.
-1936 ms : Philosopher 0 is sleeping.
-1936 ms : Philosopher 1 take the left fork.
-1936 ms : Philosopher 1 start to eat.
-2041 ms : Philosopher 1 finish to eat.
-2041 ms : Philosopher 1 leave the right fork.
-2041 ms : Philosopher 1 leave the left fork.
-2041 ms : Philosopher 1 is sleeping.
-2136 ms : Philosopher 0 is thinking.
-2136 ms : Philosopher 0 is dead.
-2136 ms : Philosopher 0 take the right fork.
-2136 ms : Philosopher 0 take the left fork.
-2136 ms : Philosopher 0 start to eat.
-2241 ms : Philosopher 0 finish to eat.
-2241 ms : Philosopher 0 leave the right fork.
-2241 ms : Philosopher 0 leave the left fork.
-2241 ms : Philosopher 0 is sleeping.
-2241 ms : Philosopher 1 is thinking.
-2241 ms : Philosopher 1 is dead.
-2241 ms : Philosopher 1 take the right fork.
-2241 ms : Philosopher 1 take the left fork.
-2241 ms : Philosopher 1 start to eat.
-2346 ms : Philosopher 1 finish to eat.
-2346 ms : Philosopher 1 leave the right fork.
-2346 ms : Philosopher 1 leave the left fork.
-2346 ms : Philosopher 1 is sleeping.
-2446 ms : Philosopher 0 is thinking.
-2446 ms : Philosopher 0 is dead.
-2446 ms : Philosopher 0 take the right fork.
-2446 ms : Philosopher 0 take the left fork.
-2446 ms : Philosopher 0 start to eat.
-2551 ms : Philosopher 0 finish to eat.
-2551 ms : Philosopher 0 leave the right fork.
-2551 ms : Philosopher 0 leave the left fork.
-2551 ms : Philosopher 0 is sleeping.
-2551 ms : Philosopher 1 is thinking.
-2551 ms : Philosopher 1 is dead.
-2551 ms : Philosopher 1 take the right fork.
-2551 ms : Philosopher 1 take the left fork.
-2551 ms : Philosopher 1 start to eat.
-2652 ms : Philosopher 1 finish to eat.
-2652 ms : Philosopher 1 leave the right fork.
-2652 ms : Philosopher 1 leave the left fork.
-2652 ms : Philosopher 1 is sleeping.
-2753 ms : Philosopher 0 is thinking.
-2753 ms : Philosopher 0 is dead.
-2753 ms : Philosopher 0 take the right fork.
-2753 ms : Philosopher 0 take the left fork.
-2753 ms : Philosopher 0 start to eat.
-2853 ms : Philosopher 1 is thinking.
-2853 ms : Philosopher 1 is dead.
-2853 ms : Philosopher 1 take the right fork.
-2853 ms : Philosopher 0 finish to eat.
-2853 ms : Philosopher 0 leave the right fork.
-2853 ms : Philosopher 0 leave the left fork.
-2853 ms : Philosopher 0 is sleeping.
-2853 ms : Philosopher 1 take the left fork.
-2853 ms : Philosopher 1 start to eat.
-2958 ms : Philosopher 1 finish to eat.
-2958 ms : Philosopher 1 leave the right fork.
-2958 ms : Philosopher 1 leave the left fork.
-2958 ms : Philosopher 1 is sleeping.
-3053 ms : Philosopher 0 is thinking.
-3053 ms : Philosopher 0 is dead.
-3053 ms : Philosopher 0 take the right fork.
-3053 ms : Philosopher 0 take the left fork.
-3053 ms : Philosopher 0 start to eat.
-3153 ms : Philosopher 0 finish to eat.
-3153 ms : Philosopher 0 leave the right fork.
-3153 ms : Philosopher 0 leave the left fork.
-3153 ms : Philosopher 0 is sleeping.
-3163 ms : Philosopher 1 is thinking.
-3163 ms : Philosopher 1 is dead.
-3163 ms : Philosopher 1 take the right fork.
-3163 ms : Philosopher 1 take the left fork.
-3163 ms : Philosopher 1 start to eat.
-3268 ms : Philosopher 1 finish to eat.
-3268 ms : Philosopher 1 leave the right fork.
-3268 ms : Philosopher 1 leave the left fork.
-3268 ms : Philosopher 1 is sleeping.
-3353 ms : Philosopher 0 is thinking.
-3353 ms : Philosopher 0 is dead.
-3353 ms : Philosopher 0 take the right fork.
-3353 ms : Philosopher 0 take the left fork.
-3353 ms : Philosopher 0 start to eat.
-3453 ms : Philosopher 0 finish to eat.
-3453 ms : Philosopher 0 leave the right fork.
-3453 ms : Philosopher 0 leave the left fork.
-3453 ms : Philosopher 0 is sleeping.
-3469 ms : Philosopher 1
+[1;30m38 ms : Philosopher 0 try to take the right fork [0x7fcbf3405880].
+[0m[1;31m75 ms : Philosopher 1 try to take the right fork [0x7fcbf34058c0].
+[0m[1;33m81 ms : Philosopher 3 try to take the right fork [0x7fcbf3405940].
+[0m[1;33m86 ms : Philosopher 3 has taken the right fork [0x7fcbf3405940].
+[0m[1;33m88 ms : Philosopher 3 try to take the left fork [0x7fcbf3405980].
+[0m[1;31m103 ms : Philosopher 1 has taken the right fork [0x7fcbf34058c0].
+[0m[1;33m104 ms : Philosopher 3 has taken take the left fork [0x7fcbf3405980].
+[0m[1;33m105 ms : Philosopher 3 start to eat.
+[0m[1;31m106 ms : Philosopher 1 try to take the left fork [0x7fcbf3405900].
+[0m[1;31m109 ms : Philosopher 1 has taken take the left fork [0x7fcbf3405900].
+[0m[1;32m76 ms : Philosopher 2 try to take the right fork [0x7fcbf3405900].
+[0m[1;31m112 ms : Philosopher 1 start to eat.
+[0m[1;34m81 ms : Philosopher 4 try to take the left fork [0x7fcbf3405880].
+[0m[1;30m81 ms : Philosopher 0 has taken the right fork [0x7fcbf3405880].
+[0m[1;30m120 ms : Philosopher 0 try to take the left fork [0x7fcbf34058c0].
+[0m[1;31m200136 ms : Philosopher 1 finish to eat.
+[0m[1;33m200137 ms : Philosopher 3 finish to eat.
+[0m[1;33m200156 ms : Philosopher 3 leave the right fork.
+[0m[1;33m200157 ms : Philosopher 3 leave the left fork.
+[0m200157 ms : Philosopher 3 is sleeping.
+[1;31m200158 ms : Philosopher 1 leave the right fork.
+[0m[1;30m200159 ms : Philosopher 0 has taken take the left fork [0x7fcbf34058c0].
+[0m[1;30m200162 ms : Philosopher 0 start to eat.
+[0m[1;32m200163 ms : Philosopher 2 has taken the right fork [0x7fcbf3405900].
+[0m[1;32m200164 ms : Philosopher 2 try to take the left fork [0x7fcbf3405940].
+[0m[1;32m200165 ms : Philosopher 2 has taken take the left fork [0x7fcbf3405940].
+[0m[1;31m200160 ms : Philosopher 1 leave the left fork.
+[0m200169 ms : Philosopher 1 is sleeping.
+[1;32m200166 ms : Philosopher 2 start to eat.
+[0m400163 ms : Philosopher 3 is thinking.
+[1;33m400169 ms : Philosopher 3 try to take the right fork [0x7fcbf3405940].
+[0m[1;30m400165 ms : Philosopher 0 finish to eat.
+[0m[1;32m400174 ms : Philosopher 2 finish to eat.
+[0m[1;32m400176 ms : Philosopher 2 leave the right fork.
+[0m[1;34m400177 ms : Philosopher 4 has taken take the left fork [0x7fcbf3405880].
+[0m[1;33m400180 ms : Philosopher 3 has taken the right fork [0x7fcbf3405940].
+[0m[1;30m400175 ms : Philosopher 0 leave the right fork.
+[0m[1;33m400185 ms : Philosopher 3 try to take the left fork [0x7fcbf3405980].
+[0m[1;33m400185 ms : Philosopher 3 has taken take the left fork [0x7fcbf3405980].
+[0m[1;33m400185 ms : Philosopher 3 start to eat.
+[0m[1;30m400186 ms : Philosopher 0 leave the left fork.
+[0m400186 ms : Philosopher 0 is sleeping.
+[1;32m400178 ms : Philosopher 2 leave the left fork.
+[0m400203 ms : Philosopher 2 is sleeping.
+[1;34m400181 ms : Philosopher 4 try to take the right fork [0x7fcbf3405980].
+[0m400207 ms : Philosopher 1 is thinking.
+[1;31m400212 ms : Philosopher 1 try to take the right fork [0x7fcbf34058c0].
+[0m[1;31m400212 ms : Philosopher 1 has taken the right fork [0x7fcbf34058c0].
+[0m[1;31m400212 ms : Philosopher 1 try to take the left fork [0x7fcbf3405900].
+[0m[1;31m400213 ms : Philosopher 1 has taken take the left fork [0x7fcbf3405900].
+[0m[1;31m400213 ms : Philosopher 1 start to eat.
+[0m600197 ms : Philosopher 0 is thinking.
+[1;30m600201 ms : Philosopher 0 try to take the right fork [0x7fcbf3405880].
+[0m[1;33m600197 ms : Philosopher 3 finish to eat.
+[0m[1;33m600204 ms : Philosopher 3 leave the right fork.
+[0m[1;33m600210 ms : Philosopher 3 leave the left fork.
+[0m600210 ms : Philosopher 3 is sleeping.
+[1;34m600212 ms : Philosopher 4 has taken the right fork [0x7fcbf3405980].
+[0m[1;34m600214 ms : Philosopher 4 start to eat.
+[0m[1;31m600228 ms : Philosopher 1 finish to eat.
+[0m[1;31m600231 ms : Philosopher 1 leave the right fork.
+[0m[1;31m600232 ms : Philosopher 1 leave the left fork.
+[0m600232 ms : Philosopher 1 is sleeping.
+600228 ms : Philosopher 2 is thinking.
+[1;32m600233 ms 
