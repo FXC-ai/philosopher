@@ -8,6 +8,7 @@
 #define SLEEP 2
 #define THINK 3
 
+
 typedef struct s_philo 
 {
 
@@ -58,48 +59,42 @@ time_t	calculate_current_time_ms (time_t start_time_ms)
 
 void	take_right_fork(t_philo *philo)
 {
-	printf("\033[1;31m");
-	printf("%ld ms : Philosopher %d try to take the right fork [%p].\n", calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick0);
+	printf("\033[1;3%dm%ld ms : Philosopher %d try to take the right fork [%p].\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick0);
 	pthread_mutex_lock(philo->chopstick0);
-	printf("%ld ms : Philosopher %d has taken the right fork [%p].\n", calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick0);
+	printf("\033[1;3%dm%ld ms : Philosopher %d has taken the right fork [%p].\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick0);
 }
 
 void	take_left_fork(t_philo *philo)
 {
-	printf("\033[1;32m");
-	printf("%ld ms : Philosopher %d try to take the left fork [%p].\n", calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick1);
-	pthread_mutex_lock(philo->chopstick1);	
-	printf("%ld ms : Philosopher %d has taken take the left fork [%p].\n", calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick1);
+	printf("\033[1;3%dm%ld ms : Philosopher %d try to take the left fork [%p].\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick1);
+	pthread_mutex_lock(philo->chopstick1);
+	printf("\033[1;3%dm%ld ms : Philosopher %d has taken take the left fork [%p].\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick1);
 }
 
 void	eat(t_philo *philo)
 {
-	printf("\033[1;33m");
-	printf("%ld ms : Philosopher %d start to eat.\n", calculate_current_time_ms(philo->start_time), philo->id);
+	printf("\033[1;3%dm%ld ms : Philosopher %d start to eat.\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
 	usleep(philo->time_to_eat);
 	philo->last_eat = calculate_current_time_ms(philo->start_time);
-	printf("%ld ms : Philosopher %d finish to eat.\n", philo->last_eat, philo->id);
+	printf("\033[1;3%dm%ld ms : Philosopher %d finish to eat.\n\033[0m", (philo->id % 7), philo->last_eat, philo->id);
 
 }
 
 void	leave_right_fork(t_philo *philo)
 {
-	printf("\033[1;34m");
 	pthread_mutex_unlock(philo->chopstick0);
-	printf("%ld ms : Philosopher %d leave the right fork.\n", calculate_current_time_ms(philo->start_time), philo->id);
+	printf("\033[1;3%dm%ld ms : Philosopher %d leave the right fork.\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
 
 }
 
 void	leave_left_fork(t_philo *philo)
 {
-	printf("\033[1;35m");
 	pthread_mutex_unlock(philo->chopstick1);
-	printf("%ld ms : Philosopher %d leave the left fork.\n", calculate_current_time_ms(philo->start_time), philo->id);
+	printf("\033[1;3%dm%ld ms : Philosopher %d leave the left fork.\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
 }
 
 void	have_a_nape(t_philo *philo)
 {
-	printf("\033[1;36m");
 	printf("%ld ms : Philosopher %d is sleeping.\n", calculate_current_time_ms(philo->start_time),philo->id);
 	usleep(philo->time_to_sleep);
 }
@@ -109,6 +104,8 @@ void *routine_philosopher(void *philo)
 	t_philo			*cpy_ptr_philo;
 	struct timeval	current_time;
 	time_t			current_time_ms;
+
+	int test;
 	
 	cpy_ptr_philo = (t_philo *) philo;
 
