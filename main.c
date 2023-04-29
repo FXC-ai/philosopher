@@ -3,7 +3,7 @@
 int main ()
 {
 	int	number_of_philo;
-	int time_to_die;
+	time_t time_to_die;
 	int time_to_eat;
 	int time_to_sleep;
 	//int	number_of_eat;
@@ -57,8 +57,6 @@ int main ()
 		current_philo->is_dead = 0;
 		current_philo->chopstick_right = tab_mutex[i];
 		current_philo->chopstick_left = tab_mutex[(i+1) % number_of_philo];
-
-
 		current_philo->number_of_philo = number_of_philo;
 		current_philo->time_to_die = time_to_die * 1000;
 		current_philo->time_to_sleep = time_to_sleep * 1000;

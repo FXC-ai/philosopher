@@ -27,7 +27,7 @@ typedef struct s_philo
 
 	int				time_to_sleep;
 	int				time_to_eat;
-	int				time_to_die;
+	time_t			time_to_die;
 
 	time_t			time_last_eat;
 	time_t			period_last_eat;
@@ -49,14 +49,16 @@ time_t	ft_time(void);
 void	ft_usleep(time_t time_in_ms);
 int     check_death(t_philo *philo);
 
-/*routine.c*/
+/*routine_philo.c*/
 void	take_right_fork(t_philo *philo);
 void	take_left_fork(t_philo *philo);
 void	take_a_fork(t_philo *philo);
 void	eat(t_philo *philo);
-void	leave_right_fork(t_philo *philo);
-void	leave_left_fork(t_philo *philo);
+void	put_right_fork(t_philo *philo);
+void	put_left_fork(t_philo *philo);
 void	have_a_nape(t_philo *philo);
 void    *routine_philosopher(void *philo);
+
+void	*routine_manager(void *tab_manager);
 
 #endif

@@ -64,14 +64,3 @@ void	ft_usleep(time_t time_in_ms)
 	}
 }
 
-int	check_death(t_philo *philo)
-{
-
-	if (philo->time_last_eat - ft_time() > philo->time_to_die)
-	{
-		philo->is_dead = 1;
-		return (1);
-	}
-
-	return (0);
-}
