@@ -1,0 +1,3 @@
+philosopher
+*.o
+a.out.dSYM/
