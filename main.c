@@ -210,6 +210,7 @@ void	*ft_thread_manager(void *tab_philo)
 	t_philo **cpy_tab_philo;
 	cpy_tab_philo = (t_philo **) tab_philo;
 	int i;
+	int j;
 	int	check_keeps;
 
 	while (1)
@@ -221,9 +222,11 @@ void	*ft_thread_manager(void *tab_philo)
 			if (check_keeps != 0)
 			{
 				printf("check_keep = %d\n", check_keeps);
-				while ()
+				j = 0;
+				while (cpy_tab_philo[j] != NULL)
 				{
-					
+					cpy_tab_philo[j]->keep = 1;
+					j++;
 				}
 
 				return (NULL);
@@ -256,7 +259,7 @@ int main ()
 	struct timeval StartTime;
 	time_t	start_time;
 
-	number_of_philo = 4;
+	number_of_philo = 3;
 	time_to_sleep = 200;
 	time_to_eat = 200;
 	time_to_die = 400;
