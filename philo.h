@@ -20,6 +20,7 @@ typedef struct s_philo
 	time_t			start_time;
 	int				is_dead;
 	int				stop;
+	int				priority;
 
 	pthread_mutex_t	**tab_chopstick;
 	pthread_mutex_t	*chopstick_right;

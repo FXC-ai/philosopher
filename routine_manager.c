@@ -29,6 +29,7 @@ void	*routine_manager(void *tab_manager)
 					cpy_tab_philo[i]->stop = 1;
 					i++;
 				}
+				ft_print_tab_philo(cpy_tab_manager->tab_philo);
 				return (NULL);
 			}
 			//ft_usleep(200000);

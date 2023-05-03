@@ -1,20 +1,39 @@
 #include "philo.h"
 
+void	assign_priority(t_philo	*philo, int nb_of_philo)
+{
+	
+	if (nb_of_philo % 2 == 0)
+	{
+		t
+
+	}
+
+
+
+}
+
+
+
 int main ()
 {
-	int	number_of_philo;
-	time_t time_to_die;
-	int time_to_eat;
-	int time_to_sleep;
+	int			number_of_philo;
+	time_t		time_to_die;
+	int			time_to_eat;
+	int			time_to_sleep;
 	//int	number_of_eat;
 	int	i;
+	pthread_t	pid_thread_manager;
+	t_manager	tab_manager;
+
+
 
 	t_philo	**tab_philo;
 	t_philo	*current_philo;
 
 	time_t	start_time;
 
-	number_of_philo = 4;
+	number_of_philo = 3;
 	time_to_sleep = 200;
 	time_to_eat = 200;
 	time_to_die = 400;
@@ -51,6 +70,7 @@ int main ()
 		if (current_philo == NULL)
 			return (0);
 		current_philo->id = i;
+		current_philo->number_of_philo = number_of_philo;
 		current_philo->start_time = start_time;
 		current_philo->time_last_eat = 0;
 		current_philo->stop = 0;
@@ -66,20 +86,10 @@ int main ()
 	}
 	tab_philo[i] = NULL;
 
-
-	/*
-	pthread_t pid_thread_manager;
-
-	t_manager	tab_manager;
-
 	tab_manager.tab_philo = tab_philo;
 	tab_manager.tab_mutex = tab_mutex;
 
-	pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
-	*/
-
-	/* ON COMMENCE LE REPAS */
-	
+	/* ON COMMENCE LE REPAS */	
 	i = 0;
 	while (i < number_of_philo)
 	{
@@ -87,6 +97,8 @@ int main ()
 		i++;
 	}
 	
+	pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
+
 	//ft_print_tab_philo(tab_philo);
 
 	i = 0;
@@ -96,7 +108,7 @@ int main ()
 		i++;
 	}
 	
-	// pthread_join(pid_thread_manager, NULL);
+	pthread_join(pid_thread_manager, NULL);
 
 	/*
 	i = 0;

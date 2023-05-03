@@ -103,9 +103,9 @@ void *routine_philosopher(void *philo)
 
 	while (cpy_ptr_philo->stop == 0)
 	{
-		//take_right_fork (cpy_ptr_philo);
-		//take_left_fork(cpy_ptr_philo);
-		take_a_fork(cpy_ptr_philo);
+		take_right_fork (cpy_ptr_philo);
+		take_left_fork(cpy_ptr_philo);
+		//take_a_fork(cpy_ptr_philo);
 		eat(cpy_ptr_philo);
 		put_right_fork(cpy_ptr_philo);	
 		put_left_fork(cpy_ptr_philo);	

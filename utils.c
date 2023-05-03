@@ -7,10 +7,15 @@ void	ft_print_tab_philo (t_philo **tab_philo)
 	i = 0;
 	while (tab_philo[i] != NULL)
 	{
-		printf("        id = [%d]\n", tab_philo[i]->id);
-		printf("start_time = [%ld]\n", tab_philo[i]->start_time);
-		printf("fork_right = [%p]\n", tab_philo[i]->chopstick_right);
-		printf("fork_left  = [%p]\n", tab_philo[i]->chopstick_left);
+		printf("           id = [%d]\n", tab_philo[i]->id);
+		printf("   start_time = [%ld]\n", tab_philo[i]->start_time);
+		printf("   fork_right = [%p]\n", tab_philo[i]->chopstick_right);
+		printf("    fork_left = [%p]\n", tab_philo[i]->chopstick_left);
+		printf("      is_dead = [%d]\n", tab_philo[i]->is_dead);
+		printf("         stop = [%d]\n", tab_philo[i]->stop);
+		printf("time last eat = [%ld]\n", tab_philo[i]->time_last_eat);
+		printf("prid last eat = [%ld]\n", tab_philo[i]->period_last_eat);
+
 		printf("\n");
 		i++;
 	}
