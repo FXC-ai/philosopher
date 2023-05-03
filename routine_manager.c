@@ -13,6 +13,13 @@ void	*routine_manager(void *tab_manager)
 	cpy_tab_philo = cpy_tab_manager->tab_philo;
 	//cpy_tab_mutex = cpy_tab_manager->tab_mutex;
 
+	i = 0;
+	while (cpy_tab_philo[i] != NULL)
+	{
+		cpy_tab_philo[i]->stop = 0;
+		i++;
+	}
+
 	check_stops = 0;
 	while (1)
 	{

@@ -22,6 +22,8 @@ typedef struct s_philo
 	int				stop;
 	int				priority;
 
+	pthread_mutex_t	*mut_protect_priority;
+
 	pthread_mutex_t	**tab_chopstick;
 	pthread_mutex_t	*chopstick_right;
 	pthread_mutex_t	*chopstick_left;

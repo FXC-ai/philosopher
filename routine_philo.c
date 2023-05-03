@@ -95,22 +95,36 @@ void	think(t_philo *philo)
 	}
 }
 
+int		read_priority (t_philo	*philo)
+{
+	int	result;
+
+	pthread_mutex_lock(philo->mut_protect_priority);
+	result = philo->priority;
+	pthread_mutex_unlock(philo->mut_protect_priority);
+	return (result);
+}
+
+
 void *routine_philosopher(void *philo)
 {
 	t_philo			*cpy_ptr_philo;
-	
 	cpy_ptr_philo = (t_philo *) philo;
 
-	while (cpy_ptr_philo->stop == 0)
+	while (42)
 	{
-		take_right_fork (cpy_ptr_philo);
-		take_left_fork(cpy_ptr_philo);
-		//take_a_fork(cpy_ptr_philo);
-		eat(cpy_ptr_philo);
-		put_right_fork(cpy_ptr_philo);	
-		put_left_fork(cpy_ptr_philo);	
-		have_a_nape(cpy_ptr_philo);
-		think(cpy_ptr_philo);
+
+		if (read_priority(cpy_ptr_philo) == 1)
+		{
+
+			take_right_fork (cpy_ptr_philo);
+			take_left_fork(cpy_ptr_philo);
+			eat(cpy_ptr_philo); 
+			put_right_fork(cpy_ptr_philo);	
+			put_left_fork(cpy_ptr_philo);	
+			have_a_nape(cpy_ptr_philo);
+			think(cpy_ptr_philo);
+		}
 
 		if (cpy_ptr_philo->is_dead == 1)
 		{
