@@ -1,0 +1,4 @@
+philosopher
+*.o
+a.out.dSYM/
+a.out.dSYM/Contents/
