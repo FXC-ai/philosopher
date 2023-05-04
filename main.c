@@ -25,7 +25,7 @@ int main ()
 	int			time_to_sleep;
 	//int	number_of_eat;
 	int	i;
-	//pthread_t	pid_thread_manager;
+	pthread_t	pid_thread_manager;
 	t_manager	tab_manager;
 
 	t_philo	**tab_philo;
@@ -33,7 +33,7 @@ int main ()
 
 	time_t	start_time;
 
-	number_of_philo = 3;
+	number_of_philo = 17;
 	time_to_sleep = 200;
 	time_to_eat = 200;
 	time_to_die = 400;
@@ -110,7 +110,7 @@ int main ()
 		tab_philo[i]->priority = i % 2;
 		i++;
 	}
-	tab_philo[i]->priority = 1;
+	tab_philo[i]->priority = 2;
 
 	tab_manager.tab_philo = tab_philo;
 	tab_manager.tab_mutex = tab_mutex;
@@ -126,7 +126,7 @@ int main ()
 	// 	i++;
 	// }
 
-	// pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
+	pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
 
 	//ft_print_tab_philo(tab_philo);
 

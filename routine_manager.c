@@ -36,11 +36,14 @@ void	*routine_manager(void *tab_manager)
 					cpy_tab_philo[i]->stop = 1;
 					i++;
 				}
-				ft_print_tab_philo(cpy_tab_manager->tab_philo);
 				return (NULL);
 			}
-			//ft_usleep(200000);
-			//printf("Everybody are alive\n");
+
+			pthread_mutex_lock(cpy_tab_philo[i]->mut_protect_priority);
+			cpy_tab_philo[i]->priority = cpy_tab_philo[i]->priority + 1 % 3;
+			pthread_mutex_unlock(cpy_tab_philo[i]->mut_protect_priority);
+
+
 			i++;
 		}
 	}
