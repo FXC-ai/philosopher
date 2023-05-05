@@ -21,6 +21,7 @@ typedef struct s_philo
 	int				is_dead;
 	int				stop;
 	int				priority;
+	int				nb_of_meal;
 
 	pthread_mutex_t	*mut_protect_priority;
 
@@ -41,6 +42,7 @@ typedef struct s_manager
 {
 	t_philo 		**tab_philo;
 	pthread_mutex_t	**tab_mutex;
+	int				nb_philo;
 
 } t_manager;
 

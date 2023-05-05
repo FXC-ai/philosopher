@@ -43,7 +43,7 @@ time_t	calculate_current_time_ms (time_t start_time_ms)
 	time_t	result;
 
 	gettimeofday(&current_time, NULL);
-	current_time_ms = (current_time.tv_sec * 1000000) + (current_time.tv_usec);
+	current_time_ms = (current_time.tv_sec * 1000) + (current_time.tv_usec/1000);
 	result = current_time_ms - start_time_ms;
 	return (result);
 }
@@ -54,7 +54,7 @@ time_t	ft_time(void)
 	time_t		time_in_mils;
 
 	gettimeofday(&tv, NULL);
-	time_in_mils = tv.tv_sec * 1000000 + (tv.tv_usec);
+	time_in_mils = tv.tv_sec * 1000 + (tv.tv_usec/1000);
 	return (time_in_mils);
 }
 
@@ -70,4 +70,5 @@ void	ft_usleep(time_t time_in_ms)
 			break ;
 	}
 }
+
 

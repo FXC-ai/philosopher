@@ -25,7 +25,7 @@ int main ()
 	int			time_to_sleep;
 	//int	number_of_eat;
 	int	i;
-	pthread_t	pid_thread_manager;
+	//pthread_t	pid_thread_manager;
 	t_manager	tab_manager;
 
 	t_philo	**tab_philo;
@@ -33,7 +33,7 @@ int main ()
 
 	time_t	start_time;
 
-	number_of_philo = 17;
+	number_of_philo = 3;
 	time_to_sleep = 200;
 	time_to_eat = 200;
 	time_to_die = 400;
@@ -90,7 +90,7 @@ int main ()
 		current_philo->start_time = start_time;
 		current_philo->time_last_eat = 0;
 		current_philo->mut_protect_priority = tab_mutex_protectors[i];
-		current_philo->stop = 1;
+		current_philo->stop = 0;
 		current_philo->is_dead = 0;
 		current_philo->chopstick_right = tab_mutex[i];
 		current_philo->chopstick_left = tab_mutex[(i+1) % number_of_philo];
@@ -98,6 +98,7 @@ int main ()
 		current_philo->time_to_die = time_to_die * 1000;
 		current_philo->time_to_sleep = time_to_sleep * 1000;
 		current_philo->time_to_eat = time_to_eat * 1000;
+		current_philo->priority = -1;
 		tab_philo[i] = current_philo;
 		i++;
 	}
@@ -114,28 +115,29 @@ int main ()
 
 	tab_manager.tab_philo = tab_philo;
 	tab_manager.tab_mutex = tab_mutex;
+	tab_manager.nb_philo = number_of_philo;
 
-
-	ft_print_tab_philo(tab_philo);
-
-	/* ON COMMENCE LE REPAS */	
-	// i = 0;
-	// while (i < number_of_philo)
-	// {
-	// 	pthread_create(&(tab_philo[i]->tid), NULL, routine_philosopher, tab_philo[i]);
-	// 	i++;
-	// }
-
-	pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
 
 	//ft_print_tab_philo(tab_philo);
 
-	// i = 0;
-	// while (i < number_of_philo)
-	// {
-	// 	pthread_join(tab_philo[i]->tid, NULL);
-	// 	i++;
-	// }
+	/* ON COMMENCE LE REPAS */	
+	i = 0;
+	while (i < number_of_philo)
+	{
+		pthread_create(&(tab_philo[i]->tid), NULL, routine_philosopher, tab_philo[i]);
+		i++;
+	}
+
+	//pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
+
+	//ft_print_tab_philo(tab_philo);
+
+	i = 0;
+	while (i < number_of_philo)
+	{
+		pthread_join(tab_philo[i]->tid, NULL);
+		i++;
+	}
 	
 	//pthread_join(pid_thread_manager, NULL);
 
