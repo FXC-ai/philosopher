@@ -4,7 +4,7 @@ int	check_death(t_philo *philo)
 {
 
 	//printf("\n (calculate_current_time_ms(philo->start_time) %ld - philo->time_last_eat %ld = %ld %ld\n",calculate_current_time_ms(philo->start_time), philo->time_last_eat, (calculate_current_time_ms(philo->start_time) - philo->time_last_eat), philo->time_to_die);
-	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat) > philo->time_to_die)
+	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat) > philo->rules->time_to_die)
 	{
 		//printf("Le philosophe %d est mort.\n", philo->id);
 		philo->is_dead = 1;
@@ -53,7 +53,7 @@ void	eat(t_philo *philo)
     if (check_death(philo) == 0 && philo->stop == 0)
     {
         printf("\033[1;3%dm%ld ms : Philosopher %d start to eat.\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
-        ft_usleep(philo->time_to_eat);
+        ft_usleep(philo->rules->time_to_eat);
         philo->time_last_eat = calculate_current_time_ms(philo->start_time);
 		philo->nb_of_meal += 1;
         printf("\033[1;3%dm%ld ms : Philosopher %d finish to eat.\n\033[0m", (philo->id % 7), philo->time_last_eat, philo->id);
@@ -62,7 +62,7 @@ void	eat(t_philo *philo)
 
 void	put_right_fork(t_philo *philo)
 {
-	printf("put right fork\n");
+
     if (check_death(philo) == 0 && philo->stop == 0)
     {
         pthread_mutex_unlock(philo->chopstick_right);
@@ -85,7 +85,7 @@ void	have_a_nape(t_philo *philo)
     if (check_death(philo) == 0 && philo->stop == 0)
     {
 		printf("\033[1;3%dm%ld ms : Philosopher %d is sleeping.\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time),philo->id);
-		ft_usleep(philo->time_to_sleep);
+		ft_usleep(philo->rules->time_to_sleep);
 	}
 }
 
@@ -110,26 +110,26 @@ int		read_priority (t_philo	*philo)
 
 void *routine_philosopher(void *philo)
 {
-	t_philo			*cpy_ptr_philo;
-	cpy_ptr_philo = (t_philo *) philo;
+	t_philo			*cpy_philo;
 
+	cpy_philo = (t_philo *) philo;
 	while (42)
 	{
-		//printf("id = %d priority = %d\n", cpy_ptr_philo->id, read_priority(cpy_ptr_philo));
-		if (read_priority(cpy_ptr_philo) == 1)
+		if (cpy_philo->priority == 1)
 		{
-			take_right_fork (cpy_ptr_philo);
-			take_left_fork(cpy_ptr_philo);
-			eat(cpy_ptr_philo); 
-			put_right_fork(cpy_ptr_philo);	
-			put_left_fork(cpy_ptr_philo);	
-			have_a_nape(cpy_ptr_philo);
-			think(cpy_ptr_philo);
-		}
+			take_right_fork (cpy_philo);
+			take_left_fork(cpy_philo);
+			eat(cpy_philo); 
+			put_right_fork(cpy_philo);	
+			put_left_fork(cpy_philo);	
+			have_a_nape(cpy_philo);
+			think(cpy_philo);
 
-		if (cpy_ptr_philo->is_dead == 1)
+		}
+		
+		if (cpy_philo->is_dead == 1)
 		{
-			printf("%ld ms : Philosopher %d is dead.\n", calculate_current_time_ms(cpy_ptr_philo->start_time),cpy_ptr_philo->id);
+			printf("%ld ms : Philosopher %d is dead.\n", calculate_current_time_ms(cpy_philo->start_time),cpy_philo->id);
 			break;
 		}
 	}

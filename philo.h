@@ -11,6 +11,15 @@
 #define SLEEP 2
 #define THINK 3
 
+typedef struct s_rules
+{
+	int			number_of_philo;
+	time_t		time_to_die;
+	int			time_to_eat;
+	int			time_to_sleep;
+	int			number_of_meal;
+} t_rules;
+
 typedef struct s_philo 
 {
 
@@ -24,27 +33,29 @@ typedef struct s_philo
 	int				nb_of_meal;
 
 	pthread_mutex_t	*mut_protect_priority;
+	pthread_mutex_t *mut_protect_nbmeal;
 
 	pthread_mutex_t	**tab_chopstick;
 	pthread_mutex_t	*chopstick_right;
 	pthread_mutex_t	*chopstick_left;
 
-	int				time_to_sleep;
-	int				time_to_eat;
-	time_t			time_to_die;
-
 	time_t			time_last_eat;
 	time_t			period_last_eat;
+
+
+	t_rules			*rules;
+
 
 } t_philo;
 
 typedef struct s_manager
 {
-	t_philo 		**tab_philo;
-	pthread_mutex_t	**tab_mutex;
-	int				nb_philo;
+	t_philo **tab_philo;
+	t_rules	*rules;
 
 } t_manager;
+
+
 
 /*utils.c*/
 void	ft_print_tab_philo (t_philo **tab_philo);

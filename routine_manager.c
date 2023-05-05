@@ -19,7 +19,7 @@ void	*routine_manager(void *tab_manager)
 	cpy_tab_philo = cpy_tab_manager->tab_philo;
 	//cpy_tab_mutex = cpy_tab_manager->tab_mutex;
 
-	nb_philo = cpy_tab_manager->nb_philo;
+	nb_philo = cpy_tab_manager->rules->number_of_philo;
 
 	// i = 0;
 	// while (cpy_tab_philo[i] != NULL)
@@ -42,9 +42,18 @@ void	*routine_manager(void *tab_manager)
 
 			id_philo++;
 		}
-		//ft_print_tab_philo(cpy_tab_philo);
 
-		id_tour++;
+
+		
+		/*
+		VERIFIER QUE TOUS CEUX DEVAIT MANGER ONT BIEN MANGER !!!!!
+		
+		
+		*/
+
+
+		//ft_print_tab_philo(cpy_tab_philo);
+		//break;
 	}
 	
 

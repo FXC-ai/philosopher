@@ -23,7 +23,12 @@ void	ft_print_tab_philo (t_philo **tab_philo)
 	}
 
 }
+/*
+void	ft_print_tab_mutex()
+{
 
+}
+*/
 void	ft_print_tab_mutex (pthread_mutex_t **tab_mutex)
 {
 	int	i;
