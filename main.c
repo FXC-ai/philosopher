@@ -122,7 +122,7 @@ int main ()
 	tab_times[2] = 200; //time_to_sleep
 
 	/* ON DONNE LES REGLES */
-	rules = init_rules(8, tab_times, 5);
+	rules = init_rules(11, tab_times, 5);
 
 	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
