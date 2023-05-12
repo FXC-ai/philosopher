@@ -62,6 +62,8 @@ typedef struct s_manager
 
 /*utils.c*/
 void	ft_print_tab_philo (t_philo **tab_philo);
+void	ft_print_philo (t_philo *philo);
+
 void	ft_print_tab_mutex (pthread_mutex_t **tab_mutex);
 time_t	calculate_current_time_ms (time_t start_time_ms);
 time_t	ft_time(void);

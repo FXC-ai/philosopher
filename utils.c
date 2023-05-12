@@ -1,5 +1,23 @@
 #include "philo.h"
 
+
+
+void	ft_print_philo (t_philo *philo)
+{
+
+	printf("           id = [%d]\n", philo->id);
+	printf("   start_time = [%ld]\n", philo->start_time);
+	printf("   fork_right = [%p]\n", philo->chopstick_right);
+	printf("    fork_left = [%p]\n", philo->chopstick_left);
+	printf("protect_prior = [%p]\n", philo->mut_protect_priority);
+	printf("\033[1;32m     priority = [%d]\n\033[0m", philo->priority);
+	printf("      is_dead = [%d]\n", philo->is_dead);
+	printf("         stop = [%d]\n", philo->stop);
+	printf("time last eat = [%ld]\n", philo->time_last_eat);
+	printf("prid last eat = [%ld]\n", philo->period_last_eat);
+	printf("\n");
+}
+
 void	ft_print_tab_philo (t_philo **tab_philo)
 {
 	int	i;
@@ -7,18 +25,8 @@ void	ft_print_tab_philo (t_philo **tab_philo)
 	i = 0;
 	while (tab_philo[i] != NULL)
 	{
-		printf("           id = [%d]\n", tab_philo[i]->id);
-		printf("   start_time = [%ld]\n", tab_philo[i]->start_time);
-		printf("   fork_right = [%p]\n", tab_philo[i]->chopstick_right);
-		printf("    fork_left = [%p]\n", tab_philo[i]->chopstick_left);
-		printf("protect_prior = [%p]\n", tab_philo[i]->mut_protect_priority);
-		printf("\033[1;32m     priority = [%d]\n\033[0m", tab_philo[i]->priority);
-		printf("      is_dead = [%d]\n", tab_philo[i]->is_dead);
-		printf("         stop = [%d]\n", tab_philo[i]->stop);
-		printf("time last eat = [%ld]\n", tab_philo[i]->time_last_eat);
-		printf("prid last eat = [%ld]\n", tab_philo[i]->period_last_eat);
-
-		printf("\n");
+		ft_print_philo(tab_philo[i]);
+		
 		i++;
 	}
 

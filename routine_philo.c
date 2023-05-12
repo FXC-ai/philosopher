@@ -3,7 +3,7 @@
 int	check_death(t_philo *philo)
 {
 
-	//printf("\n (calculate_current_time_ms(philo->start_time) %ld - philo->time_last_eat %ld = %ld %ld\n",calculate_current_time_ms(philo->start_time), philo->time_last_eat, (calculate_current_time_ms(philo->start_time) - philo->time_last_eat), philo->time_to_die);
+	//printf("\n (calculate_current_time_ms(philo->start_time) %ld - philo->time_last_eat %ld = %ld %ld\n",calculate_current_time_ms(philo->start_time), philo->time_last_eat, (calculate_current_time_ms(philo->start_time) - philo->time_last_eat), philo->rules->time_to_die);
 	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat) > philo->rules->time_to_die)
 	{
 		//printf("Le philosophe %d est mort.\n", philo->id);
@@ -119,11 +119,16 @@ void *routine_philosopher(void *philo)
 	t_philo			*cpy_philo;
 
 	cpy_philo = (t_philo *) philo;
+
 	while (42)
 	{
 		
-		if (cpy_philo->priority == 1)
+		//sleep(2);
+		//ft_print_philo(cpy_philo);
+
+		if (read_priority(cpy_philo) == 1)
 		{
+			//printf("poire\n");
 			take_right_fork (cpy_philo);
 			take_left_fork(cpy_philo);
 			eat(cpy_philo); 
@@ -134,9 +139,10 @@ void *routine_philosopher(void *philo)
 
 		}
 		
-		if (cpy_philo->is_dead == 1)
+		if (check_death(cpy_philo) == 1)
 		{
 			printf("%ld ms : Philosopher %d is dead.\n", calculate_current_time_ms(cpy_philo->start_time),cpy_philo->id);
+			ft_print_philo(cpy_philo);
 			break;
 		}
 	}
