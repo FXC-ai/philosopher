@@ -57,7 +57,7 @@ int main()
 	printf("ft_time = %ld\n", calculate_current_time_ms(test));
 
 
-	nb_philo = 1;
+	nb_philo = 3;
 	nb_tour = 5;
 
 	id_tour = 0;

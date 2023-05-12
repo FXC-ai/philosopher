@@ -31,9 +31,12 @@ typedef struct s_philo
 	int				stop;
 	int				priority;
 	int				nb_of_meal;
+	int				has_eaten;
+	int				id_lap;
 
 	pthread_mutex_t	*mut_protect_priority;
-	pthread_mutex_t *mut_protect_nbmeal;
+	pthread_mutex_t *mut_has_eaten;
+	pthread_mutex_t *mut_id_lap;
 
 	pthread_mutex_t	**tab_chopstick;
 	pthread_mutex_t	*chopstick_right;

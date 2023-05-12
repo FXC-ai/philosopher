@@ -56,6 +56,12 @@ void	eat(t_philo *philo)
         ft_usleep(philo->rules->time_to_eat);
         philo->time_last_eat = calculate_current_time_ms(philo->start_time);
 		philo->nb_of_meal += 1;
+		philo->has_eaten = 1;
+		pthread_mutex_lock(philo->mut_protect_priority);
+		philo->priority = 0;
+		pthread_mutex_unlock(philo->mut_protect_priority);
+
+
         printf("\033[1;3%dm%ld ms : Philosopher %d finish to eat.\n\033[0m", (philo->id % 7), philo->time_last_eat, philo->id);
     }
 }
@@ -115,6 +121,7 @@ void *routine_philosopher(void *philo)
 	cpy_philo = (t_philo *) philo;
 	while (42)
 	{
+		
 		if (cpy_philo->priority == 1)
 		{
 			take_right_fork (cpy_philo);

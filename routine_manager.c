@@ -12,8 +12,11 @@ void	*routine_manager(void *tab_manager)
 	//int				nb_tour;
 	int				id_philo;
 	int				nb_philo;
+	int				check_priorities;
 
 	id_tour = 0;
+	check_priorities = 0;
+	
 
 	cpy_tab_manager = (t_manager *) tab_manager;
 	cpy_tab_philo = cpy_tab_manager->tab_philo;
@@ -34,15 +37,65 @@ void	*routine_manager(void *tab_manager)
 	{
 		//printf("Tour : %d\n", id_tour);
 		id_philo = 0;
+		
+		while (cpy_tab_philo[id_philo] != NULL)
+		{
+			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_protect_priority);
+			check_priorities += cpy_tab_philo[id_philo]->priority;
+			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_protect_priority);	
+			id_philo++;
+		}
+
+		if (check_priorities == 0)
+		{
+			id_philo = 0;
+			while (cpy_tab_philo[id_philo] != NULL)
+			{
+				pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_protect_priority);
+				cpy_tab_philo[id_philo]->priority = ((id_tour + cpy_tab_philo[id_philo]->id) % nb_philo) % 2;
+				pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_protect_priority);
+				id_philo++;
+			}
+			id_tour++;
+		}
+		printf("Je tourne : %d\n");
+
+		//ft_print_tab_philo(cpy_tab_philo);
+		//sleep(1);
+		/*
 		while (cpy_tab_philo[id_philo] != NULL)
 		{			
 			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_protect_priority);
 			cpy_tab_philo[id_philo]->priority = ((cpy_tab_philo[id_philo]->nb_of_meal + cpy_tab_philo[id_philo]->id) % nb_philo) % 2;
 			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_protect_priority);
+			
+			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_has_eaten);
+			cpy_tab_philo[id_philo]->has_eaten = 0;
+			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_has_eaten);
+
+			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_protect_priority);
+			id_philo++;
+		}*/
+		/*
+		id_philo = 0;
+		while (cpy_tab_philo[id_philo] != NULL)
+		{			
+			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_has_eaten);
+			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_protect_priority);
+			if (cpy_tab_philo[id_philo]->priority == 1)
+			{
+
+
+
+
+			}
+			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_protect_priority);
+			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_has_eaten);
+
+			
 
 			id_philo++;
-		}
-
+		}*/
 
 		
 		/*
