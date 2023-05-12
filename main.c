@@ -76,7 +76,7 @@ t_philo	**create_tab_philosophers(pthread_mutex_t **tab_chopstick, pthread_mutex
 		current_philo->chopstick_left = tab_chopstick[(i+1) % rules->number_of_philo];
 		current_philo->mut_protect_priority = tab_mutex_priority[i];
 
-		current_philo->priority = 0;
+		current_philo->priority = (i % rules->number_of_philo) % 2;
 
 		current_philo->rules = rules;
 
@@ -106,49 +106,39 @@ void	init_start_time_philo(t_philo **tab_philo)
 
 int main ()
 {
-	//int			number_of_philo = 5;
-	//int			number_of_meals = 3;
-
 	time_t			tab_times[3];
 	t_rules			*rules;
 	t_philo			**tab_philo;
+
 	pthread_mutex_t	**tab_mutex_protectors;
-	//pthread_mutex_t **tab_mutex_nbmeal;
 	pthread_mutex_t **tab_chopstick;
+
 	int				i;
 	t_manager		tab_manager;
 	pthread_t	pid_thread_manager;
 
-
-	tab_times[0] = 410; //time_to_die
+	tab_times[0] = 400; //time_to_die
 	tab_times[1] = 200; //time_to_eat
 	tab_times[2] = 200; //time_to_sleep
 
 	/* ON DONNE LES REGLES */
-	rules = init_rules(3, tab_times, 5);
+	rules = init_rules(8, tab_times, 5);
 
 	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
 
 	tab_mutex_protectors = create_tab_mutex(rules->number_of_philo);
 
-	//tab_mutex_nbmeal = create_tab_mutex(rules->number_of_philo);
-
 	/* ON INSTALLE LES PHILOSOPHES AUTOUR DE LA TABLE */
 	tab_philo = create_tab_philosophers(tab_chopstick, tab_mutex_protectors, rules);
-
-	init_start_time_philo(tab_philo);
-
-	//ft_print_tab_philo(tab_philo);
 
 
 	tab_manager.tab_philo = tab_philo;
 	tab_manager.rules = rules;
-	// tab_manager.tab_mutex = tab_chopstick;
-	// tab_manager.nb_philo = rules->number_of_philo;
 
 	/* ON COMMENCE LE REPAS */	
 	i = 0;
+	init_start_time_philo(tab_philo);
 	while (i < rules->number_of_philo)
 	{
 		pthread_create(&(tab_philo[i]->tid), NULL, routine_philosopher, tab_philo[i]);
@@ -156,8 +146,6 @@ int main ()
 	}
 
 	pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
-
-	//ft_print_tab_philo(tab_philo);
 
 
 	i = 0;
@@ -169,13 +157,5 @@ int main ()
 	
 	pthread_join(pid_thread_manager, NULL);
 
-	/*
-	i = 0;
-	while (i < number_of_philo)
-	{
-		pthread_mutex_destroy(tab_mutex[i]);
-		i++;
-	}
-	*/
 	return 0;
 }

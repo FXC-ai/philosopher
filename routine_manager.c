@@ -9,7 +9,7 @@ void	*routine_manager(void *tab_manager)
 	int				nb_philo;
 	int				check_priorities;
 
-	id_tour = 0;
+	id_tour = 1;
 	check_priorities = 0;
 	
 	cpy_tab_manager = (t_manager *) tab_manager;
@@ -19,7 +19,6 @@ void	*routine_manager(void *tab_manager)
 
 	while (42)
 	{
-
 		id_philo = 0;
 		check_priorities = 0;
 		while (cpy_tab_philo[id_philo] != NULL)
@@ -29,7 +28,6 @@ void	*routine_manager(void *tab_manager)
 			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_protect_priority);	
 			id_philo++;
 		}
-
 		if (check_priorities == 0)
 		{
 			id_philo = 0;
@@ -42,9 +40,6 @@ void	*routine_manager(void *tab_manager)
 			}
 			id_tour++;
 		}
-
-
 	}
-	
 	return NULL;
 }
