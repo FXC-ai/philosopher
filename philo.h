@@ -38,7 +38,7 @@ typedef struct s_philo
 	pthread_mutex_t *mut_has_eaten;
 	pthread_mutex_t *mut_id_lap;
 
-	pthread_mutex_t	**tab_chopstick;
+	//pthread_mutex_t	**tab_chopstick;
 	pthread_mutex_t	*chopstick_right;
 	pthread_mutex_t	*chopstick_left;
 
@@ -81,5 +81,9 @@ void	have_a_nape(t_philo *philo);
 void    *routine_philosopher(void *philo);
 
 void	*routine_manager(void *tab_manager);
+
+long	ft_atoi(const char *str);
+int		ft_isdigit(int c);
+int		ft_isnumeric (char *str);
 
 #endif

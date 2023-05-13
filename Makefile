@@ -1,4 +1,4 @@
-SRCS	=	main.c utils.c routine_philo.c routine_manager.c
+SRCS	=	main.c utils.c routine_philo.c routine_manager.c atoi.c
 
 OBJS	= ${SRCS:.c=.o}
 
@@ -10,13 +10,11 @@ RM		= rm -f
 
 NAME 	= philosopher
 
-INCLUDE = includes
-
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o ${<:.c=.o}
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(OBJS) -I $(INCLUDE)
+	$(CC) -o $(NAME) $(OBJS)
 
 all: $(NAME)
 

@@ -1,7 +1,5 @@
 #include "philo.h"
 
-
-
 void	ft_print_philo (t_philo *philo)
 {
 

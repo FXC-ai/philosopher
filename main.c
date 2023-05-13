@@ -41,8 +41,7 @@ t_philo	**create_tab_philosophers(pthread_mutex_t **tab_chopstick, pthread_mutex
 {
 	t_philo			**tab_philo;
 	t_philo			*current_philo;
-
-	int			i;
+	int				i;
 
 	tab_philo = (t_philo **) malloc(sizeof(t_philo *) * (rules->number_of_philo + 1));
 	if (tab_philo == NULL)
@@ -103,8 +102,13 @@ void	init_start_time_philo(t_philo **tab_philo)
 
 }
 
+/*SEPARER LES CAS PAIRS ET IMPAIRS ????
 
-int main ()
+Cas limite : 15 410 200 200
+
+
+*/
+int main (int argc, char *argv[])
 {
 	time_t			tab_times[3];
 	t_rules			*rules;
@@ -115,14 +119,42 @@ int main ()
 
 	int				i;
 	t_manager		tab_manager;
-	pthread_t	pid_thread_manager;
+	pthread_t		pid_thread_manager;
 
-	tab_times[0] = 400; //time_to_die
+
+	if (argc == 5)
+	{
+		while (*argv != NULL)
+		{
+			printf("arg = %s\n", *argv);
+			argv++;
+		}
+
+		return (0);
+	}
+	else if (argc == 6)
+	{
+		while (*argv != NULL)
+		{
+			printf("arg = %s\n", *argv);
+			argv++;
+		}
+
+		return ();
+	}
+	else
+	{
+		return (1);
+	}
+
+
+
+	tab_times[0] = 410; //time_to_die
 	tab_times[1] = 200; //time_to_eat
 	tab_times[2] = 200; //time_to_sleep
 
 	/* ON DONNE LES REGLES */
-	rules = init_rules(11, tab_times, 5);
+	rules = init_rules(13, tab_times, 5);
 
 	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
@@ -131,7 +163,6 @@ int main ()
 
 	/* ON INSTALLE LES PHILOSOPHES AUTOUR DE LA TABLE */
 	tab_philo = create_tab_philosophers(tab_chopstick, tab_mutex_protectors, rules);
-
 
 	tab_manager.tab_philo = tab_philo;
 	tab_manager.rules = rules;
@@ -146,7 +177,6 @@ int main ()
 	}
 
 	pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
-
 
 	i = 0;
 	while (i < rules->number_of_philo)
