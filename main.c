@@ -57,13 +57,19 @@ t_philo	**create_tab_philosophers(pthread_mutex_t **tab_chopstick, pthread_mutex
 		current_philo->id = i;
 		current_philo->start_time = 0;
 		current_philo->time_last_eat = 0;
-		current_philo->has_eaten = 0;
 		
-		current_philo->mut_has_eaten = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
-		if (current_philo->mut_has_eaten == NULL)
+		current_philo->mut_stop = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
+		if (current_philo->mut_stop == NULL)
 			return (NULL);
+		pthread_mutex_init(current_philo->mut_stop, NULL);
 
-		pthread_mutex_init(current_philo->mut_has_eaten, NULL);
+
+		current_philo->mut_death = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
+		if (current_philo->mut_death == NULL)
+			return (NULL);
+		pthread_mutex_init(current_philo->mut_death, NULL);
+
+
 		//printf("TEST : %p\n", current_philo->mut_nbmeal);
 
 		current_philo->stop = 0;
@@ -73,8 +79,8 @@ t_philo	**create_tab_philosophers(pthread_mutex_t **tab_chopstick, pthread_mutex
 		
 		current_philo->chopstick_right = tab_chopstick[i];
 		current_philo->chopstick_left = tab_chopstick[(i+1) % rules->number_of_philo];
-		current_philo->mut_protect_priority = tab_mutex_priority[i];
 
+		current_philo->mut_protect_priority = tab_mutex_priority[i];
 		current_philo->priority = (i % rules->number_of_philo) % 2;
 
 		current_philo->rules = rules;

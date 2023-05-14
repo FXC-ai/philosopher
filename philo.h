@@ -31,12 +31,10 @@ typedef struct s_philo
 	int				stop;
 	int				priority;
 	int				nb_of_eat;
-	int				has_eaten;
-	int				id_lap;
 
 	pthread_mutex_t	*mut_protect_priority;
-	pthread_mutex_t *mut_has_eaten;
-	pthread_mutex_t *mut_id_lap;
+	pthread_mutex_t *mut_stop;
+	pthread_mutex_t *mut_death;
 
 	//pthread_mutex_t	**tab_chopstick;
 	pthread_mutex_t	*chopstick_right;
@@ -80,6 +78,7 @@ void	put_right_fork(t_philo *philo);
 void	put_left_fork(t_philo *philo);
 void	have_a_nape(t_philo *philo);
 void    *routine_philosopher(void *philo);
+int		read_priority(t_philo	*philo);
 
 void	*routine_manager(void *tab_manager);
 
