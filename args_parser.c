@@ -1,4 +1,4 @@
-include "philo.h"
+#include "philo.h"
 
 int	ft_isdigit(int c)
 {
@@ -7,7 +7,7 @@ int	ft_isdigit(int c)
 
 int	ft_isnumeric (char *str)
 {
-	while (*str != NULL)
+	while (*str != '\0')
 	{
 		if (ft_isdigit(*str) == 0)
 		{

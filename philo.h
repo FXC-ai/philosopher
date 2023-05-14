@@ -17,7 +17,7 @@ typedef struct s_rules
 	time_t		time_to_die;
 	int			time_to_eat;
 	int			time_to_sleep;
-	int			number_of_meal;
+	int			nb_of_meal;
 } t_rules;
 
 typedef struct s_philo 
@@ -30,7 +30,7 @@ typedef struct s_philo
 	int				is_dead;
 	int				stop;
 	int				priority;
-	int				nb_of_meal;
+	int				nb_of_eat;
 	int				has_eaten;
 	int				id_lap;
 

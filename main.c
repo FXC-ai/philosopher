@@ -32,7 +32,7 @@ t_rules	*init_rules (int number_of_philo, time_t *tab_times, int number_of_meal)
 	s_rules->time_to_die = tab_times[0];
 	s_rules->time_to_eat = tab_times[1];
 	s_rules->time_to_sleep = tab_times[2];
-	s_rules->number_of_meal = number_of_meal;
+	s_rules->nb_of_meal = number_of_meal;
 
 	return (s_rules);
 }
@@ -121,40 +121,65 @@ int main (int argc, char *argv[])
 	t_manager		tab_manager;
 	pthread_t		pid_thread_manager;
 
+	int				nb_philo;
+	int				nb_meals;
+
 
 	if (argc == 5)
 	{
-		while (*argv != NULL)
+		i = 1;
+		while (i < 5)
 		{
-			printf("arg = %s\n", *argv);
-			argv++;
+			if (ft_isnumeric(argv[i]) == 0)
+				return (1);
+			i++;
 		}
 
-		return (0);
+		i = 1;
+		while (i < 5)
+		{
+			if (ft_atoi(argv[i]) > 2147483647)
+				return (1);
+			i++;
+		}
+
+		nb_philo = ft_atoi(argv[1]);
+		tab_times[0] = ft_atoi(argv[2]); //time_to_die
+		tab_times[1] = ft_atoi(argv[3]); //time_to_eat
+		tab_times[2] = ft_atoi(argv[4]); //time_to_sleep
+		nb_meals = -1;
 	}
-	else if (argc == 6)
+	else if (argc >= 6)
 	{
-		while (*argv != NULL)
+		i = 1;
+		while (i < 6)
 		{
-			printf("arg = %s\n", *argv);
-			argv++;
+			if (ft_isnumeric(argv[i]) == 0)
+				return (1);
+			i++;
 		}
-
-		return ();
+		i = 1;
+		while (i < 6)
+		{
+			if (ft_atoi(argv[i]) > 2147483647)
+				return (1);
+			i++;
+		}
+		nb_philo = ft_atoi(argv[1]);
+		tab_times[0] = ft_atoi(argv[2]); //time_to_die
+		tab_times[1] = ft_atoi(argv[3]); //time_to_eat
+		tab_times[2] = ft_atoi(argv[4]); //time_to_sleep
+		nb_meals = ft_atoi(argv[5]);
 	}
 	else
 	{
-		return (1);
+		
+		printf("C bien mon pb\n");
+		return (144);
 	}
 
-
-
-	tab_times[0] = 410; //time_to_die
-	tab_times[1] = 200; //time_to_eat
-	tab_times[2] = 200; //time_to_sleep
-
 	/* ON DONNE LES REGLES */
-	rules = init_rules(13, tab_times, 5);
+	rules = init_rules(nb_philo, tab_times, nb_meals);
 
 	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
