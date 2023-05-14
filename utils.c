@@ -1,5 +1,15 @@
 #include "philo.h"
 
+void	ft_print_rules (t_rules *rules)
+{
+	printf("number_of_philo = %d\n", rules->number_of_philo);
+	printf("    time_to_die = %ld\n", rules->time_to_die);
+	printf("    time_to_eat = %ld\n", rules->time_to_eat);
+	printf("  time_to_sleep = %ld\n", rules->time_to_sleep);
+	printf("     nb_of_meal = %d\n", rules->nb_of_meal);
+}
+
+
 void	ft_print_philo (t_philo *philo)
 {
 

@@ -125,20 +125,12 @@ int main (int argc, char *argv[])
 	int				nb_meals;
 
 
-	if (argc == 5)
+	if (argc >= 5)
 	{
 		i = 1;
 		while (i < 5)
 		{
-			if (ft_isnumeric(argv[i]) == 0)
-				return (1);
-			i++;
-		}
-
-		i = 1;
-		while (i < 5)
-		{
-			if (ft_atoi(argv[i]) > 2147483647)
+			if (ft_isnumeric(argv[i]) == 0 || ft_atoi(argv[i]) > 2147483647)
 				return (1);
 			i++;
 		}
@@ -147,39 +139,28 @@ int main (int argc, char *argv[])
 		tab_times[0] = ft_atoi(argv[2]); //time_to_die
 		tab_times[1] = ft_atoi(argv[3]); //time_to_eat
 		tab_times[2] = ft_atoi(argv[4]); //time_to_sleep
-		nb_meals = -1;
-	}
-	else if (argc >= 6)
-	{
-		i = 1;
-		while (i < 6)
+
+		if (argc > 5 && ft_isnumeric(argv[5]) == 1 && ft_atoi(argv[5]) < 2147483647 )
 		{
-			if (ft_isnumeric(argv[i]) == 0)
-				return (1);
-			i++;
+			nb_meals = ft_atoi(argv[5]);
 		}
-		i = 1;
-		while (i < 6)
+		else
 		{
-			if (ft_atoi(argv[i]) > 2147483647)
-				return (1);
-			i++;
+			nb_meals = -1;
 		}
-		nb_philo = ft_atoi(argv[1]);
-		tab_times[0] = ft_atoi(argv[2]); //time_to_die
-		tab_times[1] = ft_atoi(argv[3]); //time_to_eat
-		tab_times[2] = ft_atoi(argv[4]); //time_to_sleep
-		nb_meals = ft_atoi(argv[5]);
 	}
 	else
 	{
-		
-		printf("C bien mon pb\n");
-		return (144);
+		return (1);
 	}
+
+
 
 	/* ON DONNE LES REGLES */
 	rules = init_rules(nb_philo, tab_times, nb_meals);
+
+	//ft_print_rules(rules);
+	//return (404);
 
 	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);

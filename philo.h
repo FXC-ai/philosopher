@@ -15,8 +15,8 @@ typedef struct s_rules
 {
 	int			number_of_philo;
 	time_t		time_to_die;
-	int			time_to_eat;
-	int			time_to_sleep;
+	time_t		time_to_eat;
+	time_t		time_to_sleep;
 	int			nb_of_meal;
 } t_rules;
 
@@ -61,6 +61,7 @@ typedef struct s_manager
 
 
 /*utils.c*/
+void	ft_print_rules (t_rules *rules);
 void	ft_print_tab_philo (t_philo **tab_philo);
 void	ft_print_philo (t_philo *philo);
 
