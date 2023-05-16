@@ -10,11 +10,16 @@ RM		= rm -f
 
 NAME 	= philosopher
 
+DEBUG	= debug
+
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o ${<:.c=.o}
 
 $(NAME): $(OBJS)
 	$(CC) -o $(NAME) $(OBJS)
+
+$(DEBUG): $(OBJS)
+	$(CC) -o $(NAME) $(OBJS) -fsanitize=thread -g
 
 all: $(NAME)
 

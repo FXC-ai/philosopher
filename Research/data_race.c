@@ -1,6 +1,6 @@
 #include <pthread.h>
 #include <stdio.h>
-#define MAX 21000
+#define MAX 100000
 
 
 typedef struct s_test_philo {
