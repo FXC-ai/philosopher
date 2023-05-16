@@ -25,9 +25,31 @@ int	check_nb_meals(t_philo *philo)
 	return (0);
 }
 
+int	read_priority (t_philo	*philo)
+{
+	int	result;
+
+	pthread_mutex_lock(philo->mut_protect_priority);
+	result = philo->priority;
+	pthread_mutex_unlock(philo->mut_protect_priority);
+	return (result);
+}
+
+int	check_stop (t_philo	*philo)
+{
+	int	result;
+
+	pthread_mutex_lock(philo->mut_stop);
+	result = philo->stop;
+	pthread_mutex_unlock(philo->mut_stop);
+
+	return (result);
+}
+
+
 void	take_right_fork(t_philo *philo)
 {
-    if (check_death(philo) == 0)
+    if (check_death(philo) == 0 && check_stop(philo) == 0)
     {
 	    //printf("\033[1;3%dm%ld ms : Philosopher %d try to take the right fork [%p].\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick_right);
 	    pthread_mutex_lock(philo->chopstick_right);
@@ -37,7 +59,7 @@ void	take_right_fork(t_philo *philo)
 
 void	take_left_fork(t_philo *philo)
 {
-    if (check_death(philo) == 0)
+    if (check_death(philo) == 0 && check_stop(philo) == 0)
     {
         //printf("\033[1;3%dm%ld ms : Philosopher %d try to take the left fork [%p].\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id, philo->chopstick_left);
         pthread_mutex_lock(philo->chopstick_left);
@@ -48,7 +70,7 @@ void	take_left_fork(t_philo *philo)
 
 void	eat(t_philo *philo)
 {
-    if (check_death(philo) == 0)
+    if (check_death(philo) == 0 && check_stop(philo) == 0)
     {
         printf("\033[1;3%dm%ld ms : %d is eating\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
         ft_usleep(philo->rules->time_to_eat);
@@ -58,6 +80,14 @@ void	eat(t_philo *philo)
 		ILS DOIVENT POUVOIR MOURIR EN MANGEANT !!!!
 		*/
 		philo->nb_of_eat += 1;
+		if (check_nb_meals(philo) == 1)
+		{
+			pthread_mutex_lock(philo->mut_stop);
+			philo->stop = 1;
+			printf("\033[1;37mStop pour le %d after eat\n\033[0m", philo->id);
+			pthread_mutex_unlock(philo->mut_stop);
+		}
+
 		pthread_mutex_lock(philo->mut_protect_priority);
 		philo->priority = 0;
 		pthread_mutex_unlock(philo->mut_protect_priority);
@@ -70,7 +100,7 @@ void	eat(t_philo *philo)
 void	put_right_fork(t_philo *philo)
 {
 
-    if (check_death(philo) == 0)
+    if (check_death(philo) == 0 && check_stop(philo) == 0)
     {
         pthread_mutex_unlock(philo->chopstick_right);
         //printf("\033[1;3%dm%ld ms : %d leave the right fork.\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
@@ -80,7 +110,7 @@ void	put_right_fork(t_philo *philo)
 
 void	put_left_fork(t_philo *philo)
 {
-	if (check_death(philo) == 0)
+	if (check_death(philo) == 0 && check_stop(philo) == 0)
     {
 		pthread_mutex_unlock(philo->chopstick_left);
 		//printf("\033[1;3%dm%ld ms : Philosopher %d leave the left fork.\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
@@ -89,7 +119,7 @@ void	put_left_fork(t_philo *philo)
 
 void	have_a_nape(t_philo *philo)
 {
-    if (check_death(philo) == 0)
+    if (check_death(philo) == 0 && check_stop(philo) == 0)
     {
 		printf("%ld ms : %d is sleeping\n", calculate_current_time_ms(philo->start_time),philo->id);
 		ft_usleep(philo->rules->time_to_sleep);
@@ -98,22 +128,11 @@ void	have_a_nape(t_philo *philo)
 
 void	think(t_philo *philo)
 {
-    if (check_death(philo) == 0)
+    if (check_death(philo) == 0 && check_stop(philo) == 0)
     {
 		printf("%ld ms : %d is thinking\n", calculate_current_time_ms(philo->start_time),philo->id);
 	}
 }
-
-int		read_priority (t_philo	*philo)
-{
-	int	result;
-
-	pthread_mutex_lock(philo->mut_protect_priority);
-	result = philo->priority;
-	pthread_mutex_unlock(philo->mut_protect_priority);
-	return (result);
-}
-
 
 void *routine_philosopher(void *philo)
 {
@@ -149,6 +168,7 @@ void *routine_philosopher(void *philo)
 		{
 			pthread_mutex_lock(cpy_philo->mut_stop);
 			cpy_philo->stop = 1;
+			printf("Stop pour le %d\n", cpy_philo->id);
 			pthread_mutex_unlock(cpy_philo->mut_stop);
 			break;
 		}
