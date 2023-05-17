@@ -86,7 +86,7 @@ void	ft_usleep(time_t time_in_ms)
 	current_time = ft_time();
 	while ((ft_time() - current_time) <= time_in_ms)
 	{
-		usleep(25);
+		usleep(50);
 		if ((ft_time() - current_time) >= time_in_ms)
 			break ;
 	}

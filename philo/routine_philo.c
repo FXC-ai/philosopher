@@ -126,9 +126,6 @@ void *routine_philosopher(void *philo)
 	while (42)
 	{
 		
-		//sleep(2);
-		//ft_print_philo(cpy_philo);
-
 		if (read_priority(cpy_philo) == 1 && check_nb_meals(cpy_philo) == 0)
 		{
 			eat(cpy_philo); 
@@ -136,14 +133,14 @@ void *routine_philosopher(void *philo)
 			think(cpy_philo);
 		}
 
+		if (check_stop(cpy_philo) == 1)
+		{
+			break;
+		}
 
-		
 		if (check_death(cpy_philo, 0) == 1 && check_nb_meals(cpy_philo) == 0)
 		{
-			/*if (check_stop(cpy_philo) == 0)
-			{*/
 			printf("\033[1;3%dm%ld %d died\n\033[0m", cpy_philo->id % 7, calculate_current_time_ms(cpy_philo->start_time),cpy_philo->id);
-			/*}*/
 			//ft_print_philo(cpy_philo);
 			break;
 		}
@@ -151,12 +148,7 @@ void *routine_philosopher(void *philo)
 		{
 			pthread_mutex_lock(cpy_philo->mut_stop);
 			cpy_philo->stop = 1;
-			//printf("Stop pour le %d\n", cpy_philo->id);
 			pthread_mutex_unlock(cpy_philo->mut_stop);
-			break;
-		}
-		if (check_stop(cpy_philo) == 1)
-		{
 			break;
 		}
 		
