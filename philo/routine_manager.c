@@ -10,7 +10,7 @@ void	*routine_manager(void *tab_manager)
 	int				check_priorities;
 	int				check_deaths;
 	int				check_stops;
-	int				i;
+	//int				i;
 
 
 	id_tour = 1;
@@ -39,30 +39,29 @@ void	*routine_manager(void *tab_manager)
 			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_stop);
 			check_stops += cpy_tab_philo[id_philo]->stop;
 			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_stop);
-
-
 			
 			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_death);
 			check_deaths += cpy_tab_philo[id_philo]->is_dead;
-			if (check_deaths > 0)
-			{
-				i = 0;
-				while (cpy_tab_philo[i] != NULL)
-				{
-					//printf("%ld ms : NOW\n", calculate_current_time_ms(cpy_tab_philo[id_philo]->start_time));
-					if (i != id_philo)
-					{
-						pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_stop);
-						cpy_tab_philo[id_philo]->stop = 1;
-						pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_stop);
-					}
-					i++;
-				}				
+
+			// if (check_deaths > 0)
+			// {
+			// 	i = 0;
+			// 	while (cpy_tab_philo[i] != NULL)
+			// 	{
+			// 		//printf("%ld ms : NOW\n", calculate_current_time_ms(cpy_tab_philo[id_philo]->start_time));
+			// 		if (i != id_philo)
+			// 		{
+			// 			pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_stop);
+			// 			cpy_tab_philo[id_philo]->stop = 1;
+			// 			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_stop);
+			// 		}
+			// 		i++;
+			// 	}				
 
 				
-				pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_death);
-				break;
-			}
+			// 	pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_death);
+			// 	break;
+			// }
 			pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_death);
 			
 			id_philo++;
@@ -78,20 +77,20 @@ void	*routine_manager(void *tab_manager)
 		
 		if (check_deaths > 0)
 		{
-			//printf("We have a death !!!\n");
-			//sleep(3);
+			// printf("We have a death !!!\n");
+			// sleep(3);
 
 			
-			// id_philo = 0;
-			// while (cpy_tab_philo[id_philo] != NULL)
-			// {
-			// 	//printf("%ld ms : NOW\n", calculate_current_time_ms(cpy_tab_philo[id_philo]->start_time));
-			// 	pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_stop);
-			// 	cpy_tab_philo[id_philo]->stop = 1;
-			// 	pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_stop);
-			// 	id_philo++;
-			// }
-			ft_print_tab_philo(cpy_tab_philo);
+			id_philo = 0;
+			while (cpy_tab_philo[id_philo] != NULL)
+			{
+				//printf("%ld ms : NOW\n", calculate_current_time_ms(cpy_tab_philo[id_philo]->start_time));
+				pthread_mutex_lock(cpy_tab_philo[id_philo]->mut_stop);
+				cpy_tab_philo[id_philo]->stop = 1;
+				pthread_mutex_unlock(cpy_tab_philo[id_philo]->mut_stop);
+				id_philo++;
+			}
+			//ft_print_tab_philo(cpy_tab_philo);
 
 
 			return NULL;
