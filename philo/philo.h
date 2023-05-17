@@ -13,11 +13,14 @@
 
 typedef struct s_rules
 {
-	int			number_of_philo;
-	time_t		time_to_die;
-	time_t		time_to_eat;
-	time_t		time_to_sleep;
-	int			nb_of_meal;
+	int				number_of_philo;
+	time_t			time_to_die;
+	time_t			time_to_eat;
+	time_t			time_to_sleep;
+	int				nb_of_meal;
+
+	pthread_mutex_t	*mut_end;
+	int				end;
 } t_rules;
 
 typedef struct s_philo 
@@ -32,20 +35,16 @@ typedef struct s_philo
 	int				priority;
 	int				nb_of_eat;
 
-	pthread_mutex_t	*mut_protect_priority;
 	pthread_mutex_t *mut_stop;
-	pthread_mutex_t *mut_death;
+	pthread_mutex_t *mut_end;
 
-	//pthread_mutex_t	**tab_chopstick;
 	pthread_mutex_t	*chopstick_right;
 	pthread_mutex_t	*chopstick_left;
 
 	time_t			time_last_eat;
 	time_t			period_last_eat;
 
-
 	t_rules			*rules;
-
 
 } t_philo;
 

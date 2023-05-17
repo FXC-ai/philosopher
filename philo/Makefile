@@ -1,4 +1,4 @@
-SRCS	=	main.c utils.c routine_philo.c routine_manager.c atoi.c args_parser.c
+SRCS	=	main.c utils.c routine_philo.c atoi.c args_parser.c
 
 OBJS	= ${SRCS:.c=.o}
 
@@ -16,7 +16,7 @@ DEBUG	= debug
 	$(CC) $(CFLAGS) -c $< -o ${<:.c=.o}
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(OBJS)
+	$(CC) -o $(NAME) $(OBJS) -O3 -g3
 
 $(DEBUG): $(OBJS)
 	$(CC) -o $(NAME) $(OBJS)

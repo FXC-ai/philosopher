@@ -10,9 +10,14 @@ int	check_death(t_philo *philo, int c)
 	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat) > philo->rules->time_to_die)
 	{
 		//printf("Periode deces : %ld\n", calculate_current_time_ms(philo->start_time) - philo->time_last_eat);
-	    pthread_mutex_lock(philo->mut_death);
 		philo->is_dead = 1;
-	    pthread_mutex_unlock(philo->mut_death);
+		/*pthread_mutex_lock(philo->rules->mut_end);		
+		if (philo->rules->end == 0)
+		{
+			philo->rules->end = 1;
+			//printf("Je viens de set end a 1\n");
+		}
+		pthread_mutex_unlock(philo->rules->mut_end);*/
 
 		return (1);
 	}
@@ -28,16 +33,6 @@ int	check_nb_meals(t_philo *philo)
 	return (0);
 }
 
-int	read_priority (t_philo	*philo)
-{
-	int	result;
-
-	pthread_mutex_lock(philo->mut_protect_priority);
-	result = philo->priority;
-	pthread_mutex_unlock(philo->mut_protect_priority);
-	return (result);
-}
-
 int	check_stop (t_philo	*philo)
 {
 	int	result;
@@ -45,6 +40,17 @@ int	check_stop (t_philo	*philo)
 	pthread_mutex_lock(philo->mut_stop);
 	result = philo->stop;
 	pthread_mutex_unlock(philo->mut_stop);
+
+	return (result);
+}
+
+int	read_end (t_philo *philo)
+{
+	int	result;
+
+	pthread_mutex_lock(philo->rules->mut_end);
+	result = philo->rules->end;
+	pthread_mutex_unlock(philo->rules->mut_end );
 
 	return (result);
 }
@@ -87,13 +93,6 @@ void	eat(t_philo *philo)
 
 		if (check_death(philo, 0) == 0)
 		{
-			pthread_mutex_lock(philo->mut_protect_priority);
-			philo->priority = 0;
-			pthread_mutex_unlock(philo->mut_protect_priority);
-		}
-
-		if (check_death(philo, 0) == 0)
-		{
         	pthread_mutex_unlock(philo->chopstick_right);
 			pthread_mutex_unlock(philo->chopstick_left);
 		}
@@ -123,10 +122,15 @@ void *routine_philosopher(void *philo)
 
 	cpy_philo = (t_philo *) philo;
 
+	if (cpy_philo->id % 2 == 1)
+	{
+		ft_usleep(cpy_philo->rules->time_to_eat / 2);
+	}
+
 	while (42)
 	{
 		
-		if (read_priority(cpy_philo) == 1 && check_nb_meals(cpy_philo) == 0)
+		if (check_nb_meals(cpy_philo) == 0)
 		{
 			eat(cpy_philo); 
 			have_a_nape(cpy_philo);

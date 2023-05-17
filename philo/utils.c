@@ -17,7 +17,6 @@ void	ft_print_philo (t_philo *philo)
 	printf("   start_time = [%ld]\n", philo->start_time);
 	printf("\033[1;34m   fork_right = [%p]\n\033[0m", philo->chopstick_right);
 	printf("\033[1;33m    fork_left = [%p]\n\033[0m", philo->chopstick_left);
-	printf("protect_prior = [%p]\n", philo->mut_protect_priority);
 	printf("\033[1;32m     priority = [%d]\n\033[0m", philo->priority);
 	printf("      is_dead = [%d]\n", philo->is_dead);
 	printf("         stop = [%d]\n", philo->stop);
@@ -86,7 +85,7 @@ void	ft_usleep(time_t time_in_ms)
 	current_time = ft_time();
 	while ((ft_time() - current_time) <= time_in_ms)
 	{
-		usleep(50);
+		usleep(43);
 		if ((ft_time() - current_time) >= time_in_ms)
 			break ;
 	}
