@@ -33,15 +33,6 @@ int	check_nb_meals(t_philo *philo)
 	return (0);
 }
 
-int	check_stop (t_philo	*philo)
-{
-	int	result;
-
-	result = philo->stop;
-
-	return (result);
-}
-
 int	read_end (t_philo *philo)
 {
 	int	result;
@@ -56,7 +47,7 @@ int	read_end (t_philo *philo)
 
 void	eat(t_philo *philo)
 {
-    if (check_death(philo ,0) == 0 && check_stop(philo) == 0)
+    if (check_death(philo ,0) == 0)
     {
 		
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
@@ -99,7 +90,7 @@ void	eat(t_philo *philo)
 
 void	have_a_nape(t_philo *philo)
 {
-    if (check_death(philo, 0) == 0 && check_stop(philo) == 0)
+    if (check_death(philo, 0) == 0)
     {
 		printf("%ld %d is sleeping\n", calculate_current_time_ms(philo->start_time),philo->id);
 		ft_usleep(philo->rules->time_to_sleep);
@@ -108,7 +99,7 @@ void	have_a_nape(t_philo *philo)
 
 void	think(t_philo *philo)
 {
-    if (check_death(philo, 0) == 0 && check_stop(philo) == 0)
+    if (check_death(philo, 0) == 0)
     {
 		printf("%ld %d is thinking\n", calculate_current_time_ms(philo->start_time),philo->id);
 	}
@@ -133,11 +124,6 @@ void *routine_philosopher(void *philo)
 			eat(cpy_philo); 
 			have_a_nape(cpy_philo);
 			think(cpy_philo);
-		}
-
-		if (check_stop(cpy_philo) == 1)
-		{
-			break;
 		}
 
 		if (check_death(cpy_philo, 0) == 1 && check_nb_meals(cpy_philo) == 0)
