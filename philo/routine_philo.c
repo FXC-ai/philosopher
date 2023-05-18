@@ -63,7 +63,6 @@ void	eat(t_philo *philo)
 	    	//printf("%ld %d try to take a fork (right)\n", calculate_current_time_ms(philo->start_time), philo->id);
 	    	printf("%ld %d has taken a fork\n", calculate_current_time_ms(philo->start_time), philo->id);
 	    	pthread_mutex_lock(philo->chopstick_right);
-
 		}
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
@@ -75,20 +74,14 @@ void	eat(t_philo *philo)
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
-        	printf("\033[1;3%dm%ld %d is eating\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
+        	printf("\033[1;3%dm%ld %d is eating\n\033[0m", (philo->id % 7), calculate_current_time_ms(philo->start_time), philo->id);
 			philo->time_last_eat = calculate_current_time_ms(philo->start_time);
-			ft_usleep(philo->rules->time_to_eat);
+			ft_usleep(philo->rules->time_to_eat, philo);
 		}
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
 			philo->nb_of_eat += 1;
-			if (check_nb_meals(philo) == 1)
-			{
-				pthread_mutex_lock(philo->mut_stop);
-				philo->stop = 1;
-				pthread_mutex_unlock(philo->mut_stop);
-			}
 		}
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
@@ -104,7 +97,7 @@ void	have_a_nape(t_philo *philo)
     if (check_death(philo, 0) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0)
     {
 		printf("%ld %d is sleeping\n", calculate_current_time_ms(philo->start_time),philo->id);
-		ft_usleep(philo->rules->time_to_sleep);
+		ft_usleep(philo->rules->time_to_sleep, philo);
 	}
 }
 
@@ -124,7 +117,7 @@ void *routine_philosopher(void *philo)
 
 	if (cpy_philo->id % 2 == 1)
 	{
-		ft_usleep(cpy_philo->rules->time_to_eat / 2);
+		ft_usleep((cpy_philo->rules->time_to_eat / 2), philo);
 	}
 
 	while (42)

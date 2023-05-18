@@ -39,12 +39,9 @@ t_rules	*init_rules (int number_of_philo, time_t *tab_times, int number_of_meal)
 	rules->time_to_sleep = tab_times[2];
 	rules->nb_of_meal = number_of_meal;
 	rules->end = 0;
-	/*
-	
-	ATTENTION !!!! IL FAUT INIT LE MUTEX !!!!!!!
-	
-	*/
 
+
+	pthread_mutex_init(cur_mut_end, NULL);
 
 	rules->mut_end = cur_mut_end;
 
@@ -72,14 +69,10 @@ t_philo	**create_tab_philosophers(pthread_mutex_t **tab_chopstick, t_rules *rule
 		current_philo->start_time = 0;
 		current_philo->time_last_eat = 0;
 		
-		current_philo->mut_stop = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
-		if (current_philo->mut_stop == NULL)
-			return (NULL);
-		pthread_mutex_init(current_philo->mut_stop, NULL);
+
 
 		//printf("TEST : %p\n", current_philo->mut_nbmeal);
 
-		current_philo->stop = 0;
 
 
 		current_philo->is_dead = 0;
@@ -112,10 +105,44 @@ void	init_start_time_philo(t_philo **tab_philo)
 
 }
 
+void	free_tab_mutex(pthread_mutex_t **tab_mutex)
+{
+	int i;
+
+	i = 0;
+	while (tab_mutex[i] != NULL)
+	{
+		pthread_mutex_destroy(tab_mutex[i]);
+		free(tab_mutex[i]);
+		i++;
+	}
+	free (tab_mutex);
+}
+
+void	free_tab_philo(t_philo **tab_philo)
+{
+	int i;
+
+	i = 0;
+	while (tab_philo[i] != NULL)
+	{
+		free(tab_philo[i]);
+		i++;
+	}
+	free (tab_philo);
+}
+
+void	free_rules(t_rules *rules)
+{
+	pthread_mutex_destroy(rules->mut_end);
+	free (rules->mut_end);
+	free (rules);
+}
+
+
 /*SEPARER LES CAS PAIRS ET IMPAIRS ????
 
-Cas limite : 15 410 200 200
-
+[philo-Test #5]: Given 2 60 60 60 arguments to philo, the time difference of each death shouldn't be bigger than 10ms !
 
 */
 int main (int argc, char *argv[])
@@ -124,16 +151,14 @@ int main (int argc, char *argv[])
 	t_rules			*rules;
 	t_philo			**tab_philo;
 
-	pthread_mutex_t	**tab_mutex_protectors;
 	pthread_mutex_t **tab_chopstick;
 
 	int				i;
 	t_manager		tab_manager;
-	//pthread_t		pid_thread_manager;
+
 
 	int				nb_philo;
 	int				nb_meals;
-	int				debug;
 
 	nb_meals = -1;
 	if (argc >= 5)
@@ -169,23 +194,19 @@ int main (int argc, char *argv[])
 		return (1);
 	}
 
-
-
 	/* ON DONNE LES REGLES */
 	rules = init_rules(nb_philo, tab_times, nb_meals);
 
-	//ft_print_rules(rules);
-	//return (404);
+
 
 	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
 
-	tab_mutex_protectors = create_tab_mutex(rules->number_of_philo);
 
 	/* ON INSTALLE LES PHILOSOPHES AUTOUR DE LA TABLE */
 	tab_philo = create_tab_philosophers(tab_chopstick, rules);
-	// ft_print_tab_philo(tab_philo);
-	// return 404;
+	
+
 
 	tab_manager.tab_philo = tab_philo;
 	tab_manager.rules = rules;
@@ -195,23 +216,20 @@ int main (int argc, char *argv[])
 	init_start_time_philo(tab_philo);
 	while (i < rules->number_of_philo)
 	{
-		//printf("Creation de philo %d\n", i);
 		pthread_create(&(tab_philo[i]->tid), NULL, routine_philosopher, tab_philo[i]);
 		i++;
 	}
 
-	//pthread_create(&pid_thread_manager, NULL, routine_manager, &tab_manager);
-
 	i = 0;
 	while (i < rules->number_of_philo)
 	{
-		debug = pthread_join(tab_philo[i]->tid, NULL);
-		//printf("debug = %d | i = %d\n", debug, i);
-
+		pthread_join(tab_philo[i]->tid, NULL);
 		i++;
 	}
-	
-	//pthread_join(pid_thread_manager, NULL);
+
+	free_tab_mutex(tab_chopstick);
+	free_rules(rules);
+	free_tab_philo(tab_philo);
 
 	return 0;
 }

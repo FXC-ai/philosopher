@@ -31,11 +31,9 @@ typedef struct s_philo
 	int				number_of_philo;
 	time_t			start_time;
 	int				is_dead;
-	int				stop;
 	int				priority;
 	int				nb_of_eat;
 
-	pthread_mutex_t *mut_stop;
 	pthread_mutex_t *mut_end;
 
 	pthread_mutex_t	*chopstick_right;
@@ -52,7 +50,6 @@ typedef struct s_manager
 {
 	t_philo **tab_philo;
 	t_rules	*rules;
-
 } t_manager;
 
 
@@ -65,7 +62,7 @@ void	ft_print_philo (t_philo *philo);
 void	ft_print_tab_mutex (pthread_mutex_t **tab_mutex);
 time_t	calculate_current_time_ms (time_t start_time_ms);
 time_t	ft_time(void);
-void	ft_usleep(time_t time_in_ms);
+void	ft_usleep(time_t time_in_ms, t_philo *philo);
 int     check_death(t_philo *philo, int c);
 
 /*routine_philo.c*/
@@ -78,6 +75,7 @@ void	put_left_fork(t_philo *philo);
 void	have_a_nape(t_philo *philo);
 void    *routine_philosopher(void *philo);
 int		read_priority(t_philo	*philo);
+int		check_death(t_philo *philo, int c);
 
 void	*routine_manager(void *tab_manager);
 

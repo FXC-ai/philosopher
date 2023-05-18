@@ -19,7 +19,6 @@ void	ft_print_philo (t_philo *philo)
 	printf("\033[1;33m    fork_left = [%p]\n\033[0m", philo->chopstick_left);
 	printf("\033[1;32m     priority = [%d]\n\033[0m", philo->priority);
 	printf("      is_dead = [%d]\n", philo->is_dead);
-	printf("         stop = [%d]\n", philo->stop);
 	printf("time last eat = [%ld]\n", philo->time_last_eat);
 	printf("prid last eat = [%ld]\n", philo->period_last_eat);
 	printf("\n");
@@ -78,15 +77,15 @@ time_t	ft_time(void)
 	return (time_in_mils);
 }
 
-void	ft_usleep(time_t time_in_ms)
+void	ft_usleep(time_t time_in_ms, t_philo *philo)
 {
 	time_t	current_time;
 
 	current_time = ft_time();
 	while ((ft_time() - current_time) <= time_in_ms)
 	{
-		usleep(43);
-		if ((ft_time() - current_time) >= time_in_ms)
+		usleep(50);
+		if ((ft_time() - current_time) >= time_in_ms || check_death(philo, 0) == 1)
 			break ;
 	}
 }
