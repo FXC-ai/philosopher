@@ -135,7 +135,7 @@ int main (int argc, char *argv[])
 	int				nb_meals;
 	int				debug;
 
-
+	nb_meals = -1;
 	if (argc >= 5)
 	{
 		i = 1;
@@ -151,14 +151,18 @@ int main (int argc, char *argv[])
 		tab_times[1] = ft_atoi(argv[3]); //time_to_eat
 		tab_times[2] = ft_atoi(argv[4]); //time_to_sleep
 
-		if (argc > 5 && ft_isnumeric(argv[5]) == 1 && ft_atoi(argv[5]) < 2147483647 )
+		if (argc > 5)
 		{
-			nb_meals = ft_atoi(argv[5]);
+			if (ft_isnumeric(argv[5]) == 1 && ft_atoi(argv[5]) < 2147483647)
+			{
+				nb_meals = ft_atoi(argv[5]);
+			}
+			else
+			{
+				return (1);
+			}
 		}
-		else
-		{
-			nb_meals = -1;
-		}
+
 	}
 	else
 	{
