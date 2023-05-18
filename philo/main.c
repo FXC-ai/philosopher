@@ -39,6 +39,13 @@ t_rules	*init_rules (int number_of_philo, time_t *tab_times, int number_of_meal)
 	rules->time_to_sleep = tab_times[2];
 	rules->nb_of_meal = number_of_meal;
 	rules->end = 0;
+	/*
+	
+	ATTENTION !!!! IL FAUT INIT LE MUTEX !!!!!!!
+	
+	*/
+
+
 	rules->mut_end = cur_mut_end;
 
 	return (rules);

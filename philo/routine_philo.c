@@ -11,13 +11,13 @@ int	check_death(t_philo *philo, int c)
 	{
 		//printf("Periode deces : %ld\n", calculate_current_time_ms(philo->start_time) - philo->time_last_eat);
 		philo->is_dead = 1;
-		/*pthread_mutex_lock(philo->rules->mut_end);		
+		pthread_mutex_lock(philo->rules->mut_end);		
 		if (philo->rules->end == 0)
 		{
 			philo->rules->end = 1;
 			//printf("Je viens de set end a 1\n");
 		}
-		pthread_mutex_unlock(philo->rules->mut_end);*/
+		pthread_mutex_unlock(philo->rules->mut_end);
 
 		return (1);
 	}
@@ -37,9 +37,7 @@ int	check_stop (t_philo	*philo)
 {
 	int	result;
 
-	pthread_mutex_lock(philo->mut_stop);
 	result = philo->stop;
-	pthread_mutex_unlock(philo->mut_stop);
 
 	return (result);
 }
@@ -61,26 +59,26 @@ void	eat(t_philo *philo)
     if (check_death(philo ,0) == 0 && check_stop(philo) == 0)
     {
 		
-		if (check_death(philo, 0) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
 	    	pthread_mutex_lock(philo->chopstick_right);
 	    	printf("%ld %d has taken a fork\n", calculate_current_time_ms(philo->start_time), philo->id);
 		}
 
-		if (check_death(philo, 0) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
         	pthread_mutex_lock(philo->chopstick_left);
         	printf("%ld %d has taken a fork\n",calculate_current_time_ms(philo->start_time), philo->id);
 		}
 
-		if (check_death(philo, 0) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
         	printf("\033[1;3%dm%ld %d is eating\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
         	philo->time_last_eat = calculate_current_time_ms(philo->start_time);
 			ft_usleep(philo->rules->time_to_eat);
 		}
 
-		if (check_death(philo, 0) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
 			philo->nb_of_eat += 1;
 			if (check_nb_meals(philo) == 1)
@@ -91,7 +89,7 @@ void	eat(t_philo *philo)
 			}
 		}
 
-		if (check_death(philo, 0) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
         	pthread_mutex_unlock(philo->chopstick_right);
 			pthread_mutex_unlock(philo->chopstick_left);
