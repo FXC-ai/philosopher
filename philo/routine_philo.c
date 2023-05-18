@@ -1,5 +1,17 @@
 #include "philo.h"
 
+int	read_end (t_philo *philo)
+{
+	int	result;
+
+	pthread_mutex_lock(philo->rules->mut_end);
+	result = philo->rules->end;
+	pthread_mutex_unlock(philo->rules->mut_end );
+
+	return (result);
+}
+
+
 int	check_death(t_philo *philo, int c)
 {
 	if (c == 1)
@@ -10,7 +22,12 @@ int	check_death(t_philo *philo, int c)
 	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat) > philo->rules->time_to_die)
 	{
 		//printf("Periode deces : %ld\n", calculate_current_time_ms(philo->start_time) - philo->time_last_eat);
-		philo->is_dead = 1;
+		if (philo->is_dead == 0 && read_end(philo) == 0)
+		{
+			philo->is_dead = 1;
+			printf("\033[1;3%dm%ld %d died\n\033[0m", philo->id % 7, calculate_current_time_ms(philo->start_time), philo->id);
+		}
+
 		pthread_mutex_lock(philo->rules->mut_end);		
 		if (philo->rules->end == 0)
 		{
@@ -18,6 +35,9 @@ int	check_death(t_philo *philo, int c)
 			//printf("Je viens de set end a 1\n");
 		}
 		pthread_mutex_unlock(philo->rules->mut_end);
+
+		pthread_mutex_unlock(philo->chopstick_right);
+		pthread_mutex_unlock(philo->chopstick_left);
 
 		return (1);
 	}
@@ -33,39 +53,30 @@ int	check_nb_meals(t_philo *philo)
 	return (0);
 }
 
-int	read_end (t_philo *philo)
-{
-	int	result;
-
-	pthread_mutex_lock(philo->rules->mut_end);
-	result = philo->rules->end;
-	pthread_mutex_unlock(philo->rules->mut_end );
-
-	return (result);
-}
-
-
 void	eat(t_philo *philo)
 {
-    if (check_death(philo ,0) == 0)
+    if (check_death(philo ,0) == 0 && read_end(philo) == 0)
     {
 		
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
-	    	pthread_mutex_lock(philo->chopstick_right);
+	    	//printf("%ld %d try to take a fork (right)\n", calculate_current_time_ms(philo->start_time), philo->id);
 	    	printf("%ld %d has taken a fork\n", calculate_current_time_ms(philo->start_time), philo->id);
+	    	pthread_mutex_lock(philo->chopstick_right);
+
 		}
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
-        	pthread_mutex_lock(philo->chopstick_left);
+	    	//printf("%ld %d try to take a fork (left)\n", calculate_current_time_ms(philo->start_time), philo->id);
         	printf("%ld %d has taken a fork\n",calculate_current_time_ms(philo->start_time), philo->id);
+        	pthread_mutex_lock(philo->chopstick_left);
 		}
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
         	printf("\033[1;3%dm%ld %d is eating\n\033[0m", (philo->id % 7),calculate_current_time_ms(philo->start_time), philo->id);
-        	philo->time_last_eat = calculate_current_time_ms(philo->start_time);
+			philo->time_last_eat = calculate_current_time_ms(philo->start_time);
 			ft_usleep(philo->rules->time_to_eat);
 		}
 
@@ -90,7 +101,7 @@ void	eat(t_philo *philo)
 
 void	have_a_nape(t_philo *philo)
 {
-    if (check_death(philo, 0) == 0)
+    if (check_death(philo, 0) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0)
     {
 		printf("%ld %d is sleeping\n", calculate_current_time_ms(philo->start_time),philo->id);
 		ft_usleep(philo->rules->time_to_sleep);
@@ -99,7 +110,7 @@ void	have_a_nape(t_philo *philo)
 
 void	think(t_philo *philo)
 {
-    if (check_death(philo, 0) == 0)
+    if (check_death(philo, 0) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0)
     {
 		printf("%ld %d is thinking\n", calculate_current_time_ms(philo->start_time),philo->id);
 	}
@@ -118,6 +129,7 @@ void *routine_philosopher(void *philo)
 
 	while (42)
 	{
+		//printf("%d je tourne toujours\n", cpy_philo->id);
 		
 		if (check_nb_meals(cpy_philo) == 0)
 		{
@@ -126,20 +138,33 @@ void *routine_philosopher(void *philo)
 			think(cpy_philo);
 		}
 
-		if (check_death(cpy_philo, 0) == 1 && check_nb_meals(cpy_philo) == 0)
+		if (check_nb_meals(cpy_philo) == 1)
 		{
-			printf("\033[1;3%dm%ld %d died\n\033[0m", cpy_philo->id % 7, calculate_current_time_ms(cpy_philo->start_time),cpy_philo->id);
+
+			break;
+		}
+
+		if (check_death(cpy_philo, 0) == 1)
+		{
+			//printf("\033[1;3%dm%ld %d died\n\033[0m", cpy_philo->id % 7, calculate_current_time_ms(cpy_philo->start_time),cpy_philo->id);
 			//ft_print_philo(cpy_philo);
 			break;
 		}
-		if (check_nb_meals(cpy_philo) == 1)
-		{
-			pthread_mutex_lock(cpy_philo->mut_stop);
-			cpy_philo->stop = 1;
-			pthread_mutex_unlock(cpy_philo->mut_stop);
-			break;
-		}
+
+
+		
+	
 		
 	}
+
+
 	return NULL;
 }
+
+/*
+DANS QUEL ORDRE DOIVENT SE FAIRE LES CHECK ????
+FAIRE UN CHECK SUR LA VARIABLE END !!!
+
+ET SI IL MEURT EN MANGEANT ???????
+
+*/

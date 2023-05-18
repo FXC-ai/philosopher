@@ -133,6 +133,7 @@ int main (int argc, char *argv[])
 
 	int				nb_philo;
 	int				nb_meals;
+	int				debug;
 
 
 	if (argc >= 5)
@@ -190,6 +191,7 @@ int main (int argc, char *argv[])
 	init_start_time_philo(tab_philo);
 	while (i < rules->number_of_philo)
 	{
+		//printf("Creation de philo %d\n", i);
 		pthread_create(&(tab_philo[i]->tid), NULL, routine_philosopher, tab_philo[i]);
 		i++;
 	}
@@ -199,7 +201,9 @@ int main (int argc, char *argv[])
 	i = 0;
 	while (i < rules->number_of_philo)
 	{
-		pthread_join(tab_philo[i]->tid, NULL);
+		debug = pthread_join(tab_philo[i]->tid, NULL);
+		//printf("debug = %d | i = %d\n", debug, i);
+
 		i++;
 	}
 	
