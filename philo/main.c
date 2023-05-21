@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/21 13:17:44 by fcoindre          #+#    #+#             */
+/*   Updated: 2023/05/21 13:19:19 by fcoindre         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "philo.h"
 
 pthread_mutex_t	**create_tab_mutex(int number_of_philo)
@@ -18,32 +30,27 @@ pthread_mutex_t	**create_tab_mutex(int number_of_philo)
 		i++;
 	}
 	tab_chopstick[i] = NULL;
-
-	return tab_chopstick;
+	return (tab_chopstick);
 }
 
 t_rules	*init_rules (int number_of_philo, time_t *tab_times, int number_of_meal)
 {
 	pthread_mutex_t *cur_mut_end;
+
 	t_rules	*rules = (t_rules *) malloc (sizeof(t_rules));
 	if (rules == NULL)
 		return (NULL);
-
 	cur_mut_end = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
 	if (rules == NULL)
 		return (NULL);
-
 	rules->number_of_philo = number_of_philo;
 	rules->time_to_die = tab_times[0];
 	rules->time_to_eat = tab_times[1];
 	rules->time_to_sleep = tab_times[2];
 	rules->nb_of_meal = number_of_meal;
 	rules->end = 0;
-
 	pthread_mutex_init(cur_mut_end, NULL);
 	rules->mut_end = cur_mut_end;
-
-
 	return (rules);
 }
 
@@ -163,29 +170,17 @@ int main (int argc, char *argv[])
 				return (1);
 			}
 		}
-
 	}
 	else
 	{
 		return (1);
 	}
 
-	/* ON DONNE LES REGLES */
 	rules = init_rules(nb_philo, tab_times, nb_meals);
-	
-	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
-
-	/* ON INSTALLE LES PHILOSOPHES AUTOUR DE LA TABLE */
 	tab_philo = create_tab_philosophers(tab_chopstick, rules);
-	
 	tab_manager.tab_philo = tab_philo;
 	tab_manager.rules = rules;
-
-	//ft_print_tab_philo(tab_philo);
-
-
-	/* ON COMMENCE LE REPAS */	
 	i = 0;
 	init_start_time_philo(tab_philo);
 	while (i < rules->number_of_philo)

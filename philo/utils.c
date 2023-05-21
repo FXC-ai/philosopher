@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/21 13:17:20 by fcoindre          #+#    #+#             */
+/*   Updated: 2023/05/21 13:19:52 by fcoindre         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "philo.h"
 
 void	ft_print_rules (t_rules *rules)
@@ -11,10 +23,8 @@ void	ft_print_rules (t_rules *rules)
 	printf("        mut_end = %p\n", rules->mut_end);
 }
 
-
 void	ft_print_philo (t_philo *philo)
 {
-
 	printf("           id = [%d]\n", philo->id);
 	printf("   start_time = [%ld]\n", philo->start_time);
 	printf("\033[1;34m   fork_right = [%p]\n\033[0m", philo->chopstick_right);
@@ -32,17 +42,10 @@ void	ft_print_tab_philo (t_philo **tab_philo)
 	while (tab_philo[i] != NULL)
 	{
 		ft_print_philo(tab_philo[i]);
-		
 		i++;
 	}
-
 }
-/*
-void	ft_print_tab_mutex()
-{
 
-}
-*/
 void	ft_print_tab_mutex (pthread_mutex_t **tab_mutex)
 {
 	int	i;
@@ -89,5 +92,3 @@ void	ft_usleep(time_t time_in_ms, t_philo *philo)
 			break ;
 	}
 }
-
-

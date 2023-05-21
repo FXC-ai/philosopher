@@ -7,10 +7,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define EAT 1
-#define SLEEP 2
-#define THINK 3
-
 typedef struct s_rules
 {
 	int				number_of_philo;
@@ -27,19 +23,19 @@ typedef struct s_philo
 {
 
 	pthread_t		tid;
-	int				id;
-	int				number_of_philo;
-	time_t			start_time;
-	int				is_dead;
-	int				nb_of_eat;
-	int				chopstick_taken;
 
 	pthread_mutex_t *mut_end;
 	pthread_mutex_t	*chopstick_right;
 	pthread_mutex_t	*chopstick_left;
 
+	time_t			start_time;
 	time_t			time_last_eat;
-	//time_t			period_last_eat;
+
+	int				id;
+	int				number_of_philo;
+	int				is_dead;
+	int				nb_of_eat;
+	int				chopstick_taken;
 
 	t_rules			*rules;
 
@@ -50,8 +46,6 @@ typedef struct s_manager
 	t_philo **tab_philo;
 	t_rules	*rules;
 } t_manager;
-
-
 
 /*utils.c*/
 void	ft_print_rules (t_rules *rules);
