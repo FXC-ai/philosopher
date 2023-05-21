@@ -33,6 +33,7 @@ typedef struct s_philo
 	int				is_dead;
 	int				priority;
 	int				nb_of_eat;
+	int				chopstick_taken;
 
 	pthread_mutex_t *mut_end;
 

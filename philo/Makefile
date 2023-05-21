@@ -16,7 +16,7 @@ DEBUG	= debug
 	$(CC) $(CFLAGS) -c $< -o ${<:.c=.o}
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(OBJS) -O3 -g3
+	$(CC) -o $(NAME) $(OBJS)
 
 $(DEBUG): $(OBJS)
 	$(CC) -o $(NAME) $(OBJS)

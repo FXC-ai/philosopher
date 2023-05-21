@@ -68,6 +68,7 @@ t_philo	**create_tab_philosophers(pthread_mutex_t **tab_chopstick, t_rules *rule
 		current_philo->id = i;
 		current_philo->start_time = 0;
 		current_philo->time_last_eat = 0;
+		current_philo->chopstick_taken = 0;
 		
 
 
@@ -139,12 +140,6 @@ void	free_rules(t_rules *rules)
 	free (rules);
 }
 
-
-/*SEPARER LES CAS PAIRS ET IMPAIRS ????
-
-[philo-Test #5]: Given 2 60 60 60 arguments to philo, the time difference of each death shouldn't be bigger than 10ms !
-
-*/
 int main (int argc, char *argv[])
 {
 	time_t			tab_times[3];
@@ -197,19 +192,17 @@ int main (int argc, char *argv[])
 	/* ON DONNE LES REGLES */
 	rules = init_rules(nb_philo, tab_times, nb_meals);
 
-
-
 	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
-
 
 	/* ON INSTALLE LES PHILOSOPHES AUTOUR DE LA TABLE */
 	tab_philo = create_tab_philosophers(tab_chopstick, rules);
 	
-
-
 	tab_manager.tab_philo = tab_philo;
 	tab_manager.rules = rules;
+
+	//ft_print_tab_philo(tab_philo);
+
 
 	/* ON COMMENCE LE REPAS */	
 	i = 0;

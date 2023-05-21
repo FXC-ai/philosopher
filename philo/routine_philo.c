@@ -42,6 +42,7 @@ int	check_death(t_philo *philo, int c)
 		return (1);
 	}
 	return (0);
+	//return (philo->is_dead);
 }
 
 int	check_nb_meals(t_philo *philo)
@@ -60,19 +61,21 @@ void	eat(t_philo *philo)
 		
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
-	    	//printf("%ld %d try to take a fork (right)\n", calculate_current_time_ms(philo->start_time), philo->id);
-	    	printf("%ld %d has taken a fork\n", calculate_current_time_ms(philo->start_time), philo->id);
+	    	//ft_print_philo(philo);
 	    	pthread_mutex_lock(philo->chopstick_right);
+			philo->chopstick_taken += 1;
+	    	printf("%ld %d has taken a fork\n", calculate_current_time_ms(philo->start_time), philo->id);
 		}
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
 	    	//printf("%ld %d try to take a fork (left)\n", calculate_current_time_ms(philo->start_time), philo->id);
-        	printf("%ld %d has taken a fork\n",calculate_current_time_ms(philo->start_time), philo->id);
         	pthread_mutex_lock(philo->chopstick_left);
+			philo->chopstick_taken += 1;
+        	printf("%ld %d has taken a fork\n",calculate_current_time_ms(philo->start_time), philo->id);
 		}
 
-		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0 && philo->chopstick_taken == 2)
 		{
         	printf("\033[1;3%dm%ld %d is eating\n\033[0m", (philo->id % 7), calculate_current_time_ms(philo->start_time), philo->id);
 			philo->time_last_eat = calculate_current_time_ms(philo->start_time);
@@ -86,6 +89,7 @@ void	eat(t_philo *philo)
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
 		{
+			philo->chopstick_taken = 0;
         	pthread_mutex_unlock(philo->chopstick_right);
 			pthread_mutex_unlock(philo->chopstick_left);
 		}
