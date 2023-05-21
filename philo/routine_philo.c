@@ -19,6 +19,7 @@ int	check_death(t_philo *philo, int c)
 		printf("\n%d (calculate_current_time_ms(philo->start_time) %ld - philo->time_last_eat %ld = %ld %ld\n", philo->id, calculate_current_time_ms(philo->start_time), philo->time_last_eat, (calculate_current_time_ms(philo->start_time) - philo->time_last_eat), philo->rules->time_to_die);
 	}
 	//sleep(2);
+	//printf("a\n");
 	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat) > philo->rules->time_to_die)
 	{
 		//printf("Periode deces : %ld\n", calculate_current_time_ms(philo->start_time) - philo->time_last_eat);
@@ -59,20 +60,29 @@ void	eat(t_philo *philo)
     if (check_death(philo ,0) == 0 && read_end(philo) == 0)
     {
 		
-		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0 && philo->chopstick_taken == 0)
 		{
 	    	//ft_print_philo(philo);
 	    	pthread_mutex_lock(philo->chopstick_right);
 			philo->chopstick_taken += 1;
-	    	printf("%ld %d has taken a fork\n", calculate_current_time_ms(philo->start_time), philo->id);
+			//ft_print_rules(philo->rules);
+			if (read_end(philo) == 0)
+			{
+	    		printf("%ld %d has taken a fork\n", calculate_current_time_ms(philo->start_time), philo->id);
+			}
 		}
 
-		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0 && philo->rules->number_of_philo > 1)
 		{
+	    	//ft_print_philo(philo);
+			//printf("sdfg");
 	    	//printf("%ld %d try to take a fork (left)\n", calculate_current_time_ms(philo->start_time), philo->id);
         	pthread_mutex_lock(philo->chopstick_left);
 			philo->chopstick_taken += 1;
-        	printf("%ld %d has taken a fork\n",calculate_current_time_ms(philo->start_time), philo->id);
+			if (read_end(philo) == 0)
+			{
+        		printf("%ld %d has taken a fork\n",calculate_current_time_ms(philo->start_time), philo->id);
+			}
 		}
 
 		if (check_death(philo, 0) == 0 && read_end(philo) == 0 && philo->chopstick_taken == 2)
@@ -82,12 +92,12 @@ void	eat(t_philo *philo)
 			ft_usleep(philo->rules->time_to_eat, philo);
 		}
 
-		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0 && philo->rules->number_of_philo > 1)
 		{
 			philo->nb_of_eat += 1;
 		}
 
-		if (check_death(philo, 0) == 0 && read_end(philo) == 0)
+		if (check_death(philo, 0) == 0 && read_end(philo) == 0 && philo->rules->number_of_philo > 1)
 		{
 			philo->chopstick_taken = 0;
         	pthread_mutex_unlock(philo->chopstick_right);
@@ -98,7 +108,7 @@ void	eat(t_philo *philo)
 
 void	have_a_nape(t_philo *philo)
 {
-    if (check_death(philo, 0) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0)
+    if (check_death(philo, 0) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0 && philo->rules->number_of_philo > 1)
     {
 		printf("%ld %d is sleeping\n", calculate_current_time_ms(philo->start_time),philo->id);
 		ft_usleep(philo->rules->time_to_sleep, philo);
@@ -107,7 +117,7 @@ void	have_a_nape(t_philo *philo)
 
 void	think(t_philo *philo)
 {
-    if (check_death(philo, 0) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0)
+    if (check_death(philo, 0) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0 && philo->rules->number_of_philo > 1)
     {
 		printf("%ld %d is thinking\n", calculate_current_time_ms(philo->start_time),philo->id);
 	}
@@ -147,9 +157,13 @@ void *routine_philosopher(void *philo)
 			//ft_print_philo(cpy_philo);
 			break;
 		}
+		/*
+		if (read_end(cpy_philo) == 1)
+		{
 
-
-		
+			break;
+		}
+		*/
 	
 		
 	}

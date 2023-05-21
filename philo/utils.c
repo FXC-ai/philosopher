@@ -7,6 +7,8 @@ void	ft_print_rules (t_rules *rules)
 	printf("    time_to_eat = %ld\n", rules->time_to_eat);
 	printf("  time_to_sleep = %ld\n", rules->time_to_sleep);
 	printf("     nb_of_meal = %d\n", rules->nb_of_meal);
+	printf("            end = %d\n", rules->end);
+	printf("        mut_end = %p\n", rules->mut_end);
 }
 
 
@@ -17,10 +19,8 @@ void	ft_print_philo (t_philo *philo)
 	printf("   start_time = [%ld]\n", philo->start_time);
 	printf("\033[1;34m   fork_right = [%p]\n\033[0m", philo->chopstick_right);
 	printf("\033[1;33m    fork_left = [%p]\n\033[0m", philo->chopstick_left);
-	printf("\033[1;32m     priority = [%d]\n\033[0m", philo->priority);
 	printf("      is_dead = [%d]\n", philo->is_dead);
 	printf("time last eat = [%ld]\n", philo->time_last_eat);
-	printf("prid last eat = [%ld]\n", philo->period_last_eat);
 	printf("\n");
 }
 

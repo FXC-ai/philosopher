@@ -40,10 +40,9 @@ t_rules	*init_rules (int number_of_philo, time_t *tab_times, int number_of_meal)
 	rules->nb_of_meal = number_of_meal;
 	rules->end = 0;
 
-
 	pthread_mutex_init(cur_mut_end, NULL);
-
 	rules->mut_end = cur_mut_end;
+
 
 	return (rules);
 }
@@ -57,33 +56,20 @@ t_philo	**create_tab_philosophers(pthread_mutex_t **tab_chopstick, t_rules *rule
 	tab_philo = (t_philo **) malloc(sizeof(t_philo *) * (rules->number_of_philo + 1));
 	if (tab_philo == NULL)
 		return (0);
-
 	i = 0;
 	while (i < rules->number_of_philo)
 	{
 		current_philo = (t_philo *) malloc(sizeof(t_philo));
 		if (current_philo == NULL)
 			return (0);
-
 		current_philo->id = i;
 		current_philo->start_time = 0;
 		current_philo->time_last_eat = 0;
 		current_philo->chopstick_taken = 0;
-		
-
-
-		//printf("TEST : %p\n", current_philo->mut_nbmeal);
-
-
-
 		current_philo->is_dead = 0;
-		
 		current_philo->chopstick_right = tab_chopstick[i];
 		current_philo->chopstick_left = tab_chopstick[(i+1) % rules->number_of_philo];
-
 		current_philo->rules = rules;
-
-
 		tab_philo[i] = current_philo;
 		i++;
 	}
@@ -103,7 +89,6 @@ void	init_start_time_philo(t_philo **tab_philo)
 		tab_philo[i]->start_time = start_time;
 		i++;
 	}
-
 }
 
 void	free_tab_mutex(pthread_mutex_t **tab_mutex)
@@ -145,13 +130,9 @@ int main (int argc, char *argv[])
 	time_t			tab_times[3];
 	t_rules			*rules;
 	t_philo			**tab_philo;
-
 	pthread_mutex_t **tab_chopstick;
-
 	int				i;
 	t_manager		tab_manager;
-
-
 	int				nb_philo;
 	int				nb_meals;
 
@@ -191,7 +172,7 @@ int main (int argc, char *argv[])
 
 	/* ON DONNE LES REGLES */
 	rules = init_rules(nb_philo, tab_times, nb_meals);
-
+	
 	/* ON MET LE COUVERT */
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
 
