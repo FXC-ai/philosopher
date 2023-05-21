@@ -1,4 +1,4 @@
-SRCS	=	main.c utils.c routine_philo.c atoi.c args_parser.c
+SRCS	=	main.c utils.c routine_philo.c atoi.c args_parser.c philo_creators.c free_philos.c
 
 OBJS	= ${SRCS:.c=.o}
 
