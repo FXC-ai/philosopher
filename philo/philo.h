@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 18:33:23 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/21 18:38:39 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/25 16:46:10 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,9 @@ typedef struct s_rules
 	time_t			time_to_sleep;
 	int				nb_of_meal;
 	int				end;
+	int				tot_meals;
 
+	pthread_mutex_t	*mut_tot_meals;
 	pthread_mutex_t	*mut_end;
 }	t_rules;
 
@@ -38,6 +40,7 @@ typedef struct s_philo
 	pthread_mutex_t	*mut_end;
 	pthread_mutex_t	*chopstick_right;
 	pthread_mutex_t	*chopstick_left;
+	pthread_mutex_t	*mut_dead;
 
 	time_t			start_time;
 	time_t			time_last_eat;
@@ -56,6 +59,7 @@ typedef struct s_philo
 pthread_mutex_t	**create_tab_mutex(int n);
 t_rules			*init_rules(int nb_of_ph, time_t *tab_times, int nb_of_meal);
 t_philo			**create_tab_philosophers(pthread_mutex_t **t_ck, t_rules *rls);
+pthread_mutex_t	*mutex_creator();
 
 /* free_philos.c */
 void			free_tab_mutex(pthread_mutex_t **tab_mutex);
@@ -90,8 +94,8 @@ void			put_right_fork(t_philo *philo);
 void			put_left_fork(t_philo *philo);
 void			have_a_nape(t_philo *philo);
 void			*routine_philosopher(void *philo);
-int				read_priority(t_philo *philo);
 int				check_death(t_philo *philo);
 void			*routine_manager(void *tab_manager);
 long			ft_atoi(const char *str);
+int				read_dead(t_philo *philo);
 #endif
