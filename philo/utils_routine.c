@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 18:27:14 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/21 19:00:32 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 16:00:51 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,29 +22,29 @@ int	read_end(t_philo *philo)
 	return (result);
 }
 
-int	check_death(t_philo *philo)
-{
-	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat)
-		> philo->rules->time_to_die)
-	{
-		if (philo->is_dead == 0 && read_end(philo) == 0)
-		{
-			philo->is_dead = 1;
-			printf("\033[1;31m%ld %d died\n\033[0m",
-				calculate_current_time_ms(philo->start_time), philo->id + 1);
-		}
-		pthread_mutex_lock(philo->rules->mut_end);
-		if (philo->rules->end == 0)
-		{
-			philo->rules->end = 1;
-		}
-		pthread_mutex_unlock(philo->rules->mut_end);
-		pthread_mutex_unlock(philo->chopstick_right);
-		pthread_mutex_unlock(philo->chopstick_left);
-		return (1);
-	}
-	return (0);
-}
+// int	check_death(t_philo *philo)
+// {
+// 	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat)
+// 		> philo->rules->time_to_die)
+// 	{
+// 		if (philo->is_dead == 0 && read_end(philo) == 0)
+// 		{
+// 			philo->is_dead = 1;
+// 			printf("\033[1;31m%ld %d died\n\033[0m",
+// 				calculate_current_time_ms(philo->start_time), philo->id + 1);
+// 		}
+// 		pthread_mutex_lock(philo->rules->mut_end);
+// 		if (philo->rules->end == 0)
+// 		{
+// 			philo->rules->end = 1;
+// 		}
+// 		pthread_mutex_unlock(philo->rules->mut_end);
+// 		pthread_mutex_unlock(philo->chopstick_right);
+// 		pthread_mutex_unlock(philo->chopstick_left);
+// 		return (1);
+// 	}
+// 	return (0);
+// }
 
 int	check_nb_meals(t_philo *philo)
 {

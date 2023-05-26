@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 13:17:44 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 11:51:59 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 15:40:41 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,20 @@ void	ft_print_rules (t_rules *rules)
 	printf("            die : %ld | eat : %ld | sleep : %ld\n", rules->time_to_die, rules->time_to_eat, rules->time_to_sleep);
 	printf("     nb_of_meal = %d\n", rules->nb_of_meal);
 	printf("            end = %d\n", rules->end);
-	//printf("      tot_meals = %d\n", rules->tot_meals);
 	printf("        mut_end = %p\n", rules->mut_end);
 	//printf("   mut_tot_meal = %p\n", rules->mut_tot_meals);
 }
 
 void	ft_print_philo (t_philo *philo)
 {
-
 	printf("           id = [%d]\n", philo->id + 1);
 	printf("   start_time = [%ld]\n", philo->start_time);
-	printf("   fork_right = [%p]\n", philo->chopstick_right);
-	printf("    fork_left = [%p]\n", philo->chopstick_left);
+
+	printf("mt_fork_right = [%p]\n", philo->chopstick_right);
+	printf(" mt_fork_left = [%p]\n", philo->chopstick_left);
+
+	printf("chstick right = [%d]\n", philo->for_right);
+	printf("chstick left  = [%d]\n", philo->for_left);
 	printf("      is_dead = [%d]\n", philo->is_dead);
 	printf("time last eat = [%ld]\n", philo->time_last_eat);
 	printf("\n");
@@ -150,6 +152,8 @@ int	main(int argc, char *argv[])
 	tab_chopstick = create_tab_mutex(rules->number_of_philo);
 	tab_philo = create_tab_philosophers(tab_chopstick, rules);
 
+	//ft_print_tab_philo(tab_philo);
+	//return (0);
 
 	launch_simulator(tab_philo, rules->number_of_philo, rules);
 

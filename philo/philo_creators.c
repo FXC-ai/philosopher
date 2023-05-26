@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 17:23:32 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 11:52:19 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 15:27:57 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,8 @@ void	init_consts_philo(t_philo *cur_phl)
 	cur_phl->time_last_eat = 0;
 	cur_phl->chopstick_taken = 0;
 	cur_phl->is_dead = 0;
+	cur_phl->for_right = 0;
+	cur_phl->for_left = 0;
 }
 
 pthread_mutex_t	*mutex_creator()

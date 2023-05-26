@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 18:33:23 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 11:50:57 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 15:27:41 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ typedef struct s_philo
 	int				is_dead;
 	int				nb_of_eat;
 	int				chopstick_taken;
+	int				for_right;
+	int				for_left;
 
 	t_rules			*rules;
 
