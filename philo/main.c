@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 13:17:44 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 15:40:41 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 17:28:39 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,24 +65,37 @@ static void	init_start_time_philo(t_philo **tab_philo)
 	}
 }
 
-// int	read_tot_meals(t_rules *rules)
-// {
-// 	int result;
+pthread_t	*create_tab_of_tid(t_philo **tab_philo, int nb_of_philos)
+{
+	int	i;
+	pthread_t	*result;
 
-// 	pthread_mutex_lock(rules->mut_tot_meals);
-// 	result = rules->tot_meals;
-// 	pthread_mutex_unlock(rules->mut_tot_meals);
-// 	return result;
-// }
+	result = (pthread_t *) malloc(sizeof(pthread_t));
+	if (result == NULL)
+		return (NULL);
 
+	i = 0;
+	while (i < nb_of_philos)
+	{
+		result[i] = tab_philo[i]->tid;
+		i++;
+	}
+	return (result);
+}
 
 static void	launch_simulator(t_philo **t_phl, int nb_philos, t_rules *rules)
 {
 	int	i;
 	int	stop;
-	int	max_meals;
-	
-	max_meals = nb_philos * rules->nb_of_meal;
+	(void) rules;
+	//int	max_meals;
+	//printf("nb_philo = %d\n", nb_philos);
+
+	pthread_t	*tab_tid;
+
+	tab_tid = create_tab_of_tid(t_phl, nb_philos);
+
+	//max_meals = nb_philos * rules->nb_of_meal;
 	//printf("max_meals = %d\n", max_meals);
 	stop = 0;
 	i = 0;
@@ -93,38 +106,25 @@ static void	launch_simulator(t_philo **t_phl, int nb_philos, t_rules *rules)
 		i++;
 	}
 	
+	i = 0;
 	while (42)
 	{
-		i = 0;
-		while (t_phl[i] != NULL)
-		{
-			// if (read_tot_meals(rules) >= max_meals)
-			// {
-			// 	stop = 1;
-			// 	break;
-			// }			
-			stop = check_death(t_phl[i]);
-			if (stop == 1)
-			{
-				break;
-			}
-			i++;
-		}
-		if (stop == 1)
+		if (i == rules->number_of_philo)
+			i = 0;
+
+		if (check_death(t_phl[i]) == 1)
 		{
 			break;
 		}
+		i++;
 	}
-
-	//printf("tot_meals = %d\n", rules->tot_meals);
-
-	//ft_print_tab_philo(t_phl);
 
 	i = 0;
 	while (i < nb_philos)
 	{
-		pthread_join(t_phl[i]->tid, NULL);
 		//printf("i = %d\n", i);
+		pthread_join(tab_tid[i], NULL);
+		//printf("Confirm\n");
 		i++;
 	}
 }
@@ -158,7 +158,7 @@ int	main(int argc, char *argv[])
 	launch_simulator(tab_philo, rules->number_of_philo, rules);
 
 
-	ft_print_tab_philo(tab_philo);
+	//ft_print_tab_philo(tab_philo);
 
 	free_tab_mutex(tab_chopstick);
 	free_rules(rules);

@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 13:17:31 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 15:59:42 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 17:29:04 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,7 @@ void	set_is_dead(t_philo *philo)
 int	check_death(t_philo *philo)
 {
 
-	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat)
-		> philo->rules->time_to_die)
+	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat) > philo->rules->time_to_die)
 	{
 		if (read_dead(philo) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0)
 		{
@@ -52,10 +51,10 @@ int	check_death(t_philo *philo)
 				calculate_current_time_ms(philo->start_time), philo->id + 1);
 		}
 		pthread_mutex_lock(philo->rules->mut_end);
-		if (philo->rules->end == 0)
-		{
+		/*if (philo->rules->end == 0)
+		{*/
 			philo->rules->end = 1;
-		}
+		/*}*/
 		pthread_mutex_unlock(philo->rules->mut_end);
 		
 		if(philo->for_right == 1)
@@ -118,7 +117,7 @@ void	eat(t_philo *philo)
 	{
 		take_right_chopstick(philo);
 		take_left_chopstick(philo);
-		//printf("%d %d : check\n", philo->for_left, philo->for_right);
+
 		if (read_end(philo) == 0 && philo->for_left == 1 && philo->for_right == 1)
 		{
 			printf("%ld %d is eating\n",
@@ -134,13 +133,13 @@ void	eat(t_philo *philo)
 		{
 			if (philo->for_right == 1)
 			{
-				philo->for_right = 0;
 				pthread_mutex_unlock(philo->chopstick_right);
+				philo->for_right = 0;
 			}
 			if (philo->for_left == 1)
 			{
-				philo->for_left = 0;
 				pthread_mutex_unlock(philo->chopstick_left);
+				philo->for_left = 0;
 			}
 		}
 	}
@@ -194,11 +193,8 @@ void	*routine_philosopher(void *philo)
 			//printf("%d : stopped\n", cpy_philo->id);
 			break;
 		}
-		// if (check_death (cpy_philo) == 1)
-		// {
-		// 	break ;
-		// }
+
 	}
-	printf("Philo %d : PROCESS ENDED\n", cpy_philo->id + 1);
+	//printf("Philo %d : PROCESS ENDED\n", cpy_philo->id + 1);
 	return (NULL);
 }

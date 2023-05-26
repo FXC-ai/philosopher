@@ -19,7 +19,7 @@ $(NAME): $(OBJS)
 	$(CC) -o $(NAME) $(OBJS)
 
 $(DEBUG): $(OBJS)
-	$(CC) -o $(NAME) $(OBJS) -fsanitize=thread -g3
+	$(CC) -o $(NAME) $(OBJS) -fsanitize=thread -g -O3
 
 all: $(NAME)
 
