@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 17:23:32 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/25 16:31:21 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 11:52:19 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,11 @@ t_rules	*init_rules(int number_of_philo, time_t *tab_times, int number_of_meal)
 	rules->time_to_eat = tab_times[1];
 	rules->time_to_sleep = tab_times[2];
 	rules->nb_of_meal = number_of_meal;
-	rules->tot_meals = 0;
+	//rules->tot_meals = 0;
 	rules->end = 0;
 	pthread_mutex_init(cur_mut_end, NULL);
 	rules->mut_end = cur_mut_end;
-	rules->mut_tot_meals = mutex_creator();
+	//rules->mut_tot_meals = mutex_creator();
 	return (rules);
 }
 

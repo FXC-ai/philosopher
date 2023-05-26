@@ -1,55 +1,7363 @@
-max_meals = 12
 0 1 has taken a fork
 0 1 has taken a fork
 0 1 is eating
 0 3 has taken a fork
 0 3 has taken a fork
 0 3 is eating
-200 1 is sleeping
-200 2 has taken a fork
-200 4 has taken a fork
+0 5 has taken a fork
+0 7 has taken a fork
+0 9 has taken a fork
+0 7 has taken a fork
+0 7 is eating
+0 11 has taken a fork
+0 13 has taken a fork
+0 9 has taken a fork
+0 9 is eating
+0 5 has taken a fork
+0 13 has taken a fork
+0 11 has taken a fork
+0 13 is eating
+0 15 has taken a fork
+0 11 is eating
+0 15 has taken a fork
+0 15 is eating
+0 5 is eating
+0 17 has taken a fork
+0 17 has taken a fork
+0 17 is eating
+0 19 has taken a fork
+0 19 has taken a fork
+0 19 is eating
+0 21 has taken a fork
+0 21 has taken a fork
+0 21 is eating
+0 23 has taken a fork
+0 23 has taken a fork
+0 23 is eating
+0 25 has taken a fork
+0 25 has taken a fork
+0 25 is eating
+0 27 has taken a fork
+0 27 has taken a fork
+0 27 is eating
+0 29 has taken a fork
+0 29 has taken a fork
+0 29 is eating
+0 31 has taken a fork
+0 31 has taken a fork
+0 31 is eating
+0 33 has taken a fork
+0 33 has taken a fork
+0 33 is eating
+0 35 has taken a fork
+0 35 has taken a fork
+0 35 is eating
+0 37 has taken a fork
+0 37 has taken a fork
+0 37 is eating
+0 39 has taken a fork
+0 39 has taken a fork
+0 39 is eating
+0 41 has taken a fork
+0 41 has taken a fork
+0 41 is eating
+0 43 has taken a fork
+0 43 has taken a fork
+0 43 is eating
+0 45 has taken a fork
+0 45 has taken a fork
+0 45 is eating
+0 47 has taken a fork
+0 47 has taken a fork
+0 47 is eating
+0 49 has taken a fork
+0 49 has taken a fork
+0 49 is eating
+0 51 has taken a fork
+0 51 has taken a fork
+0 51 is eating
+0 53 has taken a fork
+0 53 has taken a fork
+0 53 is eating
+0 55 has taken a fork
+0 55 has taken a fork
+0 55 is eating
+0 57 has taken a fork
+0 57 has taken a fork
+0 57 is eating
+0 59 has taken a fork
+0 59 has taken a fork
+0 59 is eating
+0 61 has taken a fork
+0 61 has taken a fork
+0 61 is eating
+0 63 has taken a fork
+0 63 has taken a fork
+0 63 is eating
+0 65 has taken a fork
+0 65 has taken a fork
+0 65 is eating
+0 69 has taken a fork
+0 69 has taken a fork
+0 69 is eating
+0 67 has taken a fork
+0 67 has taken a fork
+0 67 is eating
+0 73 has taken a fork
+0 73 has taken a fork
+0 73 is eating
+0 71 has taken a fork
+1 71 has taken a fork
+1 71 is eating
+1 75 has taken a fork
+1 75 has taken a fork
+1 75 is eating
+1 77 has taken a fork
+1 77 has taken a fork
+1 77 is eating
+1 79 has taken a fork
+1 79 has taken a fork
+1 79 is eating
+1 81 has taken a fork
+1 81 has taken a fork
+1 81 is eating
+1 83 has taken a fork
+1 83 has taken a fork
+1 83 is eating
+1 87 has taken a fork
+1 87 has taken a fork
+1 87 is eating
+1 85 has taken a fork
+1 85 has taken a fork
+1 85 is eating
+1 89 has taken a fork
+1 89 has taken a fork
+1 89 is eating
+1 91 has taken a fork
+1 91 has taken a fork
+1 91 is eating
+1 95 has taken a fork
+1 95 has taken a fork
+1 95 is eating
+1 93 has taken a fork
+1 93 has taken a fork
+1 99 has taken a fork
+1 99 has taken a fork
+1 99 is eating
+1 97 has taken a fork
+1 97 has taken a fork
+1 97 is eating
+1 101 has taken a fork
+1 101 has taken a fork
+1 101 is eating
+1 103 has taken a fork
+1 103 has taken a fork
+1 103 is eating
+1 93 is eating
+1 105 has taken a fork
+1 105 has taken a fork
+1 105 is eating
+1 107 has taken a fork
+1 107 has taken a fork
+1 107 is eating
+1 109 has taken a fork
+1 109 has taken a fork
+1 109 is eating
+1 111 has taken a fork
+1 111 has taken a fork
+1 111 is eating
+1 113 has taken a fork
+1 113 has taken a fork
+1 113 is eating
+1 115 has taken a fork
+1 115 has taken a fork
+1 115 is eating
+1 117 has taken a fork
+1 117 has taken a fork
+1 117 is eating
+1 119 has taken a fork
+1 119 has taken a fork
+1 119 is eating
+1 121 has taken a fork
+1 121 has taken a fork
+1 121 is eating
+1 123 has taken a fork
+1 123 has taken a fork
+1 123 is eating
+1 129 has taken a fork
+1 129 has taken a fork
+1 129 is eating
+1 127 has taken a fork
+1 127 has taken a fork
+1 127 is eating
+1 125 has taken a fork
+1 125 has taken a fork
+1 125 is eating
+1 131 has taken a fork
+1 131 has taken a fork
+1 131 is eating
+1 135 has taken a fork
+1 135 has taken a fork
+1 135 is eating
+1 133 has taken a fork
+1 139 has taken a fork
+1 139 has taken a fork
+1 139 is eating
+1 137 has taken a fork
+1 137 has taken a fork
+1 137 is eating
+1 133 has taken a fork
+2 133 is eating
+2 141 has taken a fork
+2 141 has taken a fork
+2 141 is eating
+2 143 has taken a fork
+2 143 has taken a fork
+2 143 is eating
+2 145 has taken a fork
+2 145 has taken a fork
+2 145 is eating
+2 149 has taken a fork
+2 149 has taken a fork
+2 149 is eating
+2 147 has taken a fork
+2 147 has taken a fork
+2 147 is eating
+2 151 has taken a fork
+2 151 has taken a fork
+2 151 is eating
+2 153 has taken a fork
+2 153 has taken a fork
+2 153 is eating
+2 155 has taken a fork
+2 155 has taken a fork
+2 155 is eating
+2 159 has taken a fork
+2 159 has taken a fork
+2 159 is eating
+2 161 has taken a fork
+2 161 has taken a fork
+2 161 is eating
+2 157 has taken a fork
+2 157 has taken a fork
+2 157 is eating
+2 169 has taken a fork
+2 169 has taken a fork
+2 169 is eating
+2 167 has taken a fork
+2 167 has taken a fork
+2 167 is eating
+2 165 has taken a fork
+2 165 has taken a fork
+2 165 is eating
+2 163 has taken a fork
+2 163 has taken a fork
+2 163 is eating
+2 171 has taken a fork
+2 171 has taken a fork
+2 171 is eating
+2 173 has taken a fork
+2 173 has taken a fork
+2 173 is eating
+2 175 has taken a fork
+2 175 has taken a fork
+2 175 is eating
+2 177 has taken a fork
+2 177 has taken a fork
+2 177 is eating
+2 179 has taken a fork
+2 179 has taken a fork
+2 179 is eating
+2 183 has taken a fork
+2 185 has taken a fork
+2 185 has taken a fork
+2 181 has taken a fork
+2 181 has taken a fork
+2 181 is eating
+2 183 has taken a fork
+2 183 is eating
+2 185 is eating
+2 187 has taken a fork
+2 187 has taken a fork
+2 187 is eating
+3 195 has taken a fork
+3 195 has taken a fork
+3 195 is eating
+3 189 has taken a fork
+3 189 has taken a fork
+3 189 is eating
+3 193 has taken a fork
+3 193 has taken a fork
+3 193 is eating
+3 191 has taken a fork
+3 191 has taken a fork
+3 191 is eating
+3 197 has taken a fork
+3 197 has taken a fork
+3 197 is eating
+3 199 has taken a fork
+200 73 is sleeping
+200 5 is sleeping
+200 35 is sleeping
+200 48 has taken a fork
+200 68 has taken a fork
+200 36 has taken a fork
+200 55 is sleeping
+200 9 is sleeping
+200 61 is sleeping
+200 57 is sleeping
+200 43 is sleeping
 200 3 is sleeping
+200 15 is sleeping
+200 22 has taken a fork
+200 22 has taken a fork
+200 22 is eating
+200 19 is sleeping
+200 31 is sleeping
+200 27 is sleeping
+200 37 is sleeping
+200 13 is sleeping
+200 49 is sleeping
+200 25 is sleeping
+200 65 is sleeping
+200 23 is sleeping
+200 6 has taken a fork
+200 6 has taken a fork
+200 17 is sleeping
+200 6 is eating
+200 32 has taken a fork
+200 20 has taken a fork
 200 4 has taken a fork
-200 4 is eating
+200 20 has taken a fork
+200 12 has taken a fork
+200 28 has taken a fork
+200 28 has taken a fork
+200 199 has taken a fork
+200 64 has taken a fork
+200 199 is eating
+200 12 has taken a fork
+200 34 has taken a fork
+200 60 has taken a fork
+200 34 has taken a fork
+200 48 has taken a fork
+200 68 has taken a fork
+200 48 is eating
+200 46 has taken a fork
+200 66 has taken a fork
+200 50 has taken a fork
+200 66 has taken a fork
+200 12 is eating
+200 46 has taken a fork
+200 50 has taken a fork
+200 52 has taken a fork
+200 50 is eating
+200 52 has taken a fork
+200 52 is eating
+200 18 has taken a fork
+200 7 is sleeping
+200 18 has taken a fork
+200 46 is eating
+200 1 is sleeping
+200 41 is sleeping
+200 67 is sleeping
+200 59 is sleeping
+200 47 is sleeping
+200 58 has taken a fork
+200 58 has taken a fork
+200 53 is sleeping
+200 58 is eating
+200 10 has taken a fork
+200 62 has taken a fork
+200 74 has taken a fork
+200 10 has taken a fork
+200 32 has taken a fork
+200 45 is sleeping
+200 24 has taken a fork
+200 8 has taken a fork
+200 69 is sleeping
+200 11 is sleeping
+200 62 has taken a fork
+200 62 is eating
+200 21 is sleeping
+200 16 has taken a fork
+200 14 has taken a fork
+200 39 is sleeping
+200 32 is eating
+200 14 has taken a fork
+200 14 is eating
+200 28 is eating
+200 42 has taken a fork
+200 34 is eating
+200 60 has taken a fork
+200 70 has taken a fork
+200 38 has taken a fork
+200 38 has taken a fork
+200 38 is eating
+200 44 has taken a fork
+200 20 is eating
+200 44 has taken a fork
+200 66 is eating
+200 44 is eating
+200 10 is eating
+200 30 has taken a fork
+200 18 is eating
+200 63 is sleeping
+200 68 is eating
+200 56 has taken a fork
+200 56 has taken a fork
+200 56 is eating
+200 36 has taken a fork
+200 36 is eating
 200 2 has taken a fork
+200 2 has taken a fork
+200 4 has taken a fork
 200 2 is eating
+200 4 is eating
+200 26 has taken a fork
+200 26 has taken a fork
+200 26 is eating
+200 30 has taken a fork
+200 30 is eating
+200 29 is sleeping
+200 33 is sleeping
+200 40 has taken a fork
+200 40 has taken a fork
+200 51 is sleeping
+200 40 is eating
+200 16 has taken a fork
+200 16 is eating
+200 24 has taken a fork
+200 54 has taken a fork
+200 64 has taken a fork
+200 8 has taken a fork
+200 64 is eating
+200 42 has taken a fork
+200 42 is eating
+200 60 is eating
+200 54 has taken a fork
+201 54 is eating
+200 24 is eating
+201 79 is sleeping
+201 93 is sleeping
+201 119 is sleeping
+200 8 is eating
+201 115 is sleeping
+201 131 is sleeping
+201 117 is sleeping
+201 75 is sleeping
+201 99 is sleeping
+201 135 is sleeping
+201 139 is sleeping
+201 123 is sleeping
+201 103 is sleeping
+201 83 is sleeping
+201 105 is sleeping
+201 91 is sleeping
+201 121 is sleeping
+201 127 is sleeping
+201 113 is sleeping
+201 89 is sleeping
+201 101 is sleeping
+201 95 is sleeping
+201 80 has taken a fork
+201 77 is sleeping
+201 107 is sleeping
+201 97 is sleeping
+201 111 is sleeping
+201 109 is sleeping
+201 81 is sleeping
+201 94 has taken a fork
+201 94 has taken a fork
+201 94 is eating
+201 132 has taken a fork
+201 137 is sleeping
+201 118 has taken a fork
+201 120 has taken a fork
+201 125 is sleeping
+201 118 has taken a fork
+201 118 is eating
+201 120 has taken a fork
+201 120 is eating
+201 85 is sleeping
+201 129 is sleeping
+201 136 has taken a fork
+201 76 has taken a fork
+201 136 has taken a fork
+201 122 has taken a fork
+201 128 has taken a fork
+201 71 is sleeping
+201 96 has taken a fork
+201 128 has taken a fork
+201 96 has taken a fork
+201 128 is eating
+201 96 is eating
+201 78 has taken a fork
+201 78 has taken a fork
+201 78 is eating
+201 108 has taken a fork
+201 108 has taken a fork
+201 80 has taken a fork
+201 110 has taken a fork
+201 80 is eating
+201 82 has taken a fork
+201 110 has taken a fork
+201 112 has taken a fork
+201 112 has taken a fork
+201 112 is eating
+201 110 is eating
+201 138 has taken a fork
+201 138 has taken a fork
+201 70 has taken a fork
+201 138 is eating
+201 87 is sleeping
+201 70 is eating
+201 74 has taken a fork
+201 72 has taken a fork
+201 72 has taken a fork
+201 84 has taken a fork
+201 84 has taken a fork
+201 84 is eating
+201 102 has taken a fork
+201 102 has taken a fork
+201 102 is eating
+201 74 is eating
+201 72 is eating
+201 88 has taken a fork
+201 140 has taken a fork
+201 92 has taken a fork
+201 100 has taken a fork
+201 92 has taken a fork
+201 100 has taken a fork
+201 92 is eating
+201 100 is eating
+201 116 has taken a fork
+201 106 has taken a fork
+201 126 has taken a fork
+201 106 has taken a fork
+201 126 has taken a fork
+201 122 has taken a fork
+201 122 is eating
+201 108 is eating
+201 98 has taken a fork
+201 98 has taken a fork
+201 114 has taken a fork
+201 86 has taken a fork
+201 114 has taken a fork
+201 130 has taken a fork
+201 124 has taken a fork
+201 90 has taken a fork
+201 124 has taken a fork
+201 90 has taken a fork
+201 124 is eating
+201 90 is eating
+201 88 has taken a fork
+201 88 is eating
+201 76 has taken a fork
+201 76 is eating
+201 126 is eating
+201 130 has taken a fork
+201 130 is eating
+201 114 is eating
+201 136 is eating
+201 104 has taken a fork
+201 104 has taken a fork
+201 98 is eating
+201 86 has taken a fork
+201 86 is eating
+201 82 has taken a fork
+201 82 is eating
+201 116 has taken a fork
+201 116 is eating
+201 106 is eating
+201 104 is eating
+202 155 is sleeping
+202 179 is sleeping
+202 185 is sleeping
+202 173 is sleeping
+202 174 has taken a fork
+202 149 is sleeping
+202 167 is sleeping
+202 183 is sleeping
+202 147 is sleeping
+202 159 is sleeping
+202 187 is sleeping
+202 141 is sleeping
+202 153 is sleeping
+202 133 is sleeping
+202 163 is sleeping
+202 175 is sleeping
+202 171 is sleeping
+202 151 is sleeping
+202 145 is sleeping
+202 158 has taken a fork
+202 158 has taken a fork
+202 158 is eating
+202 166 has taken a fork
+202 186 has taken a fork
+202 140 has taken a fork
+202 134 has taken a fork
+202 174 has taken a fork
+202 140 is eating
+202 154 has taken a fork
+202 134 has taken a fork
+202 176 has taken a fork
+202 154 has taken a fork
+202 134 is eating
+202 152 has taken a fork
+202 174 is eating
+202 152 has taken a fork
+202 154 is eating
+202 152 is eating
+202 170 has taken a fork
+202 170 has taken a fork
+202 177 is sleeping
+202 170 is eating
+202 169 is sleeping
+202 182 has taken a fork
+202 143 is sleeping
+202 165 is sleeping
+202 160 has taken a fork
+202 184 has taken a fork
+202 148 has taken a fork
+202 160 has taken a fork
+202 166 has taken a fork
+202 148 has taken a fork
+202 148 is eating
+202 160 is eating
+202 157 is sleeping
+202 150 has taken a fork
+202 166 is eating
+202 150 has taken a fork
+202 150 is eating
+202 168 has taken a fork
+202 168 has taken a fork
+202 168 is eating
+202 180 has taken a fork
+202 162 has taken a fork
+202 180 has taken a fork
+202 180 is eating
+202 162 has taken a fork
+202 162 is eating
+202 188 has taken a fork
+202 181 is sleeping
+202 161 is sleeping
+202 156 has taken a fork
+202 156 has taken a fork
+202 156 is eating
+202 132 has taken a fork
+202 132 is eating
+202 178 has taken a fork
+202 178 has taken a fork
+202 178 is eating
+202 186 has taken a fork
+202 186 is eating
+202 176 has taken a fork
+202 164 has taken a fork
+202 176 is eating
+202 164 has taken a fork
+202 182 has taken a fork
+202 164 is eating
+202 182 is eating
+202 172 has taken a fork
+202 172 has taken a fork
+202 172 is eating
+202 184 has taken a fork
+202 144 has taken a fork
+202 144 has taken a fork
+202 144 is eating
+202 146 has taken a fork
+202 146 has taken a fork
+202 146 is eating
+202 142 has taken a fork
+202 142 has taken a fork
+202 142 is eating
+202 184 is eating
+203 193 is sleeping
+203 195 is sleeping
+203 191 is sleeping
+203 197 is sleeping
+203 189 is sleeping
+203 192 has taken a fork
+203 192 has taken a fork
+203 192 is eating
+203 196 has taken a fork
+203 188 has taken a fork
+203 188 is eating
+203 190 has taken a fork
+203 190 has taken a fork
+203 194 has taken a fork
+203 190 is eating
+203 194 has taken a fork
+203 194 is eating
+203 198 has taken a fork
+203 196 has taken a fork
+203 196 is eating
+400 10 is sleeping
+400 26 is sleeping
+400 68 is sleeping
+400 18 is sleeping
+400 34 is sleeping
+400 66 is sleeping
+400 6 is sleeping
+400 199 is sleeping
+400 198 has taken a fork
+400 28 is sleeping
+400 36 is sleeping
+400 198 is eating
+400 62 is sleeping
+400 56 is sleeping
+400 42 is sleeping
+400 38 is sleeping
+400 14 is sleeping
+400 48 is sleeping
+400 32 is sleeping
+400 50 is sleeping
+400 46 is sleeping
+400 2 is sleeping
+400 64 is sleeping
+400 20 is sleeping
+400 16 is sleeping
+400 30 is sleeping
+400 52 is sleeping
 400 4 is sleeping
+400 22 is sleeping
+400 44 is sleeping
+400 12 is sleeping
+400 58 is sleeping
 400 1 is thinking
 400 1 has taken a fork
-400 2 is sleeping
+400 65 is thinking
+400 23 is thinking
 400 1 has taken a fork
+400 23 has taken a fork
+400 49 is thinking
+400 49 has taken a fork
+400 49 has taken a fork
+400 49 is eating
+400 61 is thinking
+400 21 is thinking
+400 67 is thinking
+400 55 is thinking
+400 21 has taken a fork
+400 21 has taken a fork
+400 21 is eating
+400 40 is sleeping
+400 41 is thinking
+400 41 has taken a fork
+400 41 has taken a fork
+400 5 is thinking
+400 29 is thinking
+400 17 is thinking
+400 19 is thinking
+400 5 has taken a fork
+400 65 has taken a fork
+400 17 has taken a fork
+400 15 is thinking
+400 17 has taken a fork
+400 65 has taken a fork
+400 65 is eating
+400 15 has taken a fork
+400 15 has taken a fork
+400 15 is eating
+400 67 has taken a fork
+400 67 has taken a fork
+400 67 is eating
+400 25 is thinking
+400 41 is eating
+400 33 is thinking
+400 19 has taken a fork
+400 33 has taken a fork
+400 19 has taken a fork
+400 19 is eating
+400 33 has taken a fork
+400 33 is eating
 400 1 is eating
+400 5 has taken a fork
+400 5 is eating
+400 17 is eating
+400 51 is thinking
+400 51 has taken a fork
+400 69 is thinking
+400 51 has taken a fork
+400 51 is eating
+400 69 has taken a fork
 400 3 is thinking
 400 3 has taken a fork
 400 3 has taken a fork
 400 3 is eating
+400 7 is thinking
+400 7 has taken a fork
+400 29 has taken a fork
+400 31 is thinking
+400 29 has taken a fork
+400 43 is thinking
+400 37 is thinking
+400 43 has taken a fork
+400 37 has taken a fork
+400 43 has taken a fork
+400 43 is eating
+400 37 has taken a fork
+400 37 is eating
+400 29 is eating
+400 63 is thinking
+400 63 has taken a fork
+400 63 has taken a fork
+400 57 is thinking
+400 47 is thinking
+400 45 is thinking
+400 47 has taken a fork
+400 47 has taken a fork
+400 47 is eating
+400 45 has taken a fork
+400 27 is thinking
+400 9 is thinking
+400 45 has taken a fork
+400 45 is eating
+400 27 has taken a fork
+400 27 has taken a fork
+400 27 is eating
+400 35 is thinking
+400 11 is thinking
+400 11 has taken a fork
+400 11 has taken a fork
+400 11 is eating
+400 73 is thinking
+400 63 is eating
+400 57 has taken a fork
+400 57 has taken a fork
+400 57 is eating
+401 122 is sleeping
+401 138 is sleeping
+401 128 is sleeping
+401 114 is sleeping
+401 104 is sleeping
+401 102 is sleeping
+401 98 is sleeping
+401 80 is sleeping
+401 110 is sleeping
+401 108 is sleeping
+401 118 is sleeping
+401 126 is sleeping
+401 86 is sleeping
+401 84 is sleeping
+401 54 is sleeping
+401 88 is sleeping
+401 130 is sleeping
+401 136 is sleeping
+401 112 is sleeping
+401 106 is sleeping
+401 94 is sleeping
+401 123 is thinking
+401 123 has taken a fork
+401 96 is sleeping
+401 90 is sleeping
+401 8 is sleeping
+401 100 is sleeping
+401 71 is thinking
+401 78 is sleeping
+401 82 is sleeping
+401 120 is sleeping
+401 72 is sleeping
+401 116 is sleeping
+401 70 is sleeping
+401 71 has taken a fork
+401 74 is sleeping
+401 60 is sleeping
+401 71 has taken a fork
+401 71 is eating
+401 124 is sleeping
+401 24 is sleeping
+401 76 is sleeping
+401 92 is sleeping
+401 131 is thinking
+401 131 has taken a fork
+401 55 has taken a fork
+401 55 has taken a fork
+401 107 is thinking
+401 55 is eating
+401 107 has taken a fork
+401 107 has taken a fork
+401 61 has taken a fork
+401 23 has taken a fork
+401 61 has taken a fork
+401 23 is eating
+401 109 is thinking
+401 109 has taken a fork
+401 109 has taken a fork
+401 109 is eating
+401 61 is eating
+401 79 is thinking
+401 79 has taken a fork
+401 79 has taken a fork
+401 79 is eating
+401 95 is thinking
+401 95 has taken a fork
+401 95 has taken a fork
+401 95 is eating
+401 125 is thinking
+401 125 has taken a fork
+401 125 has taken a fork
+401 125 is eating
+401 129 is thinking
+401 101 is thinking
+401 91 is thinking
+401 91 has taken a fork
+401 91 has taken a fork
+401 91 is eating
+401 117 is thinking
+401 127 is thinking
+401 117 has taken a fork
+401 127 has taken a fork
+401 117 has taken a fork
+401 127 has taken a fork
+401 127 is eating
+401 117 is eating
+401 137 is thinking
+401 137 has taken a fork
+401 137 has taken a fork
+401 137 is eating
+401 101 has taken a fork
+401 101 has taken a fork
+401 101 is eating
+401 113 is thinking
+401 107 is eating
+401 111 is thinking
+401 111 has taken a fork
+401 111 has taken a fork
+401 111 is eating
+401 123 has taken a fork
+401 83 is thinking
+401 119 is thinking
+401 119 has taken a fork
+401 119 has taken a fork
+401 119 is eating
+401 25 has taken a fork
+401 25 has taken a fork
+401 25 is eating
+401 103 is thinking
+401 103 has taken a fork
+401 103 has taken a fork
+401 103 is eating
+401 135 is thinking
+401 113 has taken a fork
+401 123 is eating
+401 113 has taken a fork
+401 113 is eating
+401 83 has taken a fork
+401 83 has taken a fork
+401 83 is eating
+401 129 has taken a fork
+401 129 has taken a fork
+401 129 is eating
+400 59 is thinking
+401 59 has taken a fork
+401 59 has taken a fork
+401 59 is eating
+400 39 is thinking
+401 87 is thinking
+401 87 has taken a fork
+401 87 has taken a fork
+401 87 is eating
+401 39 has taken a fork
+401 39 has taken a fork
+401 39 is eating
+400 35 has taken a fork
+401 35 has taken a fork
+401 35 is eating
+401 99 is thinking
+401 121 is thinking
+401 121 has taken a fork
+401 75 is thinking
+401 121 has taken a fork
+401 121 is eating
+401 99 has taken a fork
+401 75 has taken a fork
+401 99 has taken a fork
+401 89 is thinking
+401 89 has taken a fork
+401 89 has taken a fork
+401 89 is eating
+401 75 has taken a fork
+401 75 is eating
+401 99 is eating
+401 81 is thinking
+401 81 has taken a fork
+402 133 is thinking
+402 77 is thinking
+402 7 has taken a fork
+402 81 has taken a fork
+402 77 has taken a fork
+402 133 has taken a fork
+402 81 is eating
+402 77 has taken a fork
+402 133 has taken a fork
+402 7 is eating
+402 77 is eating
+402 144 is sleeping
+402 157 is thinking
+402 177 is thinking
+402 157 has taken a fork
+402 157 has taken a fork
+402 177 has taken a fork
+402 157 is eating
+402 177 has taken a fork
+402 177 is eating
+402 158 is sleeping
+402 160 is sleeping
+402 154 is sleeping
+402 156 is sleeping
+402 166 is sleeping
+402 178 is sleeping
+402 142 is sleeping
+402 146 is sleeping
+402 150 is sleeping
+402 174 is sleeping
+402 168 is sleeping
+402 172 is sleeping
+402 133 is eating
+402 155 is thinking
+402 159 is thinking
+402 132 is sleeping
+402 163 is thinking
+402 169 is thinking
+402 140 is sleeping
+402 169 has taken a fork
+402 169 has taken a fork
+402 169 is eating
+402 184 is sleeping
+402 161 is thinking
+402 167 is thinking
+402 153 is thinking
+402 162 is sleeping
+402 153 has taken a fork
+402 153 has taken a fork
+402 152 is sleeping
+402 153 is eating
+402 141 is thinking
+402 147 is thinking
+402 141 has taken a fork
+402 151 is thinking
+402 179 is thinking
+402 141 has taken a fork
+402 151 has taken a fork
+402 179 has taken a fork
+402 141 is eating
+402 179 has taken a fork
+402 151 has taken a fork
+402 135 has taken a fork
+402 179 is eating
+402 151 is eating
+402 182 is sleeping
+402 186 is sleeping
+402 176 is sleeping
+402 170 is sleeping
+402 183 is thinking
+402 143 is thinking
+402 164 is sleeping
+402 143 has taken a fork
+402 180 is sleeping
+402 143 has taken a fork
+402 143 is eating
+402 187 is thinking
+402 187 has taken a fork
+402 134 is sleeping
+402 165 is thinking
+402 175 is thinking
+402 173 is thinking
+402 173 has taken a fork
+402 173 has taken a fork
+402 175 has taken a fork
+402 147 has taken a fork
+402 175 has taken a fork
+402 173 is eating
+402 175 is eating
+402 148 is sleeping
+402 149 is thinking
+402 131 has taken a fork
+402 135 has taken a fork
+402 131 is eating
+402 147 has taken a fork
+402 147 is eating
+402 165 has taken a fork
+402 165 has taken a fork
+402 165 is eating
+402 167 has taken a fork
+402 167 has taken a fork
+402 167 is eating
+402 183 has taken a fork
+402 171 is thinking
+402 183 has taken a fork
+402 159 has taken a fork
+402 159 has taken a fork
+402 159 is eating
+402 149 has taken a fork
+402 149 has taken a fork
+402 149 is eating
+402 161 has taken a fork
+400 13 is thinking
+402 161 has taken a fork
+402 13 has taken a fork
+402 161 is eating
+402 135 is eating
+402 183 is eating
+402 171 has taken a fork
+402 171 has taken a fork
+402 185 is thinking
+402 171 is eating
+402 13 has taken a fork
+402 185 has taken a fork
+402 13 is eating
+400 31 has taken a fork
+402 181 is thinking
+400 53 is thinking
+402 181 has taken a fork
+402 53 has taken a fork
+402 181 has taken a fork
+402 181 is eating
+402 53 has taken a fork
+402 53 is eating
+402 185 has taken a fork
+402 185 is eating
+402 145 is thinking
+402 145 has taken a fork
+402 139 is thinking
+402 73 has taken a fork
+402 139 has taken a fork
+402 73 has taken a fork
+402 73 is eating
+402 139 has taken a fork
+402 139 is eating
+402 31 has taken a fork
+402 31 is eating
+402 69 has taken a fork
+402 9 has taken a fork
+401 85 is thinking
+402 85 has taken a fork
+403 190 is sleeping
+403 9 has taken a fork
+403 9 is eating
+403 188 is sleeping
+403 192 is sleeping
+403 194 is sleeping
+403 196 is sleeping
+401 93 is thinking
+403 93 has taken a fork
+403 93 has taken a fork
+403 93 is eating
+403 187 has taken a fork
+403 187 is eating
+403 195 is thinking
+403 195 has taken a fork
+403 195 has taken a fork
+403 195 is eating
+403 189 is thinking
+403 191 is thinking
+403 193 is thinking
+403 193 has taken a fork
+403 191 has taken a fork
+403 193 has taken a fork
+401 115 is thinking
+403 193 is eating
+402 155 has taken a fork
+403 115 has taken a fork
+403 155 has taken a fork
+403 115 has taken a fork
+403 115 is eating
+403 191 has taken a fork
+403 191 is eating
+403 155 is eating
+403 197 is thinking
+403 197 has taken a fork
+401 97 is thinking
+403 97 has taken a fork
+403 97 has taken a fork
+403 97 is eating
+401 105 is thinking
+403 85 has taken a fork
+403 85 is eating
+403 189 has taken a fork
+403 189 has taken a fork
+403 189 is eating
+402 145 has taken a fork
+403 105 has taken a fork
+403 145 is eating
+403 105 has taken a fork
+403 105 is eating
+402 69 is eating
+402 163 has taken a fork
+403 163 has taken a fork
+403 163 is eating
+600 36 is thinking
+600 32 is thinking
+600 46 is thinking
+600 18 is thinking
+600 68 is thinking
+600 62 is thinking
+600 56 is thinking
+600 29 is sleeping
+600 15 is sleeping
+600 38 is thinking
+600 44 is thinking
+600 16 is thinking
+600 22 is thinking
+600 33 is sleeping
+600 16 has taken a fork
 600 2 is thinking
+600 67 is sleeping
+600 5 is sleeping
 600 3 is sleeping
+600 65 is sleeping
+600 64 is thinking
+600 52 is thinking
+600 19 is sleeping
+600 41 is sleeping
+600 20 is thinking
+600 20 has taken a fork
+600 42 is thinking
+600 47 is sleeping
+600 42 has taken a fork
+600 16 has taken a fork
+600 18 has taken a fork
+600 14 is thinking
+600 16 is eating
+600 20 has taken a fork
+600 21 is sleeping
+600 22 has taken a fork
+600 10 is thinking
+600 50 is thinking
+600 1 is sleeping
+600 2 has taken a fork
+600 20 is eating
+600 43 is sleeping
+600 18 has taken a fork
+600 18 is eating
+600 68 has taken a fork
+600 44 has taken a fork
+600 63 is sleeping
+600 64 has taken a fork
+600 64 has taken a fork
+600 64 is eating
+600 17 is sleeping
 600 4 is thinking
 600 4 has taken a fork
-600 2 has taken a fork
-600 2 has taken a fork
-600 2 is eating
 600 4 has taken a fork
 600 4 is eating
-600 1 is sleeping
+600 2 has taken a fork
+600 2 is eating
+600 42 has taken a fork
+600 42 is eating
+600 66 is thinking
+600 34 is thinking
+600 27 is sleeping
+600 49 is sleeping
+600 66 has taken a fork
+600 66 has taken a fork
+600 66 is eating
+600 48 is thinking
+600 48 has taken a fork
+600 48 has taken a fork
+600 48 is eating
+600 12 is thinking
+600 51 is sleeping
+600 6 is thinking
+600 40 is thinking
+600 52 has taken a fork
+600 6 has taken a fork
+600 50 has taken a fork
+600 50 has taken a fork
+600 50 is eating
+600 34 has taken a fork
+600 57 is sleeping
+600 37 is sleeping
+600 38 has taken a fork
+600 46 has taken a fork
+600 46 has taken a fork
+600 45 is sleeping
+600 46 is eating
+600 44 has taken a fork
+600 44 is eating
+600 11 is sleeping
+600 198 is sleeping
+600 197 has taken a fork
+600 197 is eating
+600 12 has taken a fork
+600 199 is thinking
+600 199 has taken a fork
+600 199 has taken a fork
+600 199 is eating
+600 26 is thinking
+600 28 is thinking
+600 28 has taken a fork
+600 28 has taken a fork
+600 28 is eating
+600 58 is thinking
+600 58 has taken a fork
+600 30 is thinking
+600 30 has taken a fork
+601 121 is sleeping
+601 24 is thinking
+601 82 is thinking
+601 119 is sleeping
+601 123 is sleeping
+601 83 is sleeping
+601 114 is thinking
+601 78 is thinking
+601 124 is thinking
+601 72 is thinking
+601 117 is sleeping
+601 104 is thinking
+601 124 has taken a fork
+601 116 is thinking
+601 90 is thinking
+601 106 is thinking
+601 111 is sleeping
+601 55 is sleeping
+601 86 is thinking
+601 100 is thinking
+601 108 is thinking
+601 102 is thinking
+601 124 has taken a fork
+601 92 is thinking
+601 92 has taken a fork
+601 124 is eating
+601 96 is thinking
+601 102 has taken a fork
+601 88 is thinking
+601 62 has taken a fork
+601 103 is sleeping
+601 23 is sleeping
+601 120 is thinking
+601 95 is sleeping
+601 76 is thinking
+601 102 has taken a fork
+601 120 has taken a fork
+601 120 has taken a fork
+601 62 has taken a fork
+601 62 is eating
+601 120 is eating
+601 98 is thinking
+601 127 is sleeping
+601 102 is eating
+601 91 is sleeping
+601 56 has taken a fork
+601 56 has taken a fork
+601 56 is eating
+601 8 is thinking
+601 125 is sleeping
+601 80 is thinking
+601 22 has taken a fork
+601 130 is thinking
+601 60 is thinking
+601 104 has taken a fork
+601 22 is eating
+601 137 is sleeping
+601 128 is thinking
+601 54 is thinking
+601 74 is thinking
+601 109 is sleeping
+601 126 is thinking
+601 61 is sleeping
+601 136 is thinking
+601 128 has taken a fork
+601 138 is thinking
+601 110 is thinking
+601 96 has taken a fork
+601 110 has taken a fork
+601 138 has taken a fork
+601 108 has taken a fork
+601 25 is sleeping
+601 126 has taken a fork
+601 122 is thinking
+601 108 has taken a fork
+601 122 has taken a fork
+601 114 has taken a fork
+601 112 is thinking
+601 79 is sleeping
+601 80 has taken a fork
+601 108 is eating
+601 126 has taken a fork
+601 107 is sleeping
+601 126 is eating
+601 101 is sleeping
+601 110 has taken a fork
+601 110 is eating
+601 75 is sleeping
+601 76 has taken a fork
+601 99 is sleeping
+601 100 has taken a fork
+601 129 is sleeping
+601 130 has taken a fork
+601 118 is thinking
+601 112 has taken a fork
+601 112 has taken a fork
+601 100 has taken a fork
+601 118 has taken a fork
+601 118 has taken a fork
+601 112 is eating
+601 35 is sleeping
+601 118 is eating
+601 100 is eating
+601 36 has taken a fork
+601 36 has taken a fork
+601 36 is eating
+601 38 has taken a fork
+601 38 is eating
+601 128 has taken a fork
+601 39 is sleeping
+601 128 is eating
+601 84 is thinking
+601 84 has taken a fork
+601 113 is sleeping
+601 70 is thinking
+601 122 has taken a fork
+601 122 is eating
+601 34 has taken a fork
+601 34 is eating
+601 89 is sleeping
+601 90 has taken a fork
+601 90 has taken a fork
+601 90 is eating
+601 40 has taken a fork
+601 40 has taken a fork
+601 40 is eating
+601 60 has taken a fork
+601 60 has taken a fork
+601 60 is eating
+601 59 is sleeping
+601 87 is sleeping
+601 88 has taken a fork
+601 88 has taken a fork
+601 88 is eating
+601 24 has taken a fork
+601 71 is sleeping
+601 72 has taken a fork
+601 24 has taken a fork
+601 24 is eating
+601 26 has taken a fork
+601 26 has taken a fork
+601 26 is eating
+601 94 is thinking
+601 58 has taken a fork
+601 58 is eating
+602 149 is sleeping
+602 186 is thinking
+602 180 is thinking
+602 176 is thinking
+602 144 is thinking
+602 158 is thinking
+602 154 is thinking
+602 152 is thinking
+602 142 is thinking
+602 178 is thinking
+602 151 is sleeping
+602 184 is thinking
+602 140 is thinking
+602 133 is sleeping
+602 153 is sleeping
+602 146 is thinking
+602 160 is thinking
+602 175 is sleeping
+602 131 is sleeping
+602 168 is thinking
+602 185 is sleeping
+602 170 is thinking
+602 183 is sleeping
+602 141 is sleeping
+602 171 is sleeping
+602 150 is thinking
+602 150 has taken a fork
+602 150 has taken a fork
+602 182 is thinking
+602 162 is thinking
+602 135 is sleeping
+602 150 is eating
+602 142 has taken a fork
+602 154 has taken a fork
+602 130 has taken a fork
+602 130 is eating
+602 176 has taken a fork
+602 165 is sleeping
+602 186 has taken a fork
+602 174 is thinking
+602 179 is sleeping
+602 143 is sleeping
+602 136 has taken a fork
+602 136 has taken a fork
+602 136 is eating
+602 180 has taken a fork
+602 144 has taken a fork
+602 184 has taken a fork
+602 184 has taken a fork
+602 184 is eating
+602 147 is sleeping
+602 172 is thinking
+602 172 has taken a fork
+602 167 is sleeping
+602 173 is sleeping
+602 168 has taken a fork
+602 177 is sleeping
+602 176 has taken a fork
+602 174 has taken a fork
+602 176 is eating
+602 174 has taken a fork
+602 174 is eating
+602 178 has taken a fork
+602 178 has taken a fork
+602 178 is eating
+602 164 is thinking
+602 166 is thinking
+602 166 has taken a fork
+602 166 has taken a fork
+602 73 is sleeping
+602 166 is eating
+602 72 has taken a fork
+602 72 is eating
+602 74 has taken a fork
+602 74 has taken a fork
+602 74 is eating
+602 132 is thinking
+602 161 is sleeping
+602 132 has taken a fork
+602 132 has taken a fork
+602 132 is eating
+602 162 has taken a fork
+602 156 is thinking
+602 13 is sleeping
+602 31 is sleeping
+602 32 has taken a fork
+602 32 has taken a fork
+602 32 is eating
+602 180 has taken a fork
+602 180 is eating
+602 76 has taken a fork
+602 76 is eating
+602 77 is sleeping
+602 181 is sleeping
+602 78 has taken a fork
+602 78 has taken a fork
+602 78 is eating
+602 157 is sleeping
+602 168 has taken a fork
+602 168 is eating
+602 158 has taken a fork
+602 182 has taken a fork
+602 158 has taken a fork
+602 182 has taken a fork
+602 158 is eating
+602 169 is sleeping
+602 182 is eating
+602 170 has taken a fork
+602 160 has taken a fork
+602 160 has taken a fork
+602 53 is sleeping
+602 52 has taken a fork
+602 54 has taken a fork
+602 54 has taken a fork
+602 54 is eating
+602 148 is thinking
+602 148 has taken a fork
+602 148 has taken a fork
+602 160 is eating
+602 148 is eating
+602 52 is eating
+602 142 has taken a fork
+602 142 is eating
+602 14 has taken a fork
+602 14 has taken a fork
+602 14 is eating
+602 81 is sleeping
+602 80 has taken a fork
+602 80 is eating
+602 170 has taken a fork
+602 170 is eating
+602 159 is sleeping
+602 140 has taken a fork
+602 140 has taken a fork
+602 140 is eating
+602 138 has taken a fork
+602 138 is eating
+602 152 has taken a fork
+602 152 has taken a fork
+602 152 is eating
+602 12 has taken a fork
+602 12 is eating
+602 172 has taken a fork
+602 172 is eating
+602 134 is thinking
+602 134 has taken a fork
+602 134 has taken a fork
+602 134 is eating
+602 139 is sleeping
+602 7 is sleeping
+602 82 has taken a fork
+602 82 has taken a fork
+602 8 has taken a fork
+603 194 is thinking
+603 195 is sleeping
+603 114 has taken a fork
+603 114 is eating
+603 115 is sleeping
+603 9 is sleeping
+603 8 has taken a fork
+603 188 is thinking
+603 190 is thinking
+603 8 is eating
+603 193 is sleeping
+603 194 has taken a fork
+603 116 has taken a fork
+603 116 has taken a fork
+603 116 is eating
+603 187 is sleeping
+603 186 has taken a fork
+603 186 is eating
+603 188 has taken a fork
+603 194 has taken a fork
+603 194 is eating
+603 196 is thinking
+603 196 has taken a fork
+603 192 is thinking
+603 85 is sleeping
+603 86 has taken a fork
+603 86 has taken a fork
+603 86 is eating
+603 154 has taken a fork
+603 154 is eating
+603 6 has taken a fork
+603 6 is eating
+603 155 is sleeping
+603 104 has taken a fork
+603 104 is eating
+603 105 is sleeping
+603 93 is sleeping
+603 106 has taken a fork
+603 106 has taken a fork
+603 106 is eating
+603 84 has taken a fork
+603 84 is eating
+603 10 has taken a fork
+603 10 has taken a fork
+603 10 is eating
+603 92 has taken a fork
+603 92 is eating
+603 156 has taken a fork
+603 156 has taken a fork
+603 156 is eating
+603 68 has taken a fork
+603 69 is sleeping
+603 192 has taken a fork
+603 192 has taken a fork
+603 192 is eating
+603 70 has taken a fork
+603 70 has taken a fork
+603 70 is eating
+603 68 is eating
+603 97 is sleeping
+603 96 has taken a fork
+603 96 is eating
+603 146 has taken a fork
+603 146 has taken a fork
+603 146 is eating
+603 144 has taken a fork
+603 144 is eating
+603 98 has taken a fork
+603 98 has taken a fork
+603 98 is eating
+603 163 is sleeping
+603 164 has taken a fork
+603 164 has taken a fork
+603 164 is eating
+603 162 has taken a fork
+603 162 is eating
+603 191 is sleeping
+603 188 has taken a fork
+603 188 is eating
+603 189 is sleeping
+603 190 has taken a fork
+603 190 has taken a fork
+603 190 is eating
+603 145 is sleeping
+602 82 is eating
+603 30 has taken a fork
+603 30 is eating
+603 94 has taken a fork
+603 94 has taken a fork
+603 94 is eating
+800 18 is sleeping
+800 43 is thinking
+800 50 is sleeping
+800 20 is sleeping
+800 29 is thinking
 800 1 is thinking
-800 4 is sleeping
+800 27 is thinking
+800 65 is thinking
+800 48 is sleeping
 800 2 is sleeping
+800 16 is sleeping
+800 19 is thinking
+800 19 has taken a fork
+800 19 has taken a fork
+800 19 is eating
+800 33 is thinking
+800 5 is thinking
+800 41 is thinking
+800 4 is sleeping
+800 17 is thinking
+800 17 has taken a fork
+800 66 is sleeping
+800 42 is sleeping
+800 17 has taken a fork
+800 17 is eating
 800 3 is thinking
 800 3 has taken a fork
 800 3 has taken a fork
 800 3 is eating
+800 67 is thinking
+800 67 has taken a fork
+800 44 is sleeping
+800 21 is thinking
+800 21 has taken a fork
+800 197 is sleeping
+800 196 has taken a fork
+800 196 is eating
+800 51 is thinking
+800 51 has taken a fork
+800 5 has taken a fork
+800 47 is thinking
+800 43 has taken a fork
+800 43 has taken a fork
+800 43 is eating
+800 64 is sleeping
+800 15 is thinking
+800 49 is thinking
+800 49 has taken a fork
+800 49 has taken a fork
+800 49 is eating
+800 57 is thinking
+800 198 is thinking
+800 63 is thinking
+800 37 is thinking
+800 198 has taken a fork
+800 28 is sleeping
+800 65 has taken a fork
+800 65 has taken a fork
+800 65 is eating
+800 29 has taken a fork
+800 11 is thinking
+800 199 is sleeping
+800 45 is thinking
+800 45 has taken a fork
 800 1 has taken a fork
 800 1 has taken a fork
 800 1 is eating
-1000 4 is thinking
-1000 4 has taken a fork
-1000 4 has taken a fork
-1000 4 is eating
+800 198 has taken a fork
+800 198 is eating
+800 45 has taken a fork
+800 45 is eating
+800 46 is sleeping
+800 47 has taken a fork
+800 47 has taken a fork
+800 47 is eating
+801 61 is thinking
+801 101 is thinking
+801 55 is thinking
+801 112 is sleeping
+801 129 is thinking
+801 128 is sleeping
+801 88 is sleeping
+801 126 is sleeping
+801 129 has taken a fork
+801 109 is thinking
+801 100 is sleeping
+801 125 is thinking
+801 117 is thinking
+801 90 is sleeping
+801 79 is thinking
+801 99 is thinking
+801 118 is sleeping
+801 40 is sleeping
+801 95 is thinking
+801 137 is thinking
+801 75 is thinking
+801 122 is sleeping
+801 101 has taken a fork
+801 110 is sleeping
+801 91 is thinking
+801 91 has taken a fork
+801 35 is thinking
+801 107 is thinking
+801 41 has taken a fork
+801 41 has taken a fork
+801 41 is eating
+801 120 is sleeping
+801 34 is sleeping
+801 56 is sleeping
+801 60 is sleeping
+801 103 is thinking
+801 123 is thinking
+801 123 has taken a fork
+801 127 is thinking
+801 127 has taken a fork
+801 127 has taken a fork
+801 127 is eating
+801 108 is sleeping
+801 22 is sleeping
+801 113 is thinking
+801 39 is thinking
+801 113 has taken a fork
+801 62 is sleeping
+801 21 has taken a fork
+801 111 is thinking
+801 21 is eating
+801 111 has taken a fork
+801 111 has taken a fork
+801 111 is eating
+801 61 has taken a fork
+801 61 has taken a fork
+801 61 is eating
+801 35 has taken a fork
+801 109 has taken a fork
+801 109 has taken a fork
+801 109 is eating
+801 25 is thinking
+801 83 is thinking
+801 24 is sleeping
+801 25 has taken a fork
+801 121 is thinking
+801 59 is thinking
+801 89 is thinking
+801 89 has taken a fork
+801 89 has taken a fork
+801 89 is eating
+801 121 has taken a fork
+801 121 has taken a fork
+801 121 is eating
+801 26 is sleeping
+801 25 has taken a fork
+801 25 is eating
+801 27 has taken a fork
+801 27 has taken a fork
+801 27 is eating
+801 87 is thinking
+801 71 is thinking
+801 58 is sleeping
+801 36 is sleeping
+801 35 has taken a fork
+801 35 is eating
+801 63 has taken a fork
+801 63 has taken a fork
+801 63 is eating
+801 59 has taken a fork
+801 119 is thinking
+801 57 has taken a fork
+801 57 has taken a fork
+801 119 has taken a fork
+801 57 is eating
+801 119 has taken a fork
+801 119 is eating
+801 23 is thinking
+801 23 has taken a fork
+801 23 has taken a fork
+801 23 is eating
+801 37 has taken a fork
+801 59 has taken a fork
+801 59 is eating
+801 101 has taken a fork
+801 125 has taken a fork
+801 125 has taken a fork
+801 125 is eating
+801 124 is sleeping
+801 101 is eating
+801 103 has taken a fork
+801 102 is sleeping
+801 37 has taken a fork
+801 37 is eating
+801 123 has taken a fork
+801 123 is eating
+801 38 is sleeping
+801 39 has taken a fork
+801 39 has taken a fork
+801 39 is eating
+802 143 is thinking
+802 160 is sleeping
+802 81 is thinking
+802 182 is sleeping
+802 158 is sleeping
+802 169 is thinking
+802 152 is sleeping
+802 142 is sleeping
+802 166 is sleeping
+802 52 is sleeping
+802 147 is thinking
+802 77 is thinking
+802 174 is sleeping
+802 132 is sleeping
+802 177 is thinking
+802 13 is thinking
+802 136 is sleeping
+802 76 is sleeping
+802 80 is sleeping
+802 175 is thinking
+802 181 is thinking
+802 32 is sleeping
+802 175 has taken a fork
+802 170 is sleeping
+802 172 is sleeping
+802 173 is thinking
+802 173 has taken a fork
+802 173 has taken a fork
+802 173 is eating
+802 180 is sleeping
+802 157 is thinking
+802 161 is thinking
+802 138 is sleeping
+802 161 has taken a fork
+802 168 is sleeping
+802 73 is thinking
+802 181 has taken a fork
+802 181 has taken a fork
+802 181 is eating
+802 54 is sleeping
+802 130 is sleeping
+802 134 is sleeping
+802 185 is thinking
+802 141 is thinking
+802 31 is thinking
+802 184 is sleeping
+802 178 is sleeping
+802 167 is thinking
+802 133 is thinking
+802 12 is sleeping
+802 131 is thinking
+802 51 has taken a fork
+802 51 is eating
+802 53 is thinking
+802 53 has taken a fork
+802 53 has taken a fork
+802 53 is eating
+802 176 is sleeping
+802 143 has taken a fork
+802 148 is sleeping
+802 133 has taken a fork
+802 149 is thinking
+802 133 has taken a fork
+802 131 has taken a fork
+802 131 has taken a fork
+802 131 is eating
+802 153 is thinking
+802 133 is eating
+802 153 has taken a fork
+802 149 has taken a fork
+802 159 is thinking
+802 183 is thinking
+802 159 has taken a fork
+802 169 has taken a fork
+802 159 has taken a fork
+802 183 has taken a fork
+802 183 has taken a fork
+802 129 has taken a fork
+802 74 is sleeping
+802 185 has taken a fork
+802 13 has taken a fork
+802 183 is eating
+802 13 has taken a fork
+802 175 has taken a fork
+802 13 is eating
+802 129 is eating
+802 177 has taken a fork
+802 177 has taken a fork
+802 175 is eating
+802 15 has taken a fork
+802 15 has taken a fork
+802 15 is eating
+802 75 has taken a fork
+802 75 has taken a fork
+802 75 is eating
+802 167 has taken a fork
+802 179 is thinking
+802 169 has taken a fork
+802 167 has taken a fork
+802 33 has taken a fork
+802 169 is eating
+802 137 has taken a fork
+802 33 has taken a fork
+802 33 is eating
+802 137 has taken a fork
+802 159 is eating
+802 137 is eating
+802 179 has taken a fork
+802 14 is sleeping
+802 179 has taken a fork
+802 177 is eating
+802 55 has taken a fork
+802 167 is eating
+802 179 is eating
+802 55 has taken a fork
+802 55 is eating
+802 77 has taken a fork
+802 81 has taken a fork
+802 165 is thinking
+802 140 is sleeping
+802 141 has taken a fork
+802 141 has taken a fork
+802 141 is eating
+802 149 has taken a fork
+802 149 is eating
+802 135 is thinking
+802 135 has taken a fork
+802 135 has taken a fork
+802 135 is eating
+802 139 is thinking
+802 139 has taken a fork
+802 139 has taken a fork
+802 139 is eating
+802 150 is sleeping
+802 7 is thinking
+802 171 is thinking
+802 171 has taken a fork
+802 171 has taken a fork
+802 171 is eating
+802 151 is thinking
+802 151 has taken a fork
+802 151 has taken a fork
+802 151 is eating
+802 77 has taken a fork
+802 79 has taken a fork
+802 77 is eating
+802 72 is sleeping
+802 79 has taken a fork
+802 79 is eating
+802 73 has taken a fork
+802 73 has taken a fork
+802 73 is eating
+802 78 is sleeping
+803 186 is sleeping
+803 190 is sleeping
+803 6 is sleeping
+803 96 is sleeping
+803 85 is thinking
+803 93 is thinking
+803 70 is sleeping
+803 8 is sleeping
+803 193 is thinking
+803 156 is sleeping
+803 185 has taken a fork
+803 5 has taken a fork
+803 185 is eating
+803 5 is eating
+803 98 is sleeping
+803 187 is thinking
+803 187 has taken a fork
+803 86 is sleeping
+803 105 is thinking
+803 154 is sleeping
+803 68 is sleeping
+803 157 has taken a fork
+803 157 has taken a fork
+803 157 is eating
+803 194 is sleeping
+803 92 is sleeping
+803 10 is sleeping
+803 99 has taken a fork
+803 162 is sleeping
+803 153 has taken a fork
+803 104 is sleeping
+803 99 has taken a fork
+803 116 is sleeping
+803 67 has taken a fork
+803 153 is eating
+803 67 is eating
+803 115 is thinking
+803 164 is sleeping
+803 69 is thinking
+803 69 has taken a fork
+803 69 has taken a fork
+803 69 is eating
+803 103 has taken a fork
+803 161 has taken a fork
+803 106 is sleeping
+803 105 has taken a fork
+803 188 is sleeping
+803 105 has taken a fork
+803 117 has taken a fork
+803 105 is eating
+803 117 has taken a fork
+803 117 is eating
+803 91 has taken a fork
+803 91 is eating
+803 161 is eating
+803 93 has taken a fork
+803 192 is sleeping
+803 144 is sleeping
+803 107 has taken a fork
+803 107 has taken a fork
+803 107 is eating
+803 155 is thinking
+803 187 has taken a fork
+803 187 is eating
+803 84 is sleeping
+803 103 is eating
+803 9 is thinking
+803 9 has taken a fork
+803 9 has taken a fork
+803 9 is eating
+803 193 has taken a fork
+803 193 has taken a fork
+803 193 is eating
+803 143 has taken a fork
+803 143 is eating
+803 85 has taken a fork
+803 85 has taken a fork
+803 85 is eating
+803 145 is thinking
+803 145 has taken a fork
+803 195 is thinking
+803 195 has taken a fork
+803 113 has taken a fork
+803 113 is eating
+803 155 has taken a fork
+803 155 has taken a fork
+803 155 is eating
+803 99 is eating
+803 115 has taken a fork
+803 115 has taken a fork
+803 115 is eating
+803 163 is thinking
+803 163 has taken a fork
+803 191 is thinking
+803 163 has taken a fork
+803 163 is eating
+803 82 is sleeping
+803 191 has taken a fork
+803 191 has taken a fork
+803 191 is eating
+803 81 has taken a fork
+803 81 is eating
+803 94 is sleeping
+803 93 has taken a fork
+803 93 is eating
+803 95 has taken a fork
+803 95 has taken a fork
+803 95 is eating
+803 97 is thinking
+803 97 has taken a fork
+803 97 has taken a fork
+803 97 is eating
+803 30 is sleeping
+803 29 has taken a fork
+803 29 is eating
+803 31 has taken a fork
+803 31 has taken a fork
+803 31 is eating
+803 7 has taken a fork
+803 7 has taken a fork
+803 7 is eating
+803 189 is thinking
+803 189 has taken a fork
+803 189 has taken a fork
+803 189 is eating
+803 87 has taken a fork
+803 87 has taken a fork
+803 87 is eating
+803 71 has taken a fork
+803 71 has taken a fork
+803 71 is eating
+803 165 has taken a fork
+803 165 has taken a fork
+803 165 is eating
+803 11 has taken a fork
+803 11 has taken a fork
+803 11 is eating
+803 114 is sleeping
+803 83 has taken a fork
+804 83 has taken a fork
+804 83 is eating
+804 146 is sleeping
+804 147 has taken a fork
+804 147 has taken a fork
+804 147 is eating
+804 145 has taken a fork
+804 145 is eating
+1000 18 is thinking
 1000 2 is thinking
+1000 50 is thinking
+1000 17 is sleeping
+1000 197 is thinking
+1000 48 is thinking
+1000 47 is sleeping
+1000 48 has taken a fork
+1000 1 is sleeping
+1000 44 is thinking
+1000 20 is thinking
 1000 2 has taken a fork
+1000 4 is thinking
+1000 42 is thinking
 1000 2 has taken a fork
+1000 66 is thinking
+1000 4 has taken a fork
+1000 44 has taken a fork
 1000 2 is eating
-[1;31m1211 1 died
-[0m
+1000 18 has taken a fork
+1000 65 is sleeping
+1000 66 has taken a fork
+1000 3 is sleeping
+1000 28 is thinking
+1000 48 has taken a fork
+1000 48 is eating
+1000 50 has taken a fork
+1000 64 is thinking
+1000 43 is sleeping
+1000 45 is sleeping
+1000 44 has taken a fork
+1000 44 is eating
+1000 49 is sleeping
+1000 19 is sleeping
+1000 16 is thinking
+1000 18 has taken a fork
+1000 18 is eating
+1000 20 has taken a fork
+1000 199 is thinking
+1000 198 is sleeping
+1000 199 has taken a fork
+1000 199 has taken a fork
+1000 199 is eating
+1000 195 has taken a fork
+1000 195 is eating
+1000 197 has taken a fork
+1000 197 has taken a fork
+1000 197 is eating
+1000 196 is sleeping
+1000 46 is thinking
+1000 46 has taken a fork
+1000 46 has taken a fork
+1000 46 is eating
+1001 126 is thinking
+1001 101 is sleeping
+1001 35 is sleeping
+1001 61 is sleeping
+1001 108 is thinking
+1001 63 is sleeping
+1001 64 has taken a fork
+1001 64 has taken a fork
+1001 64 is eating
+1001 60 is thinking
+1001 127 is sleeping
+1001 41 is sleeping
+1001 21 is sleeping
+1001 20 has taken a fork
+1001 20 is eating
+1001 125 is sleeping
+1001 109 is sleeping
+1001 100 is thinking
+1001 38 is thinking
+1001 126 has taken a fork
+1001 27 is sleeping
+1001 126 has taken a fork
+1001 126 is eating
+1001 118 is thinking
+1001 22 is thinking
+1001 22 has taken a fork
+1001 25 is sleeping
+1001 34 is thinking
+1001 111 is sleeping
+1001 62 is thinking
+1001 62 has taken a fork
+1001 62 has taken a fork
+1001 62 is eating
+1001 122 is thinking
+1001 89 is sleeping
+1001 90 is thinking
+1001 90 has taken a fork
+1001 110 is thinking
+1001 110 has taken a fork
+1001 110 has taken a fork
+1001 110 is eating
+1001 88 is thinking
+1001 39 is sleeping
+1001 37 is sleeping
+1001 38 has taken a fork
+1001 38 has taken a fork
+1001 38 is eating
+1001 123 is sleeping
+1001 112 is thinking
+1001 112 has taken a fork
+1001 128 is thinking
+1001 128 has taken a fork
+1001 57 is sleeping
+1001 40 is thinking
+1001 40 has taken a fork
+1001 40 has taken a fork
+1001 40 is eating
+1001 42 has taken a fork
+1001 42 has taken a fork
+1001 42 is eating
+1001 102 is thinking
+1001 102 has taken a fork
+1001 119 is sleeping
+1001 28 has taken a fork
+1001 24 is thinking
+1001 124 is thinking
+1001 124 has taken a fork
+1001 124 has taken a fork
+1001 124 is eating
+1001 60 has taken a fork
+1001 60 has taken a fork
+1001 60 is eating
+1001 26 is thinking
+1001 26 has taken a fork
+1001 26 has taken a fork
+1001 26 is eating
+1001 59 is sleeping
+1001 120 is thinking
+1001 120 has taken a fork
+1001 36 is thinking
+1001 36 has taken a fork
+1001 36 has taken a fork
+1001 36 is eating
+1001 56 is thinking
+1001 58 is thinking
+1001 58 has taken a fork
+1001 58 has taken a fork
+1001 58 is eating
+1001 121 is sleeping
+1001 23 is sleeping
+1001 22 has taken a fork
+1001 22 is eating
+1001 122 has taken a fork
+1001 122 has taken a fork
+1001 122 is eating
+1001 24 has taken a fork
+1001 24 has taken a fork
+1001 24 is eating
+1001 120 has taken a fork
+1001 120 is eating
+1002 80 is thinking
+1002 176 is thinking
+1002 139 is sleeping
+1002 167 is sleeping
+1002 52 is thinking
+1002 175 is sleeping
+1002 142 is thinking
+1002 32 is thinking
+1002 12 is thinking
+1002 73 is sleeping
+1002 33 is sleeping
+1002 183 is sleeping
+1002 75 is sleeping
+1002 52 has taken a fork
+1002 55 is sleeping
+1002 141 is sleeping
+1002 34 has taken a fork
+1002 168 is thinking
+1002 34 has taken a fork
+1002 152 is thinking
+1002 168 has taken a fork
+1002 51 is sleeping
+1002 168 has taken a fork
+1002 131 is sleeping
+1002 142 has taken a fork
+1002 74 is thinking
+1002 76 is thinking
+1002 76 has taken a fork
+1002 180 is thinking
+1002 170 is thinking
+1002 133 is sleeping
+1002 160 is thinking
+1002 179 is sleeping
+1002 158 is thinking
+1002 13 is sleeping
+1002 169 is sleeping
+1002 77 is sleeping
+1002 15 is sleeping
+1002 178 is thinking
+1002 148 is thinking
+1002 16 has taken a fork
+1002 72 is thinking
+1002 50 has taken a fork
+1002 137 is sleeping
+1002 50 is eating
+1002 166 is thinking
+1002 76 has taken a fork
+1002 76 is eating
+1002 74 has taken a fork
+1002 34 is eating
+1002 74 has taken a fork
+1002 74 is eating
+1002 180 has taken a fork
+1002 168 is eating
+1002 130 is thinking
+1002 128 has taken a fork
+1002 172 is thinking
+1002 130 has taken a fork
+1002 128 is eating
+1002 130 has taken a fork
+1002 172 has taken a fork
+1002 136 is thinking
+1002 174 is thinking
+1002 130 is eating
+1002 182 is thinking
+1002 170 has taken a fork
+1002 170 has taken a fork
+1002 170 is eating
+1002 138 is thinking
+1002 138 has taken a fork
+1002 138 has taken a fork
+1002 129 is sleeping
+1002 138 is eating
+1002 16 has taken a fork
+1002 16 is eating
+1002 134 is thinking
+1002 134 has taken a fork
+1002 160 has taken a fork
+1002 149 is sleeping
+1002 79 is sleeping
+1002 176 has taken a fork
+1002 54 is thinking
+1002 180 has taken a fork
+1002 180 is eating
+1002 181 is sleeping
+1002 182 has taken a fork
+1002 182 has taken a fork
+1002 182 is eating
+1002 184 is thinking
+1002 80 has taken a fork
+1002 172 has taken a fork
+1002 172 is eating
+1002 173 is sleeping
+1002 174 has taken a fork
+1002 174 has taken a fork
+1002 174 is eating
+1002 159 is sleeping
+1002 184 has taken a fork
+1002 140 is thinking
+1002 140 has taken a fork
+1002 140 has taken a fork
+1002 140 is eating
+1002 150 is thinking
+1002 150 has taken a fork
+1002 171 is sleeping
+1002 152 has taken a fork
+1002 14 is thinking
+1002 14 has taken a fork
+1002 14 has taken a fork
+1002 14 is eating
+1002 135 is sleeping
+1002 176 has taken a fork
+1002 176 is eating
+1002 177 is sleeping
+1002 178 has taken a fork
+1002 178 has taken a fork
+1002 178 is eating
+1002 151 is sleeping
+1002 150 has taken a fork
+1002 150 is eating
+1002 134 has taken a fork
+1002 134 is eating
+1002 136 has taken a fork
+1002 136 has taken a fork
+1002 136 is eating
+1002 56 has taken a fork
+1002 56 has taken a fork
+1002 56 is eating
+1002 132 is thinking
+1002 132 has taken a fork
+1002 132 has taken a fork
+1002 132 is eating
+1002 78 is thinking
+1002 78 has taken a fork
+1002 78 has taken a fork
+1002 78 is eating
+1002 53 is sleeping
+1002 52 has taken a fork
+1002 52 is eating
+1002 54 has taken a fork
+1002 54 has taken a fork
+1002 54 is eating
+1003 115 is sleeping
+1003 85 is sleeping
+1003 69 is sleeping
+1003 162 is thinking
+1003 71 is sleeping
+1003 194 is thinking
+1003 91 is sleeping
+1003 103 is sleeping
+1003 81 is sleeping
+1003 95 is sleeping
+1003 144 is thinking
+1003 193 is sleeping
+1003 188 is thinking
+1003 105 is sleeping
+1003 9 is sleeping
+1003 161 is sleeping
+1003 113 is sleeping
+1003 191 is sleeping
+1003 72 has taken a fork
+1003 187 is sleeping
+1003 5 is sleeping
+1003 68 is thinking
+1003 194 has taken a fork
+1003 160 has taken a fork
+1003 160 is eating
+1003 107 is sleeping
+1003 162 has taken a fork
+1003 70 is thinking
+1003 84 is thinking
+1003 70 has taken a fork
+1003 116 is thinking
+1003 116 has taken a fork
+1003 70 has taken a fork
+1003 82 is thinking
+1003 192 is thinking
+1003 192 has taken a fork
+1003 108 has taken a fork
+1003 98 is thinking
+1003 8 is thinking
+1003 108 has taken a fork
+1003 108 is eating
+1003 186 is thinking
+1003 106 is thinking
+1003 106 has taken a fork
+1003 106 has taken a fork
+1003 106 is eating
+1003 10 is thinking
+1003 117 is sleeping
+1003 118 has taken a fork
+1003 118 has taken a fork
+1003 118 is eating
+1003 72 has taken a fork
+1003 10 has taken a fork
+1003 192 has taken a fork
+1003 72 is eating
+1003 192 is eating
+1003 164 is thinking
+1003 190 is thinking
+1003 70 is eating
+1003 116 has taken a fork
+1003 155 is sleeping
+1003 116 is eating
+1003 93 is sleeping
+1003 185 is sleeping
+1003 31 is sleeping
+1003 96 is thinking
+1003 32 has taken a fork
+1003 82 has taken a fork
+1003 32 has taken a fork
+1003 32 is eating
+1003 67 is sleeping
+1003 186 has taken a fork
+1003 186 has taken a fork
+1003 186 is eating
+1003 188 has taken a fork
+1003 96 has taken a fork
+1003 68 has taken a fork
+1003 68 has taken a fork
+1003 68 is eating
+1003 156 is thinking
+1003 152 has taken a fork
+1003 92 is thinking
+1003 92 has taken a fork
+1003 92 has taken a fork
+1003 92 is eating
+1003 30 is thinking
+1003 156 has taken a fork
+1003 142 has taken a fork
+1003 142 is eating
+1003 97 is sleeping
+1003 96 has taken a fork
+1003 96 is eating
+1003 98 has taken a fork
+1003 98 has taken a fork
+1003 143 is sleeping
+1003 100 has taken a fork
+1003 100 has taken a fork
+1003 100 is eating
+1003 157 is sleeping
+1003 98 is eating
+1003 30 has taken a fork
+1003 30 has taken a fork
+1003 30 is eating
+1003 158 has taken a fork
+1003 158 has taken a fork
+1003 158 is eating
+1003 104 is thinking
+1003 104 has taken a fork
+1003 104 has taken a fork
+1003 104 is eating
+1003 90 has taken a fork
+1003 66 has taken a fork
+1003 90 is eating
+1003 4 has taken a fork
+1003 156 has taken a fork
+1003 156 is eating
+1003 66 is eating
+1003 4 is eating
+1003 80 has taken a fork
+1003 80 is eating
+1003 152 is eating
+1003 28 has taken a fork
+1003 154 is thinking
+1003 94 is thinking
+1003 29 is sleeping
+1003 28 is eating
+1003 184 has taken a fork
+1003 153 is sleeping
+1003 184 is eating
+1003 86 is thinking
+1003 86 has taken a fork
+1003 99 is sleeping
+1003 144 has taken a fork
+1003 112 has taken a fork
+1003 112 is eating
+1003 94 has taken a fork
+1003 94 has taken a fork
+1003 94 is eating
+1003 154 has taken a fork
+1003 154 has taken a fork
+1003 154 is eating
+1003 188 has taken a fork
+1003 188 is eating
+1003 189 is sleeping
+1003 190 has taken a fork
+1003 190 has taken a fork
+1003 190 is eating
+1003 162 has taken a fork
+1003 162 is eating
+1003 163 is sleeping
+1003 164 has taken a fork
+1003 10 has taken a fork
+1003 10 is eating
+1003 11 is sleeping
+1003 12 has taken a fork
+1003 12 has taken a fork
+1003 12 is eating
+1003 102 has taken a fork
+1003 102 is eating
+1003 86 has taken a fork
+1003 86 is eating
+1003 87 is sleeping
+1003 165 is sleeping
+1003 164 has taken a fork
+1003 164 is eating
+1003 166 has taken a fork
+1003 166 has taken a fork
+1003 166 is eating
+1003 88 has taken a fork
+1003 88 has taken a fork
+1003 88 is eating
+1003 7 is sleeping
+1003 8 has taken a fork
+1003 8 has taken a fork
+1003 8 is eating
+1003 6 is thinking
+1003 6 has taken a fork
+1003 6 has taken a fork
+1003 6 is eating
+1004 83 is sleeping
+1004 84 has taken a fork
+1004 84 has taken a fork
+1004 84 is eating
+1004 147 is sleeping
+1004 148 has taken a fork
+1004 148 has taken a fork
+1004 148 is eating
+1004 82 has taken a fork
+1004 82 is eating
+1004 145 is sleeping
+1004 144 has taken a fork
+1004 144 is eating
+1004 146 is thinking
+1004 146 has taken a fork
+1004 146 has taken a fork
+1004 146 is eating
+1004 114 is thinking
+1004 114 has taken a fork
+1004 114 has taken a fork
+1004 114 is eating
+1200 199 is sleeping
+1200 2 is sleeping
+1200 198 is thinking
+1200 17 is thinking
+1200 18 is sleeping
+1200 3 is thinking
+1200 3 has taken a fork
+1200 196 is thinking
+1200 194 has taken a fork
+1200 194 is eating
+1200 47 is thinking
+1200 45 is thinking
+1200 19 is thinking
+1200 19 has taken a fork
+1200 195 is sleeping
+1200 44 is sleeping
+1200 1 is thinking
+1200 1 has taken a fork
+1200 1 has taken a fork
+1200 1 is eating
+1200 65 is thinking
+1200 48 is sleeping
+1200 49 is thinking
+1200 49 has taken a fork
+1200 43 is thinking
+1200 197 is sleeping
+1200 198 has taken a fork
+1200 198 has taken a fork
+1200 198 is eating
+1200 45 has taken a fork
+1200 196 has taken a fork
+1200 196 has taken a fork
+1200 196 is eating
+1200 46 is sleeping
+1200 47 has taken a fork
+1200 47 has taken a fork
+1200 47 is eating
+1200 45 has taken a fork
+1200 45 is eating
+1201 123 is thinking
+1201 89 is thinking
+1201 57 is thinking
+1201 39 is thinking
+1201 122 is sleeping
+1201 62 is sleeping
+1201 37 is thinking
+1201 101 is thinking
+1201 25 is thinking
+1201 35 is thinking
+1201 38 is sleeping
+1201 21 is thinking
+1201 123 has taken a fork
+1201 39 has taken a fork
+1201 43 has taken a fork
+1201 111 is thinking
+1201 60 is sleeping
+1201 43 has taken a fork
+1201 43 is eating
+1201 22 is sleeping
+1201 42 is sleeping
+1201 40 is sleeping
+1201 110 is sleeping
+1201 39 has taken a fork
+1201 27 is thinking
+1201 61 is thinking
+1201 61 has taken a fork
+1201 59 is thinking
+1201 63 is thinking
+1201 39 is eating
+1201 20 is sleeping
+1201 111 has taken a fork
+1201 19 has taken a fork
+1201 19 is eating
+1201 41 is thinking
+1201 41 has taken a fork
+1201 109 is thinking
+1201 21 has taken a fork
+1201 21 has taken a fork
+1201 21 is eating
+1201 41 has taken a fork
+1201 41 is eating
+1201 63 has taken a fork
+1201 26 is sleeping
+1201 125 is thinking
+1201 126 is sleeping
+1201 61 has taken a fork
+1201 61 is eating
+1201 121 is thinking
+1201 119 is thinking
+1201 27 has taken a fork
+1201 127 is thinking
+1201 127 has taken a fork
+1201 120 is sleeping
+1201 36 is sleeping
+1201 24 is sleeping
+1201 124 is sleeping
+1201 123 has taken a fork
+1201 123 is eating
+1201 25 has taken a fork
+1201 25 has taken a fork
+1201 25 is eating
+1201 37 has taken a fork
+1201 37 has taken a fork
+1201 37 is eating
+1201 125 has taken a fork
+1201 125 has taken a fork
+1201 125 is eating
+1201 121 has taken a fork
+1201 121 has taken a fork
+1201 121 is eating
+1201 23 is thinking
+1201 23 has taken a fork
+1201 23 has taken a fork
+1201 23 is eating
+1201 58 is sleeping
+1201 59 has taken a fork
+1201 59 has taken a fork
+1201 59 is eating
+1201 63 has taken a fork
+1201 63 is eating
+1201 64 is sleeping
+1201 65 has taken a fork
+1202 137 is thinking
+1202 168 is sleeping
+1202 13 is thinking
+1202 54 is sleeping
+1202 129 is thinking
+1202 76 is sleeping
+1202 33 is thinking
+1202 174 is sleeping
+1202 131 is thinking
+1202 175 is thinking
+1202 175 has taken a fork
+1202 172 is sleeping
+1202 170 is sleeping
+1202 134 is sleeping
+1202 128 is sleeping
+1202 75 is thinking
+1202 51 is thinking
+1202 159 is thinking
+1202 51 has taken a fork
+1202 77 is thinking
+1202 77 has taken a fork
+1202 139 is thinking
+1202 139 has taken a fork
+1202 49 has taken a fork
+1202 49 is eating
+1202 173 is thinking
+1202 167 is thinking
+1202 173 has taken a fork
+1202 173 has taken a fork
+1202 173 is eating
+1202 130 is sleeping
+1202 181 is thinking
+1202 34 is sleeping
+1202 74 is sleeping
+1202 50 is sleeping
+1202 183 is thinking
+1202 133 is thinking
+1202 169 is thinking
+1202 182 is sleeping
+1202 169 has taken a fork
+1202 136 is sleeping
+1202 16 is sleeping
+1202 169 has taken a fork
+1202 169 is eating
+1202 131 has taken a fork
+1202 35 has taken a fork
+1202 35 has taken a fork
+1202 35 is eating
+1202 138 is sleeping
+1202 127 has taken a fork
+1202 129 has taken a fork
+1202 127 is eating
+1202 17 has taken a fork
+1202 137 has taken a fork
+1202 129 has taken a fork
+1202 179 is thinking
+1202 129 is eating
+1202 52 is sleeping
+1202 150 is sleeping
+1202 141 is thinking
+1202 15 is thinking
+1202 180 is sleeping
+1202 181 has taken a fork
+1202 181 has taken a fork
+1202 181 is eating
+1202 79 is thinking
+1202 55 is thinking
+1202 55 has taken a fork
+1202 73 is thinking
+1202 175 has taken a fork
+1202 175 is eating
+1202 176 is sleeping
+1202 183 has taken a fork
+1202 17 has taken a fork
+1202 17 is eating
+1202 149 is thinking
+1202 178 is sleeping
+1202 75 has taken a fork
+1202 51 has taken a fork
+1202 179 has taken a fork
+1202 179 has taken a fork
+1202 179 is eating
+1202 171 is thinking
+1202 177 is thinking
+1202 177 has taken a fork
+1202 177 has taken a fork
+1202 177 is eating
+1202 51 is eating
+1202 171 has taken a fork
+1202 171 has taken a fork
+1202 171 is eating
+1202 78 is sleeping
+1202 77 has taken a fork
+1202 140 is sleeping
+1202 139 has taken a fork
+1202 139 is eating
+1202 137 has taken a fork
+1202 75 has taken a fork
+1202 75 is eating
+1202 137 is eating
+1202 79 has taken a fork
+1202 77 is eating
+1202 141 has taken a fork
+1202 135 is thinking
+1202 135 has taken a fork
+1202 135 has taken a fork
+1202 135 is eating
+1202 151 is thinking
+1202 151 has taken a fork
+1202 14 is sleeping
+1202 56 is sleeping
+1202 132 is sleeping
+1202 57 has taken a fork
+1202 57 has taken a fork
+1202 57 is eating
+1202 131 has taken a fork
+1202 131 is eating
+1202 133 has taken a fork
+1202 133 has taken a fork
+1202 133 is eating
+1202 15 has taken a fork
+1202 15 has taken a fork
+1202 15 is eating
+1202 55 has taken a fork
+1202 55 is eating
+1202 53 is thinking
+1202 53 has taken a fork
+1203 8 is sleeping
+1203 53 has taken a fork
+1203 53 is eating
+1203 103 is thinking
+1203 115 is thinking
+1203 103 has taken a fork
+1203 67 is thinking
+1203 93 is thinking
+1203 193 is thinking
+1203 105 is thinking
+1203 113 is thinking
+1203 93 has taken a fork
+1203 93 has taken a fork
+1203 93 is eating
+1203 113 has taken a fork
+1203 193 has taken a fork
+1203 66 is sleeping
+1203 9 is thinking
+1203 192 is sleeping
+1203 9 has taken a fork
+1203 9 has taken a fork
+1203 100 is sleeping
+1203 9 is eating
+1203 101 has taken a fork
+1203 101 has taken a fork
+1203 101 is eating
+1203 143 is thinking
+1203 88 is sleeping
+1203 184 is sleeping
+1203 89 has taken a fork
+1203 183 has taken a fork
+1203 80 is sleeping
+1203 183 is eating
+1203 4 is sleeping
+1203 70 is sleeping
+1203 94 is sleeping
+1203 12 is sleeping
+1203 117 is thinking
+1203 95 is thinking
+1203 95 has taken a fork
+1203 152 is sleeping
+1203 95 has taken a fork
+1203 95 is eating
+1203 153 is thinking
+1203 31 is thinking
+1203 31 has taken a fork
+1203 79 has taken a fork
+1203 31 has taken a fork
+1203 31 is eating
+1203 188 is sleeping
+1203 86 is sleeping
+1203 104 is sleeping
+1203 155 is thinking
+1203 155 has taken a fork
+1203 79 is eating
+1203 155 has taken a fork
+1203 155 is eating
+1203 157 is thinking
+1203 185 is thinking
+1203 112 is sleeping
+1203 185 has taken a fork
+1203 185 has taken a fork
+1203 90 is sleeping
+1203 166 is sleeping
+1203 111 has taken a fork
+1203 111 is eating
+1203 91 is thinking
+1203 167 has taken a fork
+1203 159 has taken a fork
+1203 159 has taken a fork
+1203 159 is eating
+1203 163 is thinking
+1203 102 is sleeping
+1203 107 is thinking
+1203 186 is sleeping
+1203 71 is thinking
+1203 5 is thinking
+1203 71 has taken a fork
+1203 160 is sleeping
+1203 167 has taken a fork
+1203 71 has taken a fork
+1203 167 is eating
+1203 71 is eating
+1203 73 has taken a fork
+1203 73 has taken a fork
+1203 73 is eating
+1203 161 is thinking
+1203 109 has taken a fork
+1203 161 has taken a fork
+1203 109 has taken a fork
+1203 3 has taken a fork
+1203 161 has taken a fork
+1203 109 is eating
+1203 33 has taken a fork
+1203 161 is eating
+1203 33 has taken a fork
+1203 33 is eating
+1203 105 has taken a fork
+1203 105 has taken a fork
+1203 105 is eating
+1203 162 is sleeping
+1203 29 is thinking
+1203 29 has taken a fork
+1203 29 has taken a fork
+1203 164 is sleeping
+1203 29 is eating
+1203 190 is sleeping
+1203 191 is thinking
+1203 191 has taken a fork
+1203 143 has taken a fork
+1203 191 has taken a fork
+1203 187 is thinking
+1203 191 is eating
+1203 187 has taken a fork
+1203 65 has taken a fork
+1203 187 has taken a fork
+1203 65 is eating
+1203 187 is eating
+1203 28 is sleeping
+1203 30 is sleeping
+1203 118 is sleeping
+1203 117 has taken a fork
+1203 96 is sleeping
+1203 97 is thinking
+1203 68 is sleeping
+1203 85 is thinking
+1203 156 is sleeping
+1203 13 has taken a fork
+1203 13 has taken a fork
+1203 99 is thinking
+1203 13 is eating
+1203 185 is eating
+1203 158 is sleeping
+1203 92 is sleeping
+1203 154 is sleeping
+1203 91 has taken a fork
+1203 91 has taken a fork
+1203 91 is eating
+1203 89 has taken a fork
+1203 89 is eating
+1203 153 has taken a fork
+1203 153 has taken a fork
+1203 153 is eating
+1203 157 has taken a fork
+1203 157 has taken a fork
+1203 157 is eating
+1203 117 has taken a fork
+1203 97 has taken a fork
+1203 117 is eating
+1203 97 has taken a fork
+1203 97 is eating
+1203 116 is sleeping
+1203 81 is thinking
+1203 69 is thinking
+1203 103 has taken a fork
+1203 103 is eating
+1203 99 has taken a fork
+1203 99 has taken a fork
+1203 99 is eating
+1203 163 has taken a fork
+1203 163 has taken a fork
+1203 32 is sleeping
+1203 163 is eating
+1203 141 has taken a fork
+1203 3 is eating
+1203 141 is eating
+1203 27 has taken a fork
+1203 27 is eating
+1203 108 is sleeping
+1203 142 is sleeping
+1203 72 is sleeping
+1203 189 is thinking
+1203 11 is thinking
+1203 69 has taken a fork
+1203 5 has taken a fork
+1203 5 has taken a fork
+1203 5 is eating
+1203 10 is sleeping
+1203 106 is sleeping
+1203 81 has taken a fork
+1203 189 has taken a fork
+1203 189 has taken a fork
+1203 98 is sleeping
+1203 107 has taken a fork
+1203 189 is eating
+1203 107 has taken a fork
+1203 69 has taken a fork
+1204 107 is eating
+1204 69 is eating
+1203 67 has taken a fork
+1204 67 has taken a fork
+1204 67 is eating
+1204 83 is thinking
+1204 84 is sleeping
+1204 85 has taken a fork
+1204 85 has taken a fork
+1204 85 is eating
+1204 148 is sleeping
+1204 145 is thinking
+1204 143 has taken a fork
+1204 144 is sleeping
+1204 81 has taken a fork
+1204 81 is eating
+1204 145 has taken a fork
+1204 149 has taken a fork
+1204 149 has taken a fork
+1204 149 is eating
+1203 11 has taken a fork
+1204 11 has taken a fork
+1204 11 is eating
+1204 83 has taken a fork
+1204 83 has taken a fork
+1204 83 is eating
+1204 82 is sleeping
+1204 143 is eating
+1204 147 is thinking
+1204 145 has taken a fork
+1204 145 is eating
+1204 146 is sleeping
+1204 147 has taken a fork
+1204 147 has taken a fork
+1204 147 is eating
+1204 114 is sleeping
+1203 165 is thinking
+1204 165 has taken a fork
+1204 165 has taken a fork
+1204 165 is eating
+1203 87 is thinking
+1204 87 has taken a fork
+1204 87 has taken a fork
+1204 87 is eating
+1204 115 has taken a fork
+1204 115 has taken a fork
+1204 115 is eating
+1204 113 has taken a fork
+1204 113 is eating
+1203 119 has taken a fork
+1204 119 has taken a fork
+1204 119 is eating
+1203 7 is thinking
+1204 7 has taken a fork
+1204 7 has taken a fork
+1204 7 is eating
+1203 6 is sleeping
+1203 151 has taken a fork
+1204 151 is eating
+1400 44 is thinking
+1400 196 is sleeping
+1400 47 is sleeping
+1400 45 is sleeping
+1400 194 is sleeping
+1400 193 has taken a fork
+1400 193 is eating
+1400 1 is sleeping
+1400 48 is thinking
+1400 48 has taken a fork
+1400 18 is thinking
+1400 2 is thinking
+1400 2 has taken a fork
+1400 199 is thinking
+1400 197 is thinking
+1400 197 has taken a fork
+1400 198 is sleeping
+1400 197 has taken a fork
+1400 197 is eating
+1400 199 has taken a fork
+1400 199 has taken a fork
+1400 199 is eating
+1400 46 is thinking
+1400 46 has taken a fork
+1400 195 is thinking
+1400 195 has taken a fork
+1400 195 has taken a fork
+1400 195 is eating
+1400 46 has taken a fork
+1400 46 is eating
+1401 26 is thinking
+1401 42 is thinking
+1401 110 is thinking
+1401 25 is sleeping
+1401 26 has taken a fork
+1401 121 is sleeping
+1401 41 is sleeping
+1401 42 has taken a fork
+1401 42 has taken a fork
+1401 42 is eating
+1401 40 is thinking
+1401 62 is thinking
+1401 43 is sleeping
+1401 44 has taken a fork
+1401 44 has taken a fork
+1401 44 is eating
+1401 21 is sleeping
+1401 122 is thinking
+1401 122 has taken a fork
+1401 24 is thinking
+1401 36 is thinking
+1401 63 is sleeping
+1401 124 is thinking
+1401 126 is thinking
+1401 37 is sleeping
+1401 60 is thinking
+1401 125 is sleeping
+1401 39 is sleeping
+1401 40 has taken a fork
+1401 40 has taken a fork
+1401 40 is eating
+1401 22 is thinking
+1401 22 has taken a fork
+1401 120 is thinking
+1401 23 is sleeping
+1401 24 has taken a fork
+1401 24 has taken a fork
+1401 24 is eating
+1401 19 is sleeping
+1401 38 is thinking
+1401 38 has taken a fork
+1401 38 has taken a fork
+1401 38 is eating
+1401 61 is sleeping
+1401 58 is thinking
+1401 62 has taken a fork
+1401 62 has taken a fork
+1401 62 is eating
+1401 22 has taken a fork
+1401 22 is eating
+1401 20 is thinking
+1401 20 has taken a fork
+1401 20 has taken a fork
+1401 20 is eating
+1401 126 has taken a fork
+1401 122 has taken a fork
+1401 122 is eating
+1401 123 is sleeping
+1401 59 is sleeping
+1401 124 has taken a fork
+1401 124 has taken a fork
+1401 60 has taken a fork
+1401 60 has taken a fork
+1401 60 is eating
+1401 64 is thinking
+1401 64 has taken a fork
+1401 124 is eating
+1402 137 is sleeping
+1402 52 is thinking
+1402 180 is thinking
+1402 138 is thinking
+1402 138 has taken a fork
+1402 76 is thinking
+1402 50 is thinking
+1402 130 is thinking
+1402 150 is thinking
+1402 170 is thinking
+1402 57 is sleeping
+1402 182 is thinking
+1402 16 is thinking
+1402 172 is thinking
+1402 77 is sleeping
+1402 54 is thinking
+1402 176 is thinking
+1402 49 is sleeping
+1402 15 is sleeping
+1402 139 is sleeping
+1402 35 is sleeping
+1402 131 is sleeping
+1402 174 is thinking
+1402 74 is thinking
+1402 34 is thinking
+1402 173 is sleeping
+1402 128 is thinking
+1402 48 has taken a fork
+1402 48 is eating
+1402 174 has taken a fork
+1402 177 is sleeping
+1402 181 is sleeping
+1402 78 is thinking
+1402 78 has taken a fork
+1402 138 has taken a fork
+1402 138 is eating
+1402 140 is thinking
+1402 140 has taken a fork
+1402 178 is thinking
+1402 178 has taken a fork
+1402 132 is thinking
+1402 132 has taken a fork
+1402 174 has taken a fork
+1402 174 is eating
+1402 182 has taken a fork
+1402 16 has taken a fork
+1402 175 is sleeping
+1402 176 has taken a fork
+1402 176 has taken a fork
+1402 176 is eating
+1402 50 has taken a fork
+1402 55 is sleeping
+1402 134 is thinking
+1402 14 is thinking
+1402 56 is thinking
+1402 56 has taken a fork
+1402 56 has taken a fork
+1402 56 is eating
+1402 171 is sleeping
+1402 127 is sleeping
+1402 172 has taken a fork
+1402 172 has taken a fork
+1402 172 is eating
+1402 128 has taken a fork
+1402 136 is thinking
+1402 169 is sleeping
+1402 170 has taken a fork
+1402 135 is sleeping
+1402 170 has taken a fork
+1402 170 is eating
+1402 126 has taken a fork
+1402 126 is eating
+1402 36 has taken a fork
+1402 36 has taken a fork
+1402 36 is eating
+1402 133 is sleeping
+1402 136 has taken a fork
+1402 136 has taken a fork
+1402 136 is eating
+1402 16 has taken a fork
+1402 17 is sleeping
+1402 16 is eating
+1402 18 has taken a fork
+1402 18 has taken a fork
+1402 18 is eating
+1402 75 is sleeping
+1402 134 has taken a fork
+1402 134 has taken a fork
+1402 134 is eating
+1402 76 has taken a fork
+1402 76 has taken a fork
+1402 76 is eating
+1402 132 has taken a fork
+1402 132 is eating
+1402 168 is thinking
+1402 51 is sleeping
+1402 50 has taken a fork
+1402 50 is eating
+1402 128 has taken a fork
+1402 129 is sleeping
+1402 130 has taken a fork
+1402 130 has taken a fork
+1402 130 is eating
+1402 128 is eating
+1402 178 has taken a fork
+1402 178 is eating
+1402 179 is sleeping
+1402 58 has taken a fork
+1402 58 has taken a fork
+1402 58 is eating
+1402 180 has taken a fork
+1402 180 has taken a fork
+1402 180 is eating
+1402 52 has taken a fork
+1403 153 is sleeping
+1403 112 is thinking
+1403 162 is thinking
+1403 34 has taken a fork
+1403 117 is sleeping
+1403 112 has taken a fork
+1403 191 is sleeping
+1403 86 is thinking
+1403 167 is sleeping
+1403 29 is sleeping
+1403 4 is thinking
+1403 91 is sleeping
+1403 73 is sleeping
+1403 184 is thinking
+1403 13 is sleeping
+1403 65 is sleeping
+1403 88 is thinking
+1403 34 has taken a fork
+1403 93 is sleeping
+1403 34 is eating
+1403 96 is thinking
+1403 79 is sleeping
+1403 163 is sleeping
+1403 96 has taken a fork
+1403 70 is thinking
+1403 96 has taken a fork
+1403 96 is eating
+1403 9 is sleeping
+1403 74 has taken a fork
+1403 111 is sleeping
+1403 161 is sleeping
+1403 160 is thinking
+1403 118 is thinking
+1403 155 is sleeping
+1403 104 is thinking
+1403 160 has taken a fork
+1403 118 has taken a fork
+1403 5 is sleeping
+1403 105 is sleeping
+1403 192 is thinking
+1403 190 is thinking
+1403 28 is thinking
+1403 30 is thinking
+1403 32 is thinking
+1403 160 has taken a fork
+1403 80 is thinking
+1403 185 is sleeping
+1403 30 has taken a fork
+1403 152 is thinking
+1403 97 is sleeping
+1403 187 is sleeping
+1403 80 has taken a fork
+1403 74 has taken a fork
+1403 74 is eating
+1403 109 is sleeping
+1403 106 is thinking
+1403 26 has taken a fork
+1403 26 is eating
+1403 99 is sleeping
+1403 27 is sleeping
+1403 92 is thinking
+1403 92 has taken a fork
+1403 92 has taken a fork
+1403 92 is eating
+1403 157 is sleeping
+1403 154 is thinking
+1403 78 has taken a fork
+1403 154 has taken a fork
+1403 10 is thinking
+1403 10 has taken a fork
+1403 156 is thinking
+1403 103 is sleeping
+1403 154 has taken a fork
+1403 154 is eating
+1403 104 has taken a fork
+1403 68 is thinking
+1403 104 has taken a fork
+1403 104 is eating
+1403 110 has taken a fork
+1403 110 has taken a fork
+1403 110 is eating
+1403 182 has taken a fork
+1403 182 is eating
+1403 14 has taken a fork
+1403 14 has taken a fork
+1403 14 is eating
+1403 100 is thinking
+1403 106 has taken a fork
+1403 94 is thinking
+1403 94 has taken a fork
+1403 94 has taken a fork
+1403 94 is eating
+1403 66 is thinking
+1403 33 is sleeping
+1403 158 is thinking
+1403 158 has taken a fork
+1403 158 has taken a fork
+1403 158 is eating
+1403 28 has taken a fork
+1403 28 has taken a fork
+1403 28 is eating
+1403 192 has taken a fork
+1403 30 has taken a fork
+1403 30 is eating
+1403 142 is thinking
+1403 164 is thinking
+1403 142 has taken a fork
+1403 164 has taken a fork
+1403 3 is sleeping
+1403 8 is thinking
+1403 64 has taken a fork
+1403 53 is sleeping
+1403 54 has taken a fork
+1403 140 has taken a fork
+1403 54 has taken a fork
+1403 4 has taken a fork
+1403 54 is eating
+1403 166 is thinking
+1403 184 has taken a fork
+1403 184 has taken a fork
+1403 184 is eating
+1403 90 is thinking
+1403 64 is eating
+1403 90 has taken a fork
+1403 90 has taken a fork
+1403 90 is eating
+1403 95 is sleeping
+1403 78 is eating
+1403 89 is sleeping
+1403 100 has taken a fork
+1403 100 has taken a fork
+1403 160 is eating
+1403 32 has taken a fork
+1403 52 has taken a fork
+1403 32 has taken a fork
+1403 32 is eating
+1403 2 has taken a fork
+1403 2 is eating
+1403 100 is eating
+1403 52 is eating
+1403 4 has taken a fork
+1403 4 is eating
+1403 140 is eating
+1403 101 is sleeping
+1403 72 is thinking
+1403 66 has taken a fork
+1403 188 is thinking
+1403 159 is sleeping
+1403 183 is sleeping
+1403 162 has taken a fork
+1403 186 is thinking
+1403 156 has taken a fork
+1403 168 has taken a fork
+1403 98 is thinking
+1404 72 has taken a fork
+1403 141 is sleeping
+1404 72 has taken a fork
+1403 108 is thinking
+1404 98 has taken a fork
+1404 85 is sleeping
+1404 83 is sleeping
+1404 188 has taken a fork
+1404 188 has taken a fork
+1404 188 is eating
+1404 189 is sleeping
+1404 72 is eating
+1404 82 is thinking
+1404 190 has taken a fork
+1404 190 has taken a fork
+1404 190 is eating
+1404 115 is sleeping
+1404 162 has taken a fork
+1404 162 is eating
+1404 98 has taken a fork
+1404 98 is eating
+1404 87 is sleeping
+1404 88 has taken a fork
+1404 67 is sleeping
+1404 88 has taken a fork
+1404 113 is sleeping
+1404 112 has taken a fork
+1404 88 is eating
+1404 148 is thinking
+1404 112 is eating
+1404 166 has taken a fork
+1404 86 has taken a fork
+1404 106 has taken a fork
+1404 86 has taken a fork
+1404 86 is eating
+1404 166 has taken a fork
+1404 166 is eating
+1404 107 is sleeping
+1403 12 is thinking
+1404 119 is sleeping
+1404 106 is eating
+1404 149 is sleeping
+1404 150 has taken a fork
+1404 69 is sleeping
+1404 70 has taken a fork
+1404 146 is thinking
+1404 143 is sleeping
+1404 68 has taken a fork
+1404 68 has taken a fork
+1404 68 is eating
+1404 70 has taken a fork
+1404 70 is eating
+1404 165 is sleeping
+1404 150 has taken a fork
+1404 151 is sleeping
+1404 150 is eating
+1404 152 has taken a fork
+1404 152 has taken a fork
+1404 152 is eating
+1404 118 has taken a fork
+1404 118 is eating
+1404 7 is sleeping
+1404 120 has taken a fork
+1404 11 is sleeping
+1404 120 has taken a fork
+1404 120 is eating
+1404 147 is sleeping
+1404 84 is thinking
+1404 84 has taken a fork
+1404 84 has taken a fork
+1404 84 is eating
+1404 148 has taken a fork
+1404 148 has taken a fork
+1404 148 is eating
+1404 10 has taken a fork
+1404 10 is eating
+1404 66 has taken a fork
+1404 66 is eating
+1403 31 is sleeping
+1403 102 is thinking
+1404 102 has taken a fork
+1404 102 has taken a fork
+1404 102 is eating
+1404 80 has taken a fork
+1404 80 is eating
+1404 82 has taken a fork
+1404 82 has taken a fork
+1404 82 is eating
+1404 144 is thinking
+1404 144 has taken a fork
+1404 144 has taken a fork
+1404 144 is eating
+1404 145 is sleeping
+1404 146 has taken a fork
+1404 146 has taken a fork
+1404 146 is eating
+1404 114 is thinking
+1404 186 has taken a fork
+1404 156 has taken a fork
+1404 6 is thinking
+1404 6 has taken a fork
+1404 6 has taken a fork
+1404 6 is eating
+1404 108 has taken a fork
+1404 108 has taken a fork
+1404 108 is eating
+1404 164 has taken a fork
+1404 164 is eating
+1404 142 has taken a fork
+1403 71 is sleeping
+1404 142 is eating
+1404 81 is sleeping
+1404 12 has taken a fork
+1404 12 has taken a fork
+1404 12 is eating
+1404 114 has taken a fork
+1403 116 is thinking
+1404 114 has taken a fork
+1404 114 is eating
+1404 116 has taken a fork
+1404 116 has taken a fork
+1404 116 is eating
+1404 186 has taken a fork
+1404 186 is eating
+1404 156 is eating
+1404 168 has taken a fork
+1404 168 is eating
+1404 8 has taken a fork
+1404 8 has taken a fork
+1404 8 is eating
+1600 197 is sleeping
+1600 199 is sleeping
+1600 47 is thinking
+1600 1 is thinking
+1600 1 has taken a fork
+1600 196 is thinking
+1600 198 is thinking
+1600 198 has taken a fork
+1600 198 has taken a fork
+1600 198 is eating
+1600 45 is thinking
+1600 194 is thinking
+1600 46 is sleeping
+1600 47 has taken a fork
+1600 192 has taken a fork
+1600 192 is eating
+1600 194 has taken a fork
+1600 193 is sleeping
+1600 194 has taken a fork
+1600 194 is eating
+1600 195 is sleeping
+1600 196 has taken a fork
+1600 196 has taken a fork
+1600 196 is eating
+1601 60 is sleeping
+1601 23 is thinking
+1601 21 is thinking
+1601 44 is sleeping
+1601 40 is sleeping
+1601 25 is thinking
+1601 37 is thinking
+1601 61 is thinking
+1601 61 has taken a fork
+1601 125 is thinking
+1601 22 is sleeping
+1601 23 has taken a fork
+1601 42 is sleeping
+1601 45 has taken a fork
+1601 19 is thinking
+1601 38 is sleeping
+1601 20 is sleeping
+1601 43 is thinking
+1601 43 has taken a fork
+1601 43 has taken a fork
+1601 43 is eating
+1601 122 is sleeping
+1601 59 is thinking
+1601 24 is sleeping
+1601 23 has taken a fork
+1601 23 is eating
+1601 62 is sleeping
+1601 121 is thinking
+1601 41 is thinking
+1601 41 has taken a fork
+1601 41 has taken a fork
+1601 41 is eating
+1601 63 is thinking
+1601 124 is sleeping
+1601 63 has taken a fork
+1601 39 is thinking
+1601 39 has taken a fork
+1601 39 has taken a fork
+1601 39 is eating
+1601 45 has taken a fork
+1601 45 is eating
+1601 21 has taken a fork
+1601 21 has taken a fork
+1601 21 is eating
+1601 25 has taken a fork
+1601 61 has taken a fork
+1601 61 is eating
+1601 125 has taken a fork
+1601 123 is thinking
+1601 123 has taken a fork
+1601 123 has taken a fork
+1601 123 is eating
+1602 132 is sleeping
+1602 50 is sleeping
+1602 129 is thinking
+1602 77 is thinking
+1602 126 is sleeping
+1602 172 is sleeping
+1602 175 is thinking
+1602 136 is sleeping
+1602 139 is thinking
+1602 178 is sleeping
+1602 127 is thinking
+1602 127 has taken a fork
+1602 35 is thinking
+1602 36 is sleeping
+1602 133 is thinking
+1602 133 has taken a fork
+1602 170 is sleeping
+1602 137 is thinking
+1602 137 has taken a fork
+1602 181 is thinking
+1602 131 is thinking
+1602 137 has taken a fork
+1602 137 is eating
+1602 18 is sleeping
+1602 134 is sleeping
+1602 56 is sleeping
+1602 139 has taken a fork
+1602 135 is thinking
+1602 77 has taken a fork
+1602 130 is sleeping
+1602 131 has taken a fork
+1602 135 has taken a fork
+1602 135 has taken a fork
+1602 135 is eating
+1602 180 is sleeping
+1602 138 is sleeping
+1602 181 has taken a fork
+1602 58 is sleeping
+1602 16 is sleeping
+1602 128 is sleeping
+1602 49 is thinking
+1602 179 is thinking
+1602 179 has taken a fork
+1602 179 has taken a fork
+1602 173 is thinking
+1602 173 has taken a fork
+1602 179 is eating
+1602 51 is thinking
+1602 171 is thinking
+1602 171 has taken a fork
+1602 171 has taken a fork
+1602 171 is eating
+1602 17 is thinking
+1602 173 has taken a fork
+1602 17 has taken a fork
+1602 173 is eating
+1602 17 has taken a fork
+1602 15 is thinking
+1602 177 is thinking
+1602 17 is eating
+1602 75 is thinking
+1602 76 is sleeping
+1602 131 has taken a fork
+1602 49 has taken a fork
+1602 49 has taken a fork
+1602 49 is eating
+1602 131 is eating
+1602 55 is thinking
+1602 177 has taken a fork
+1602 177 has taken a fork
+1602 177 is eating
+1602 37 has taken a fork
+1602 37 has taken a fork
+1602 37 is eating
+1602 133 has taken a fork
+1602 133 is eating
+1602 175 has taken a fork
+1602 169 is thinking
+1602 174 is sleeping
+1602 59 has taken a fork
+1602 59 has taken a fork
+1602 59 is eating
+1602 175 has taken a fork
+1602 129 has taken a fork
+1602 129 has taken a fork
+1602 129 is eating
+1602 127 has taken a fork
+1602 127 is eating
+1602 176 is sleeping
+1602 51 has taken a fork
+1602 48 is sleeping
+1602 125 has taken a fork
+1602 175 is eating
+1602 47 has taken a fork
+1602 47 is eating
+1602 125 is eating
+1602 19 has taken a fork
+1602 19 has taken a fork
+1602 19 is eating
+1603 158 is sleeping
+1603 3 is thinking
+1603 100 is sleeping
+1603 160 is sleeping
+1603 163 is thinking
+1603 14 is sleeping
+1603 32 is sleeping
+1603 93 is thinking
+1603 74 is sleeping
+1603 99 is thinking
+1603 90 is sleeping
+1603 4 is sleeping
+1603 104 is sleeping
+1603 5 is thinking
+1603 89 is thinking
+1603 155 is thinking
+1603 95 is thinking
+1603 29 is thinking
+1603 79 is thinking
+1603 184 is sleeping
+1603 92 is sleeping
+1603 117 is thinking
+1603 93 has taken a fork
+1603 139 has taken a fork
+1603 139 is eating
+1603 26 is sleeping
+1603 105 is thinking
+1603 73 is thinking
+1603 9 is thinking
+1603 183 is thinking
+1603 111 is thinking
+1603 185 is thinking
+1603 185 has taken a fork
+1603 153 is thinking
+1603 65 is thinking
+1603 101 is thinking
+1603 101 has taken a fork
+1603 15 has taken a fork
+1603 15 has taken a fork
+1603 15 is eating
+1603 28 is sleeping
+1603 29 has taken a fork
+1603 159 is thinking
+1603 159 has taken a fork
+1603 52 is sleeping
+1603 13 is thinking
+1603 159 has taken a fork
+1603 159 is eating
+1603 182 is sleeping
+1603 181 has taken a fork
+1603 30 is sleeping
+1603 25 has taken a fork
+1603 181 is eating
+1603 27 is thinking
+1603 93 has taken a fork
+1603 77 has taken a fork
+1603 91 is thinking
+1603 27 has taken a fork
+1603 25 is eating
+1603 93 is eating
+1603 91 has taken a fork
+1603 27 has taken a fork
+1603 91 has taken a fork
+1603 77 is eating
+1603 91 is eating
+1603 27 is eating
+1603 140 is sleeping
+1603 155 has taken a fork
+1603 55 has taken a fork
+1603 183 has taken a fork
+1603 183 has taken a fork
+1603 183 is eating
+1603 75 has taken a fork
+1603 29 has taken a fork
+1603 1 has taken a fork
+1603 97 is thinking
+1603 157 is thinking
+1603 154 is sleeping
+1603 187 is thinking
+1603 29 is eating
+1603 97 has taken a fork
+1603 34 is sleeping
+1603 78 is sleeping
+1603 105 has taken a fork
+1603 51 has taken a fork
+1603 51 is eating
+1603 55 has taken a fork
+1603 75 has taken a fork
+1603 55 is eating
+1603 95 has taken a fork
+1603 161 is thinking
+1603 95 has taken a fork
+1603 35 has taken a fork
+1603 161 has taken a fork
+1603 35 has taken a fork
+1603 35 is eating
+1603 109 is thinking
+1603 96 is sleeping
+1603 79 has taken a fork
+1603 75 is eating
+1603 54 is sleeping
+1603 2 is sleeping
+1603 33 is thinking
+1603 33 has taken a fork
+1603 33 has taken a fork
+1603 33 is eating
+1603 3 has taken a fork
+1603 3 has taken a fork
+1603 3 is eating
+1603 103 is thinking
+1603 1 is eating
+1603 5 has taken a fork
+1603 167 is thinking
+1603 94 is sleeping
+1603 95 is eating
+1603 53 is thinking
+1603 53 has taken a fork
+1603 53 has taken a fork
+1603 191 is thinking
+1603 110 is sleeping
+1603 64 is sleeping
+1603 63 has taken a fork
+1603 111 has taken a fork
+1603 65 has taken a fork
+1603 53 is eating
+1603 63 is eating
+1602 57 is thinking
+1603 57 has taken a fork
+1603 57 has taken a fork
+1603 57 is eating
+1604 71 is thinking
+1604 7 is thinking
+1604 120 is sleeping
+1604 142 is sleeping
+1604 141 is thinking
+1604 146 is sleeping
+1604 141 has taken a fork
+1604 141 has taken a fork
+1604 84 is sleeping
+1604 189 is thinking
+1604 119 is thinking
+1604 69 is thinking
+1604 112 is sleeping
+1604 188 is sleeping
+1604 72 is sleeping
+1604 67 is thinking
+1604 113 is thinking
+1604 116 is sleeping
+1604 147 is thinking
+1604 113 has taken a fork
+1604 144 is sleeping
+1604 83 is thinking
+1604 150 is sleeping
+1604 87 is thinking
+1604 186 is sleeping
+1604 86 is sleeping
+1604 87 has taken a fork
+1604 108 is sleeping
+1604 141 is eating
+1604 106 is sleeping
+1604 80 is sleeping
+1604 82 is sleeping
+1604 83 has taken a fork
+1604 148 is sleeping
+1604 8 is sleeping
+1604 143 is thinking
+1604 143 has taken a fork
+1604 12 is sleeping
+1604 143 has taken a fork
+1604 10 is sleeping
+1604 31 is thinking
+1604 81 is thinking
+1604 189 has taken a fork
+1604 121 has taken a fork
+1604 102 is sleeping
+1604 165 is thinking
+1604 121 has taken a fork
+1604 118 is sleeping
+1604 119 has taken a fork
+1604 67 has taken a fork
+1604 70 is sleeping
+1604 81 has taken a fork
+1604 81 has taken a fork
+1604 81 is eating
+1604 145 is thinking
+1604 145 has taken a fork
+1604 145 has taken a fork
+1604 145 is eating
+1604 119 has taken a fork
+1604 119 is eating
+1604 164 is sleeping
+1604 152 is sleeping
+1604 166 is sleeping
+1604 121 is eating
+1604 6 is sleeping
+1604 85 is thinking
+1604 85 has taken a fork
+1604 147 has taken a fork
+1604 68 is sleeping
+1604 147 has taken a fork
+1604 88 is sleeping
+1604 69 has taken a fork
+1604 98 is sleeping
+1604 85 has taken a fork
+1604 147 is eating
+1604 99 has taken a fork
+1604 69 has taken a fork
+1604 185 has taken a fork
+1604 156 is sleeping
+1604 99 has taken a fork
+1604 185 is eating
+1604 99 is eating
+1604 117 has taken a fork
+1604 85 is eating
+1604 168 is sleeping
+1604 117 has taken a fork
+1604 11 is thinking
+1604 117 is eating
+1604 155 has taken a fork
+1604 69 is eating
+1604 11 has taken a fork
+1604 187 has taken a fork
+1604 109 has taken a fork
+1604 163 has taken a fork
+1604 109 has taken a fork
+1604 189 has taken a fork
+1604 189 is eating
+1604 163 has taken a fork
+1604 109 is eating
+1604 162 is sleeping
+1604 11 has taken a fork
+1604 163 is eating
+1604 187 has taken a fork
+1604 79 has taken a fork
+1604 187 is eating
+1604 101 has taken a fork
+1604 13 has taken a fork
+1604 65 has taken a fork
+1604 65 is eating
+1604 66 is sleeping
+1604 101 is eating
+1604 115 is thinking
+1604 11 is eating
+1604 67 has taken a fork
+1604 143 is eating
+1604 67 is eating
+1604 71 has taken a fork
+1604 155 is eating
+1604 31 has taken a fork
+1604 71 has taken a fork
+1604 5 has taken a fork
+1604 31 has taken a fork
+1604 5 is eating
+1604 71 is eating
+1604 31 is eating
+1604 153 has taken a fork
+1604 153 has taken a fork
+1604 153 is eating
+1604 111 has taken a fork
+1604 111 is eating
+1604 7 has taken a fork
+1604 87 has taken a fork
+1604 89 has taken a fork
+1604 87 is eating
+1604 89 has taken a fork
+1604 89 is eating
+1604 157 has taken a fork
+1604 157 has taken a fork
+1604 157 is eating
+1604 165 has taken a fork
+1604 165 has taken a fork
+1604 165 is eating
+1604 73 has taken a fork
+1604 73 has taken a fork
+1604 73 is eating
+1604 169 has taken a fork
+1604 169 has taken a fork
+1604 161 has taken a fork
+1604 97 has taken a fork
+1604 161 is eating
+1604 105 has taken a fork
+1604 97 is eating
+1604 190 is sleeping
+1604 9 has taken a fork
+1604 13 has taken a fork
+1604 13 is eating
+1604 167 has taken a fork
+1604 167 has taken a fork
+1604 167 is eating
+1604 7 has taken a fork
+1604 7 is eating
+1604 83 has taken a fork
+1604 83 is eating
+1604 169 is eating
+1604 107 is thinking
+1604 105 is eating
+1604 103 has taken a fork
+1604 103 has taken a fork
+1604 103 is eating
+1604 9 has taken a fork
+1604 9 is eating
+1604 79 is eating
+1604 149 is thinking
+1604 149 has taken a fork
+1604 149 has taken a fork
+1604 149 is eating
+1604 107 has taken a fork
+1604 107 has taken a fork
+1604 107 is eating
+1605 151 is thinking
+1605 151 has taken a fork
+1605 151 has taken a fork
+1605 151 is eating
+1605 191 has taken a fork
+1605 114 is sleeping
+1605 115 has taken a fork
+1605 115 has taken a fork
+1605 115 is eating
+1605 113 has taken a fork
+1605 113 is eating
+1800 195 is thinking
+1800 197 is thinking
+1800 196 is sleeping
+1800 192 is sleeping
+1800 191 has taken a fork
+1800 191 is eating
+1800 194 is sleeping
+1800 199 is thinking
+1800 199 has taken a fork
+1800 198 is sleeping
+1800 46 is thinking
+1800 195 has taken a fork
+1800 195 has taken a fork
+1800 195 is eating
+1800 193 is thinking
+1800 193 has taken a fork
+1800 193 has taken a fork
+1800 193 is eating
+1800 197 has taken a fork
+1800 197 has taken a fork
+1800 197 is eating
+1801 22 is thinking
+Philo 61 : PROCESS ENDED
+1801 62 is thinking
+1801 62 has taken a fork
+1801 40 is thinking
+Philo 43 : PROCESS ENDED
+Philo 45 : PROCESS ENDED
+Philo 41 : PROCESS ENDED
+1801 42 is thinking
+1801 42 has taken a fork
+1801 42 has taken a fork
+1801 42 is eating
+1801 44 is thinking
+Philo 21 : PROCESS ENDED
+1801 44 has taken a fork
+1801 44 has taken a fork
+1801 44 is eating
+1801 40 has taken a fork
+1801 40 has taken a fork
+1801 60 is thinking
+1801 38 is thinking
+Philo 39 : PROCESS ENDED
+1801 40 is eating
+1801 46 has taken a fork
+1801 22 has taken a fork
+1801 124 is thinking
+Philo 23 : PROCESS ENDED
+1801 22 has taken a fork
+1801 22 is eating
+Philo 123 : PROCESS ENDED
+1801 124 has taken a fork
+1801 122 is thinking
+1801 20 is thinking
+1801 24 is thinking
+1801 24 has taken a fork
+Philo 137 : PROCESS ENDED
+1802 130 is thinking
+Philo 171 : PROCESS ENDED
+1802 170 is thinking
+Philo 17 : PROCESS ENDED
+Philo 125 : PROCESS ENDED
+Philo 47 : PROCESS ENDED
+1802 176 is thinking
+Philo 175 : PROCESS ENDED
+Philo 49 : PROCESS ENDED
+1802 50 is thinking
+1802 136 is thinking
+1802 58 is thinking
+1802 36 is thinking
+1802 176 has taken a fork
+1802 180 is thinking
+1802 50 has taken a fork
+Philo 129 : PROCESS ENDED
+1802 130 has taken a fork
+Philo 135 : PROCESS ENDED
+1802 60 has taken a fork
+Philo 59 : PROCESS ENDED
+Philo 179 : PROCESS ENDED
+1802 180 has taken a fork
+1802 136 has taken a fork
+1802 136 has taken a fork
+1802 136 is eating
+1802 60 has taken a fork
+1802 60 is eating
+1802 128 is thinking
+1802 172 is thinking
+1802 172 has taken a fork
+1802 172 has taken a fork
+1802 172 is eating
+1802 174 is thinking
+1802 174 has taken a fork
+1802 174 has taken a fork
+1802 174 is eating
+Philo 177 : PROCESS ENDED
+1802 176 has taken a fork
+1802 176 is eating
+Philo 133 : PROCESS ENDED
+1802 178 is thinking
+1802 132 is thinking
+1802 178 has taken a fork
+1802 46 has taken a fork
+Philo 173 : PROCESS ENDED
+1802 16 is thinking
+1802 178 has taken a fork
+1802 178 is eating
+1802 46 is eating
+1802 38 has taken a fork
+1802 38 has taken a fork
+1802 38 is eating
+Philo 37 : PROCESS ENDED
+1802 48 is thinking
+Philo 127 : PROCESS ENDED
+1802 48 has taken a fork
+1802 48 has taken a fork
+1802 48 is eating
+1802 128 has taken a fork
+1802 128 has taken a fork
+1802 128 is eating
+1802 56 is thinking
+1802 124 has taken a fork
+1802 20 has taken a fork
+1802 130 has taken a fork
+1802 130 is eating
+1802 20 has taken a fork
+1802 20 is eating
+1802 132 has taken a fork
+1802 132 has taken a fork
+1802 132 is eating
+1802 126 is thinking
+1802 126 has taken a fork
+1802 126 has taken a fork
+1802 126 is eating
+1802 124 is eating
+Philo 19 : PROCESS ENDED
+Philo 131 : PROCESS ENDED
+1802 138 is thinking
+1802 76 is thinking
+1802 138 has taken a fork
+1802 18 is thinking
+1802 18 has taken a fork
+1802 18 has taken a fork
+1802 18 is eating
+1802 134 is thinking
+1802 134 has taken a fork
+1802 134 has taken a fork
+1802 134 is eating
+1803 78 is thinking
+Philo 51 : PROCESS ENDED
+1803 50 has taken a fork
+1803 50 is eating
+1803 140 is thinking
+Philo 63 : PROCESS ENDED
+1803 184 is thinking
+Philo 15 : PROCESS ENDED
+1803 14 is thinking
+1803 4 is thinking
+1803 30 is thinking
+1803 2 is thinking
+Philo 159 : PROCESS ENDED
+1803 92 is thinking
+Philo 91 : PROCESS ENDED
+Philo 1 : PROCESS ENDED
+1803 34 is thinking
+1803 54 is thinking
+1803 16 has taken a fork
+1803 16 has taken a fork
+1803 199 has taken a fork
+1803 16 is eating
+1803 199 is eating
+1803 110 is thinking
+Philo 181 : PROCESS ENDED
+1803 180 has taken a fork
+1803 62 has taken a fork
+1803 62 is eating
+1803 104 is thinking
+Philo 27 : PROCESS ENDED
+1803 36 has taken a fork
+1803 36 has taken a fork
+Philo 35 : PROCESS ENDED
+1803 36 is eating
+1803 154 is thinking
+1803 28 is thinking
+1803 96 is thinking
+1803 158 is thinking
+Philo 183 : PROCESS ENDED
+1803 94 is thinking
+1803 94 has taken a fork
+1803 94 has taken a fork
+1803 94 is eating
+1803 182 is thinking
+1803 4 has taken a fork
+Philo 77 : PROCESS ENDED
+1803 184 has taken a fork
+1803 78 has taken a fork
+Philo 95 : PROCESS ENDED
+1803 140 has taken a fork
+Philo 53 : PROCESS ENDED
+1803 54 has taken a fork
+1803 76 has taken a fork
+1803 76 has taken a fork
+1803 76 is eating
+1803 90 is thinking
+1803 180 is eating
+1803 54 has taken a fork
+1803 54 is eating
+1803 2 has taken a fork
+1803 2 has taken a fork
+Philo 55 : PROCESS ENDED
+1803 2 is eating
+1803 34 has taken a fork
+1803 34 has taken a fork
+1803 96 has taken a fork
+1803 34 is eating
+Philo 75 : PROCESS ENDED
+1803 182 has taken a fork
+1803 182 has taken a fork
+1803 182 is eating
+1803 26 is thinking
+1803 52 is thinking
+1803 52 has taken a fork
+1803 74 is thinking
+1803 52 has taken a fork
+1803 138 has taken a fork
+1803 52 is eating
+1803 160 is thinking
+1803 138 is eating
+1803 58 has taken a fork
+1803 160 has taken a fork
+1803 58 has taken a fork
+1803 58 is eating
+Philo 25 : PROCESS ENDED
+1803 30 has taken a fork
+1803 28 has taken a fork
+1803 28 has taken a fork
+1803 28 is eating
+1803 26 has taken a fork
+1803 26 has taken a fork
+1803 26 is eating
+1803 32 is thinking
+1803 92 has taken a fork
+1803 92 has taken a fork
+1803 92 is eating
+Philo 3 : PROCESS ENDED
+Philo 33 : PROCESS ENDED
+Philo 93 : PROCESS ENDED
+Philo 57 : PROCESS ENDED
+1803 56 has taken a fork
+1803 56 has taken a fork
+1803 56 is eating
+Philo 139 : PROCESS ENDED
+1803 64 is thinking
+1803 24 has taken a fork
+1803 64 has taken a fork
+Philo 29 : PROCESS ENDED
+1803 100 is thinking
+1803 24 is eating
+Philo 85 : PROCESS ENDED
+1804 68 is thinking
+Philo 7 : PROCESS ENDED
+Philo 9 : PROCESS ENDED
+1804 98 is thinking
+1804 82 is thinking
+Philo 97 : PROCESS ENDED
+1804 98 has taken a fork
+Philo 145 : PROCESS ENDED
+1804 142 is thinking
+Philo 105 : PROCESS ENDED
+1804 80 is thinking
+Philo 71 : PROCESS ENDED
+Philo 65 : PROCESS ENDED
+1804 102 is thinking
+Philo 11 : PROCESS ENDED
+1804 86 is thinking
+Philo 81 : PROCESS ENDED
+1804 162 is thinking
+Philo 153 : PROCESS ENDED
+1804 82 has taken a fork
+Philo 185 : PROCESS ENDED
+1804 184 has taken a fork
+1804 184 is eating
+1804 150 is thinking
+1804 82 has taken a fork
+1804 82 is eating
+1804 96 has taken a fork
+1804 120 is thinking
+1804 108 is thinking
+Philo 121 : PROCESS ENDED
+Philo 73 : PROCESS ENDED
+Philo 169 : PROCESS ENDED
+Philo 187 : PROCESS ENDED
+1804 88 is thinking
+1804 164 is thinking
+1804 146 is thinking
+1804 96 is eating
+1804 146 has taken a fork
+1804 8 is thinking
+1804 186 is thinking
+Philo 157 : PROCESS ENDED
+1804 158 has taken a fork
+1804 72 is thinking
+Philo 165 : PROCESS ENDED
+1804 186 has taken a fork
+1804 14 has taken a fork
+Philo 31 : PROCESS ENDED
+1804 6 is thinking
+1804 32 has taken a fork
+1804 80 has taken a fork
+1804 32 has taken a fork
+Philo 101 : PROCESS ENDED
+1804 102 has taken a fork
+1804 144 is thinking
+1804 14 has taken a fork
+1804 102 has taken a fork
+Philo 103 : PROCESS ENDED
+1804 104 has taken a fork
+1804 150 has taken a fork
+1804 102 is eating
+1804 14 is eating
+Philo 109 : PROCESS ENDED
+1804 148 is thinking
+1804 158 has taken a fork
+1804 32 is eating
+1804 80 has taken a fork
+1804 104 has taken a fork
+1804 80 is eating
+1804 154 has taken a fork
+Philo 107 : PROCESS ENDED
+Philo 141 : PROCESS ENDED
+1804 142 has taken a fork
+1804 162 has taken a fork
+1804 158 is eating
+1804 86 has taken a fork
+1804 170 has taken a fork
+1804 166 is thinking
+1804 170 has taken a fork
+1804 10 is thinking
+1804 30 has taken a fork
+Philo 13 : PROCESS ENDED
+1804 30 is eating
+1804 104 is eating
+Philo 117 : PROCESS ENDED
+1804 108 has taken a fork
+1804 152 is thinking
+Philo 79 : PROCESS ENDED
+Philo 149 : PROCESS ENDED
+1804 108 has taken a fork
+1804 66 is thinking
+1804 108 is eating
+1804 70 is thinking
+1804 140 has taken a fork
+1804 140 is eating
+1804 148 has taken a fork
+Philo 111 : PROCESS ENDED
+Philo 83 : PROCESS ENDED
+1804 8 has taken a fork
+1804 156 is thinking
+1804 8 has taken a fork
+1804 78 has taken a fork
+1804 170 is eating
+1804 8 is eating
+1804 78 is eating
+1804 72 has taken a fork
+1804 166 has taken a fork
+Philo 147 : PROCESS ENDED
+Philo 167 : PROCESS ENDED
+1804 10 has taken a fork
+1804 148 has taken a fork
+1804 10 has taken a fork
+1804 148 is eating
+1804 186 has taken a fork
+1804 186 is eating
+1804 146 has taken a fork
+1804 10 is eating
+1804 72 has taken a fork
+1804 146 is eating
+Philo 67 : PROCESS ENDED
+1804 68 has taken a fork
+1804 118 is thinking
+Philo 161 : PROCESS ENDED
+1804 66 has taken a fork
+1804 66 has taken a fork
+Philo 189 : PROCESS ENDED
+1804 168 is thinking
+1804 116 is thinking
+1804 118 has taken a fork
+1804 6 has taken a fork
+1804 6 has taken a fork
+1804 72 is eating
+1804 142 has taken a fork
+Philo 87 : PROCESS ENDED
+1804 66 is eating
+1804 162 has taken a fork
+1804 162 is eating
+1804 88 has taken a fork
+Philo 163 : PROCESS ENDED
+1804 12 is thinking
+1804 168 has taken a fork
+1804 190 is thinking
+1804 4 has taken a fork
+1804 168 has taken a fork
+1804 4 is eating
+1804 168 is eating
+1804 144 has taken a fork
+1804 190 has taken a fork
+1804 164 has taken a fork
+1804 144 has taken a fork
+1804 164 has taken a fork
+1804 90 has taken a fork
+1804 12 has taken a fork
+1804 86 has taken a fork
+Philo 89 : PROCESS ENDED
+1804 12 has taken a fork
+1804 86 is eating
+1804 142 is eating
+1804 90 has taken a fork
+1804 6 is eating
+1804 90 is eating
+1804 144 is eating
+1804 164 is eating
+1804 88 has taken a fork
+1804 88 is eating
+1804 74 has taken a fork
+1804 106 is thinking
+1804 84 is thinking
+1804 84 has taken a fork
+1804 84 has taken a fork
+1804 84 is eating
+1804 166 has taken a fork
+Philo 5 : PROCESS ENDED
+Philo 99 : PROCESS ENDED
+1804 166 is eating
+Philo 143 : PROCESS ENDED
+1804 12 is eating
+1804 74 has taken a fork
+1804 74 is eating
+1804 98 has taken a fork
+1804 98 is eating
+1804 112 is thinking
+1804 112 has taken a fork
+1804 188 is thinking
+1804 188 has taken a fork
+1804 64 has taken a fork
+1804 154 has taken a fork
+1804 64 is eating
+Philo 155 : PROCESS ENDED
+Philo 69 : PROCESS ENDED
+1804 120 has taken a fork
+1804 70 has taken a fork
+1804 70 has taken a fork
+1804 70 is eating
+1804 68 has taken a fork
+1804 106 has taken a fork
+1804 122 has taken a fork
+1804 106 has taken a fork
+1804 122 has taken a fork
+1804 106 is eating
+1804 122 is eating
+1804 120 has taken a fork
+1804 120 is eating
+1804 156 has taken a fork
+1804 100 has taken a fork
+1804 68 is eating
+1804 100 has taken a fork
+1804 100 is eating
+1804 160 has taken a fork
+1804 118 has taken a fork
+1804 118 is eating
+1804 156 has taken a fork
+1804 188 has taken a fork
+1804 156 is eating
+1804 154 is eating
+1804 188 is eating
+1804 110 has taken a fork
+1804 110 has taken a fork
+1804 110 is eating
+Philo 119 : PROCESS ENDED
+1804 160 is eating
+Philo 115 : PROCESS ENDED
+1805 150 has taken a fork
+1805 150 is eating
+1805 116 has taken a fork
+Philo 113 : PROCESS ENDED
+1805 112 has taken a fork
+1805 112 is eating
+Philo 151 : PROCESS ENDED
+1805 152 has taken a fork
+1805 152 has taken a fork
+1805 152 is eating
+1805 114 is thinking
+1805 114 has taken a fork
+1805 114 has taken a fork
+1805 114 is eating
+1805 116 has taken a fork
+1805 116 is eating
+Philo 197 : PROCESS ENDED
+Philo 191 : PROCESS ENDED
+2000 190 has taken a fork
+2000 190 is eating
+2000 192 is thinking
+Philo 195 : PROCESS ENDED
+2000 192 has taken a fork
+2000 194 is thinking
+2000 198 is thinking
+2000 198 has taken a fork
+2000 196 is thinking
+2000 196 has taken a fork
+2000 196 has taken a fork
+2000 196 is eating
+2000 192 has taken a fork
+2000 192 is eating
+Philo 193 : PROCESS ENDED
+2000 194 has taken a fork
+2000 194 has taken a fork
+2000 194 is eating
+Philo 44 : PROCESS ENDED
+Philo 42 : PROCESS ENDED
+Philo 40 : PROCESS ENDED
+Philo 22 : PROCESS ENDED
+Philo 18 : PROCESS ENDED
+Philo 126 : PROCESS ENDED
+Philo 128 : PROCESS ENDED
+Philo 130 : PROCESS ENDED
+Philo 174 : PROCESS ENDED
+Philo 136 : PROCESS ENDED
+Philo 124 : PROCESS ENDED
+Philo 132 : PROCESS ENDED
+Philo 48 : PROCESS ENDED
+Philo 134 : PROCESS ENDED
+Philo 38 : PROCESS ENDED
+Philo 172 : PROCESS ENDED
+Philo 46 : PROCESS ENDED
+Philo 20 : PROCESS ENDED
+Philo 178 : PROCESS ENDED
+Philo 60 : PROCESS ENDED
+Philo 176 : PROCESS ENDED
+Philo 26 : PROCESS ENDED
+Philo 50 : PROCESS ENDED
+Philo 94 : PROCESS ENDED
+Philo 58 : PROCESS ENDED
+Philo 16 : PROCESS ENDED
+Philo 28 : PROCESS ENDED
+Philo 24 : PROCESS ENDED
+Philo 34 : PROCESS ENDED
+Philo 76 : PROCESS ENDED
+Philo 92 : PROCESS ENDED
+Philo 138 : PROCESS ENDED
+Philo 62 : PROCESS ENDED
+Philo 52 : PROCESS ENDED
+Philo 199 : PROCESS ENDED
+Philo 56 : PROCESS ENDED
+Philo 36 : PROCESS ENDED
+Philo 54 : PROCESS ENDED
+Philo 182 : PROCESS ENDED
+Philo 2 : PROCESS ENDED
+Philo 180 : PROCESS ENDED
+2003 198 has taken a fork
+2003 198 is eating
+Philo 146 : PROCESS ENDED
+Philo 160 : PROCESS ENDED
+Philo 102 : PROCESS ENDED
+Philo 164 : PROCESS ENDED
+Philo 84 : PROCESS ENDED
+Philo 70 : PROCESS ENDED
+Philo 120 : PROCESS ENDED
+Philo 162 : PROCESS ENDED
+Philo 100 : PROCESS ENDED
+Philo 30 : PROCESS ENDED
+Philo 96 : PROCESS ENDED
+Philo 98 : PROCESS ENDED
+Philo 72 : PROCESS ENDED
+Philo 78 : PROCESS ENDED
+Philo 64 : PROCESS ENDED
+Philo 122 : PROCESS ENDED
+Philo 188 : PROCESS ENDED
+Philo 6 : PROCESS ENDED
+Philo 154 : PROCESS ENDED
+Philo 142 : PROCESS ENDED
+Philo 68 : PROCESS ENDED
+Philo 170 : PROCESS ENDED
+Philo 186 : PROCESS ENDED
+Philo 156 : PROCESS ENDED
+Philo 144 : PROCESS ENDED
+Philo 158 : PROCESS ENDED
+Philo 166 : PROCESS ENDED
+Philo 110 : PROCESS ENDED
+Philo 4 : PROCESS ENDED
+Philo 108 : PROCESS ENDED
+Philo 90 : PROCESS ENDED
+Philo 168 : PROCESS ENDED
+Philo 8 : PROCESS ENDED
+Philo 106 : PROCESS ENDED
+Philo 74 : PROCESS ENDED
+Philo 10 : PROCESS ENDED
+Philo 88 : PROCESS ENDED
+Philo 80 : PROCESS ENDED
+Philo 82 : PROCESS ENDED
+Philo 184 : PROCESS ENDED
+Philo 118 : PROCESS ENDED
+Philo 14 : PROCESS ENDED
+Philo 12 : PROCESS ENDED
+Philo 32 : PROCESS ENDED
+Philo 140 : PROCESS ENDED
+Philo 148 : PROCESS ENDED
+Philo 104 : PROCESS ENDED
+Philo 66 : PROCESS ENDED
+Philo 86 : PROCESS ENDED
+Philo 152 : PROCESS ENDED
+Philo 150 : PROCESS ENDED
+Philo 116 : PROCESS ENDED
+Philo 112 : PROCESS ENDED
+Philo 114 : PROCESS ENDED
+Philo 194 : PROCESS ENDED
+Philo 190 : PROCESS ENDED
+Philo 192 : PROCESS ENDED
+Philo 196 : PROCESS ENDED
+Philo 198 : PROCESS ENDED
+           id = [1]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4058a0]
+    fork_left = [0x7fe09f4058e0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [2]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4058e0]
+    fork_left = [0x7fe09f405920]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [3]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405920]
+    fork_left = [0x7fe09f405960]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [4]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405960]
+    fork_left = [0x7fe09f4059a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [5]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4059a0]
+    fork_left = [0x7fe09f4059e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [6]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4059e0]
+    fork_left = [0x7fe09f405a20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [7]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405a20]
+    fork_left = [0x7fe09f405a60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [8]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405a60]
+    fork_left = [0x7fe09f405aa0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [9]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405aa0]
+    fork_left = [0x7fe09f405ae0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [10]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405ae0]
+    fork_left = [0x7fe09f405b20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [11]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405b20]
+    fork_left = [0x7fe09f405b60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [12]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405b60]
+    fork_left = [0x7fe09f405ba0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [13]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405ba0]
+    fork_left = [0x7fe09f405be0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [14]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405be0]
+    fork_left = [0x7fe09f405c20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [15]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405c20]
+    fork_left = [0x7fe09f405c60]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [16]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405c60]
+    fork_left = [0x7fe09f405ca0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [17]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405ca0]
+    fork_left = [0x7fe09f405ce0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [18]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405ce0]
+    fork_left = [0x7fe09f405d20]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [19]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405d20]
+    fork_left = [0x7fe09f405d60]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [20]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405d60]
+    fork_left = [0x7fe09f405da0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [21]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405da0]
+    fork_left = [0x7fe09f405de0]
+      is_dead = [0]
+time last eat = [1601]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [22]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405de0]
+    fork_left = [0x7fe09f405e20]
+      is_dead = [0]
+time last eat = [1801]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [23]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405e20]
+    fork_left = [0x7fe09f405e60]
+      is_dead = [0]
+time last eat = [1601]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [24]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405e60]
+    fork_left = [0x7fe09f405ea0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [25]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405ea0]
+    fork_left = [0x7fe09f405ee0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [26]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405ee0]
+    fork_left = [0x7fe09f405f20]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [27]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405f20]
+    fork_left = [0x7fe09f405f60]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [28]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405f60]
+    fork_left = [0x7fe09f405fa0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [29]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405fa0]
+    fork_left = [0x7fe09f405fe0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [30]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f405fe0]
+    fork_left = [0x7fe09f406020]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [31]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406020]
+    fork_left = [0x7fe09f406060]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [32]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406060]
+    fork_left = [0x7fe09f4060a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [33]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4060a0]
+    fork_left = [0x7fe09f4060e0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [34]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4060e0]
+    fork_left = [0x7fe09f406120]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [35]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406120]
+    fork_left = [0x7fe09f406160]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [36]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406160]
+    fork_left = [0x7fe09f4061a0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [37]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4061a0]
+    fork_left = [0x7fe09f4061e0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [38]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4061e0]
+    fork_left = [0x7fe09f406220]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [39]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406220]
+    fork_left = [0x7fe09f406260]
+      is_dead = [0]
+time last eat = [1601]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [40]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406260]
+    fork_left = [0x7fe09f4062a0]
+      is_dead = [0]
+time last eat = [1801]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [41]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4062a0]
+    fork_left = [0x7fe09f4062e0]
+      is_dead = [0]
+time last eat = [1601]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [42]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4062e0]
+    fork_left = [0x7fe09f406320]
+      is_dead = [0]
+time last eat = [1801]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [43]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406320]
+    fork_left = [0x7fe09f406360]
+      is_dead = [0]
+time last eat = [1601]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [44]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406360]
+    fork_left = [0x7fe09f4063a0]
+      is_dead = [0]
+time last eat = [1801]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [45]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4063a0]
+    fork_left = [0x7fe09f4063e0]
+      is_dead = [0]
+time last eat = [1601]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [46]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4063e0]
+    fork_left = [0x7fe09f406420]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [47]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406420]
+    fork_left = [0x7fe09f406460]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [48]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406460]
+    fork_left = [0x7fe09f4064a0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [49]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4064a0]
+    fork_left = [0x7fe09f4064e0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [50]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4064e0]
+    fork_left = [0x7fe09f406520]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [51]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406520]
+    fork_left = [0x7fe09f406560]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [52]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406560]
+    fork_left = [0x7fe09f4065a0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [53]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4065a0]
+    fork_left = [0x7fe09f4065e0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [54]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4065e0]
+    fork_left = [0x7fe09f406620]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [55]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406620]
+    fork_left = [0x7fe09f406660]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [56]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406660]
+    fork_left = [0x7fe09f4066a0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [57]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4066a0]
+    fork_left = [0x7fe09f4066e0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [58]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4066e0]
+    fork_left = [0x7fe09f406720]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [59]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406720]
+    fork_left = [0x7fe09f406760]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [60]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406760]
+    fork_left = [0x7fe09f4067a0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [61]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4067a0]
+    fork_left = [0x7fe09f4067e0]
+      is_dead = [0]
+time last eat = [1601]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [62]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4067e0]
+    fork_left = [0x7fe09f406820]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [63]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406820]
+    fork_left = [0x7fe09f406860]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [64]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406860]
+    fork_left = [0x7fe09f4068a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [65]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4068a0]
+    fork_left = [0x7fe09f4068e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [66]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4068e0]
+    fork_left = [0x7fe09f406920]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [67]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406920]
+    fork_left = [0x7fe09f406960]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [68]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406960]
+    fork_left = [0x7fe09f4069a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [69]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4069a0]
+    fork_left = [0x7fe09f4069e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [70]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4069e0]
+    fork_left = [0x7fe09f406a20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [71]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406a20]
+    fork_left = [0x7fe09f406a60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [72]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406a60]
+    fork_left = [0x7fe09f406aa0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [73]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406aa0]
+    fork_left = [0x7fe09f406ae0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [74]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406ae0]
+    fork_left = [0x7fe09f406b20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [75]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406b20]
+    fork_left = [0x7fe09f406b60]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [76]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406b60]
+    fork_left = [0x7fe09f406ba0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [77]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406ba0]
+    fork_left = [0x7fe09f406be0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [78]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406be0]
+    fork_left = [0x7fe09f406c20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [79]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406c20]
+    fork_left = [0x7fe09f406c60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [80]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406c60]
+    fork_left = [0x7fe09f406ca0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [81]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406ca0]
+    fork_left = [0x7fe09f406ce0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [82]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406ce0]
+    fork_left = [0x7fe09f406d20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [83]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406d20]
+    fork_left = [0x7fe09f406d60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [84]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406d60]
+    fork_left = [0x7fe09f406da0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [85]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406da0]
+    fork_left = [0x7fe09f406de0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [86]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406de0]
+    fork_left = [0x7fe09f406e20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [87]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406e20]
+    fork_left = [0x7fe09f406e60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [88]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406e60]
+    fork_left = [0x7fe09f406ea0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [89]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406ea0]
+    fork_left = [0x7fe09f406ee0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [90]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406ee0]
+    fork_left = [0x7fe09f406f20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [91]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406f20]
+    fork_left = [0x7fe09f406f60]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [92]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406f60]
+    fork_left = [0x7fe09f406fa0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [93]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406fa0]
+    fork_left = [0x7fe09f406fe0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [94]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f406fe0]
+    fork_left = [0x7fe09f407020]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [95]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407020]
+    fork_left = [0x7fe09f407060]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [96]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407060]
+    fork_left = [0x7fe09f4070a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [97]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4070a0]
+    fork_left = [0x7fe09f4070e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [98]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4070e0]
+    fork_left = [0x7fe09f407120]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [99]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407120]
+    fork_left = [0x7fe09f407160]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [100]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407160]
+    fork_left = [0x7fe09f4071a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [101]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4071a0]
+    fork_left = [0x7fe09f4071e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [102]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4071e0]
+    fork_left = [0x7fe09f407220]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [103]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407220]
+    fork_left = [0x7fe09f407260]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [104]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407260]
+    fork_left = [0x7fe09f4072a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [105]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4072a0]
+    fork_left = [0x7fe09f4072e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [106]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4072e0]
+    fork_left = [0x7fe09f407320]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [107]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407320]
+    fork_left = [0x7fe09f407360]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [108]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407360]
+    fork_left = [0x7fe09f4073a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [109]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4073a0]
+    fork_left = [0x7fe09f4073e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [110]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4073e0]
+    fork_left = [0x7fe09f407420]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [111]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407420]
+    fork_left = [0x7fe09f407460]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [112]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407460]
+    fork_left = [0x7fe09f4074a0]
+      is_dead = [0]
+time last eat = [1805]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [113]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4074a0]
+    fork_left = [0x7fe09f4074e0]
+      is_dead = [0]
+time last eat = [1605]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [114]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4074e0]
+    fork_left = [0x7fe09f407520]
+      is_dead = [0]
+time last eat = [1805]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [115]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407520]
+    fork_left = [0x7fe09f407560]
+      is_dead = [0]
+time last eat = [1605]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [116]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407560]
+    fork_left = [0x7fe09f4075a0]
+      is_dead = [0]
+time last eat = [1805]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [117]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4075a0]
+    fork_left = [0x7fe09f4075e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [118]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4075e0]
+    fork_left = [0x7fe09f407620]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [119]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407620]
+    fork_left = [0x7fe09f407660]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [120]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407660]
+    fork_left = [0x7fe09f4076a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [121]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4076a0]
+    fork_left = [0x7fe09f4076e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [122]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4076e0]
+    fork_left = [0x7fe09f407720]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [123]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407720]
+    fork_left = [0x7fe09f407760]
+      is_dead = [0]
+time last eat = [1601]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [124]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407760]
+    fork_left = [0x7fe09f4077a0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [125]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4077a0]
+    fork_left = [0x7fe09f4077e0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [126]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4077e0]
+    fork_left = [0x7fe09f407820]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [127]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407820]
+    fork_left = [0x7fe09f407860]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [128]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407860]
+    fork_left = [0x7fe09f4078a0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [129]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4078a0]
+    fork_left = [0x7fe09f4078e0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [130]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4078e0]
+    fork_left = [0x7fe09f407920]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [131]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407920]
+    fork_left = [0x7fe09f407960]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [132]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407960]
+    fork_left = [0x7fe09f4079a0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [133]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4079a0]
+    fork_left = [0x7fe09f4079e0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [134]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4079e0]
+    fork_left = [0x7fe09f407a20]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [135]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407a20]
+    fork_left = [0x7fe09f407a60]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [136]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407a60]
+    fork_left = [0x7fe09f407aa0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [137]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407aa0]
+    fork_left = [0x7fe09f407ae0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [138]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407ae0]
+    fork_left = [0x7fe09f407b20]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [139]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407b20]
+    fork_left = [0x7fe09f407b60]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [140]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407b60]
+    fork_left = [0x7fe09f407ba0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [141]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407ba0]
+    fork_left = [0x7fe09f407be0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [142]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407be0]
+    fork_left = [0x7fe09f407c20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [143]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407c20]
+    fork_left = [0x7fe09f407c60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [144]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407c60]
+    fork_left = [0x7fe09f407ca0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [145]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407ca0]
+    fork_left = [0x7fe09f407ce0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [146]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407ce0]
+    fork_left = [0x7fe09f407d20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [147]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407d20]
+    fork_left = [0x7fe09f407d60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [148]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407d60]
+    fork_left = [0x7fe09f407da0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [149]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407da0]
+    fork_left = [0x7fe09f407de0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [150]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407de0]
+    fork_left = [0x7fe09f407e20]
+      is_dead = [0]
+time last eat = [1805]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [151]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407e20]
+    fork_left = [0x7fe09f407e60]
+      is_dead = [0]
+time last eat = [1605]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [152]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407e60]
+    fork_left = [0x7fe09f407ea0]
+      is_dead = [0]
+time last eat = [1805]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [153]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407ea0]
+    fork_left = [0x7fe09f407ee0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [154]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407ee0]
+    fork_left = [0x7fe09f407f20]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [155]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407f20]
+    fork_left = [0x7fe09f407f60]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [156]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407f60]
+    fork_left = [0x7fe09f407fa0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [157]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407fa0]
+    fork_left = [0x7fe09f407fe0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [158]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f407fe0]
+    fork_left = [0x7fe09f408020]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [159]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408020]
+    fork_left = [0x7fe09f408060]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [160]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408060]
+    fork_left = [0x7fe09f4080a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [161]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4080a0]
+    fork_left = [0x7fe09f4080e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [162]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4080e0]
+    fork_left = [0x7fe09f408120]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [163]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408120]
+    fork_left = [0x7fe09f408160]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [164]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408160]
+    fork_left = [0x7fe09f4081a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [165]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4081a0]
+    fork_left = [0x7fe09f4081e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [166]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4081e0]
+    fork_left = [0x7fe09f408220]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [167]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408220]
+    fork_left = [0x7fe09f408260]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [168]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408260]
+    fork_left = [0x7fe09f4082a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [169]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4082a0]
+    fork_left = [0x7fe09f4082e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [170]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4082e0]
+    fork_left = [0x7fe09f408320]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [171]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408320]
+    fork_left = [0x7fe09f408360]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [172]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408360]
+    fork_left = [0x7fe09f4083a0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [173]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4083a0]
+    fork_left = [0x7fe09f4083e0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [174]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4083e0]
+    fork_left = [0x7fe09f408420]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [175]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408420]
+    fork_left = [0x7fe09f408460]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [176]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408460]
+    fork_left = [0x7fe09f4084a0]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [177]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4084a0]
+    fork_left = [0x7fe09f4084e0]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [178]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4084e0]
+    fork_left = [0x7fe09f408520]
+      is_dead = [0]
+time last eat = [1802]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [179]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408520]
+    fork_left = [0x7fe09f408560]
+      is_dead = [0]
+time last eat = [1602]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [180]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408560]
+    fork_left = [0x7fe09f4085a0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [181]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4085a0]
+    fork_left = [0x7fe09f4085e0]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [182]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4085e0]
+    fork_left = [0x7fe09f408620]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [183]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408620]
+    fork_left = [0x7fe09f408660]
+      is_dead = [0]
+time last eat = [1603]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [184]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408660]
+    fork_left = [0x7fe09f4086a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [185]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4086a0]
+    fork_left = [0x7fe09f4086e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [186]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4086e0]
+    fork_left = [0x7fe09f408720]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [187]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408720]
+    fork_left = [0x7fe09f408760]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [188]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408760]
+    fork_left = [0x7fe09f4087a0]
+      is_dead = [0]
+time last eat = [1804]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [189]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4087a0]
+    fork_left = [0x7fe09f4087e0]
+      is_dead = [0]
+time last eat = [1604]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [190]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4087e0]
+    fork_left = [0x7fe09f408820]
+      is_dead = [0]
+time last eat = [2000]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [191]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408820]
+    fork_left = [0x7fe09f408860]
+      is_dead = [0]
+time last eat = [1800]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [192]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408860]
+    fork_left = [0x7fe09f4088a0]
+      is_dead = [0]
+time last eat = [2000]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [193]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4088a0]
+    fork_left = [0x7fe09f4088e0]
+      is_dead = [0]
+time last eat = [1800]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [194]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4088e0]
+    fork_left = [0x7fe09f408920]
+      is_dead = [0]
+time last eat = [2000]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [195]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408920]
+    fork_left = [0x7fe09f408960]
+      is_dead = [0]
+time last eat = [1800]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [196]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408960]
+    fork_left = [0x7fe09f4089a0]
+      is_dead = [0]
+time last eat = [2000]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [197]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4089a0]
+    fork_left = [0x7fe09f4089e0]
+      is_dead = [0]
+time last eat = [1800]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [198]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f4089e0]
+    fork_left = [0x7fe09f408a20]
+      is_dead = [0]
+time last eat = [2003]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------
+           id = [199]
+   start_time = [1685095867532]
+   fork_right = [0x7fe09f408a20]
+    fork_left = [0x7fe09f4058a0]
+      is_dead = [0]
+time last eat = [1803]
+
+number_of_philo = 199
+            die : 800 | eat : 200 | sleep : 200
+     nb_of_meal = 5
+            end = 1
+        mut_end = 0x7fe09f405860
+------------------------------------------------

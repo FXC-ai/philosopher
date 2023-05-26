@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 18:33:23 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/25 16:46:10 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 11:50:57 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ typedef struct s_rules
 	time_t			time_to_sleep;
 	int				nb_of_meal;
 	int				end;
-	int				tot_meals;
+	//int				tot_meals;
 
-	pthread_mutex_t	*mut_tot_meals;
+	//pthread_mutex_t	*mut_tot_meals;
 	pthread_mutex_t	*mut_end;
 }	t_rules;
 

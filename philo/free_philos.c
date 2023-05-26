@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 17:30:36 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/21 17:36:50 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 12:02:22 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ void	free_tab_philo(t_philo **tab_philo)
 	i = 0;
 	while (tab_philo[i] != NULL)
 	{
+		pthread_mutex_destroy(tab_philo[i]->mut_dead);
+		free (tab_philo[i]->mut_dead);
 		free(tab_philo[i]);
 		i++;
 	}

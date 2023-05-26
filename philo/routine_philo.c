@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 13:17:31 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/25 18:39:32 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 11:44:36 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,21 +39,24 @@ void	set_is_dead(t_philo *philo)
 	pthread_mutex_unlock(philo->mut_dead);
 }
 
-void	add_meal_to_total(t_philo *philo)
-{
-	//printf("je rentre philo = %d\n", philo->id);
-	pthread_mutex_lock(philo->rules->mut_tot_meals);
-	philo->rules->tot_meals += 1;
-	pthread_mutex_unlock(philo->rules->mut_tot_meals);
-	//printf("je sors philo = %d\n", philo->id);
-}
+// void	add_meal_to_total(t_philo *philo)
+// {
+// 	//printf("je rentre philo = %d\n", philo->id);
+// 	pthread_mutex_lock(philo->rules->mut_tot_meals);
+// 	philo->rules->tot_meals += 1;
+// 	pthread_mutex_unlock(philo->rules->mut_tot_meals);
+// 	//printf("je sors philo = %d\n", philo->id);
+// }
 
 int	check_death(t_philo *philo)
 {
+	//int c1;
+	//int c2;
+
 	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat)
 		> philo->rules->time_to_die)
 	{
-		if (read_dead(philo) == 0 && read_end(philo) == 0)
+		if (read_dead(philo) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0)
 		{
 			set_is_dead(philo);
 			printf("\033[1;31m%ld %d died\n\033[0m",
@@ -86,16 +89,17 @@ void	take_right_chopstick(t_philo *philo)
 {
 	if (read_end(philo) == 0 && philo->chopstick_taken == 0)
 	{
-		printf("%d Je bloque la R\n", philo->id + 1);
+		//printf("chopstick_taken = %d\n", philo->chopstick_taken);
 		pthread_mutex_lock(philo->chopstick_right);
 		philo->chopstick_taken += 1;
+		//printf("chopstick_taken = %d\n", philo->chopstick_taken);
 		if (read_end(philo) == 0)
 		{
 			printf("%ld %d has taken a fork\n",
 				calculate_current_time_ms(philo->start_time),
 				philo->id + 1);
 		}
-		printf("%d Je debloque la R\n", philo->id + 1);
+		//printf("%d Je debloque la R\n", philo->id + 1);
 
 	}
 }
@@ -104,7 +108,7 @@ void	take_left_chopstick(t_philo *philo)
 {
 	if (read_end(philo) == 0 && philo->rules->number_of_philo > 1) //ATTENTION BIEN UTILE D UTILISER LE 2EME CHECK ????
 	{
-		printf("Je bloque la L\n");
+		//printf("Je bloque la L\n");
 		pthread_mutex_lock(philo->chopstick_left);
 		philo->chopstick_taken += 1;
 		if (read_end(philo) == 0)
@@ -112,7 +116,7 @@ void	take_left_chopstick(t_philo *philo)
 			printf("%ld %d has taken a fork\n",
 				calculate_current_time_ms(philo->start_time), philo->id + 1);
 		}
-		printf("Je debloque la L\n");
+		//printf("Je debloque la L\n");
 
 	}
 }
@@ -135,7 +139,7 @@ void	eat(t_philo *philo)
 			philo->nb_of_eat += 1;
 			//add_meal_to_total(philo);
 		}
-		if (read_end(philo) == 0 && philo->rules->number_of_philo > 1)
+		if (philo->rules->number_of_philo > 1)
 		{
 			philo->chopstick_taken = 0;
 			pthread_mutex_unlock(philo->chopstick_right);
