@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 17:30:36 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 12:02:22 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/26 18:22:09 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	free_tab_mutex(pthread_mutex_t **tab_mutex)
 	free (tab_mutex);
 }
 
-void	free_tab_philo(t_philo **tab_philo)
+void	free_mut_ends(t_philo **tab_philo)
 {
 	int	i;
 
@@ -35,6 +35,18 @@ void	free_tab_philo(t_philo **tab_philo)
 	{
 		pthread_mutex_destroy(tab_philo[i]->mut_dead);
 		free (tab_philo[i]->mut_dead);
+		i++;
+	}
+
+}
+
+void	free_tab_philo(t_philo **tab_philo)
+{
+	int	i;
+
+	i = 0;
+	while (tab_philo[i] != NULL)
+	{
 		free(tab_philo[i]);
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 17:23:32 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 15:27:57 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/28 11:18:10 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ pthread_mutex_t	*mutex_creator()
 {
 	pthread_mutex_t	*result;
 
-	result = (pthread_mutex_t *) malloc(sizeof(pthread_t));
+	result = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
 	if (result == NULL)
 		return (NULL);
 	pthread_mutex_init(result, NULL);
@@ -85,9 +85,9 @@ t_philo	**create_tab_philosophers(pthread_mutex_t **t_chopstick, t_rules *rules)
 	t_philo			**t_p;
 	t_philo			*cur_phl;
 	int				i;
-	pthread_mutex_t	**tab_chopstick;
+	//pthread_mutex_t	**tab_chopstick;
 
-	tab_chopstick = create_tab_mutex(rules->number_of_philo);
+	//tab_chopstick = create_tab_mutex(rules->number_of_philo);
 	t_p = (t_philo **) malloc(sizeof(t_philo *) * (rules->number_of_philo + 1));
 	if (t_p == NULL)
 		return (0);

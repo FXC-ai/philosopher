@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 13:17:44 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 17:28:39 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/28 11:18:21 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,9 @@ pthread_t	*create_tab_of_tid(t_philo **tab_philo, int nb_of_philos)
 	return (result);
 }
 
-static void	launch_simulator(t_philo **t_phl, int nb_philos, t_rules *rules)
+
+
+void	launch_simulator(t_philo **t_phl, int nb_philos, t_rules *rules)
 {
 	int	i;
 	int	stop;
@@ -127,6 +129,8 @@ static void	launch_simulator(t_philo **t_phl, int nb_philos, t_rules *rules)
 		//printf("Confirm\n");
 		i++;
 	}
+	free(tab_tid);
+
 }
 
 int	main(int argc, char *argv[])
@@ -136,7 +140,6 @@ int	main(int argc, char *argv[])
 	t_philo			**tab_philo;
 	pthread_mutex_t	**tab_chopstick;
 	int				nb_philo_meals[2];
-
 
 	if (parse_args(argc, argv) == 0)
 		return (0);
@@ -162,6 +165,7 @@ int	main(int argc, char *argv[])
 
 	free_tab_mutex(tab_chopstick);
 	free_rules(rules);
+	free_mut_ends(tab_philo);
 	free_tab_philo(tab_philo);
 	return (0);
 }
