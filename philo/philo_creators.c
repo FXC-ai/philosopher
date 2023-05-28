@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 17:23:32 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/28 11:18:10 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/28 13:33:40 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,9 @@ t_rules	*init_rules(int number_of_philo, time_t *tab_times, int number_of_meal)
 	rules->time_to_eat = tab_times[1];
 	rules->time_to_sleep = tab_times[2];
 	rules->nb_of_meal = number_of_meal;
-	//rules->tot_meals = 0;
 	rules->end = 0;
 	pthread_mutex_init(cur_mut_end, NULL);
 	rules->mut_end = cur_mut_end;
-	//rules->mut_tot_meals = mutex_creator();
 	return (rules);
 }
 
@@ -67,7 +65,7 @@ void	init_consts_philo(t_philo *cur_phl)
 	cur_phl->for_left = 0;
 }
 
-pthread_mutex_t	*mutex_creator()
+pthread_mutex_t	*mutex_creator(void)
 {
 	pthread_mutex_t	*result;
 
@@ -75,19 +73,15 @@ pthread_mutex_t	*mutex_creator()
 	if (result == NULL)
 		return (NULL);
 	pthread_mutex_init(result, NULL);
-	//printf("%p : mutex control\n", result);
 	return (result);
 }
-
 
 t_philo	**create_tab_philosophers(pthread_mutex_t **t_chopstick, t_rules *rules)
 {
 	t_philo			**t_p;
 	t_philo			*cur_phl;
 	int				i;
-	//pthread_mutex_t	**tab_chopstick;
 
-	//tab_chopstick = create_tab_mutex(rules->number_of_philo);
 	t_p = (t_philo **) malloc(sizeof(t_philo *) * (rules->number_of_philo + 1));
 	if (t_p == NULL)
 		return (0);

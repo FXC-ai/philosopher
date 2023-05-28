@@ -6,62 +6,29 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 13:17:31 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 17:29:04 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/28 13:28:11 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	read_end(t_philo *philo)
-{
-	int	result;
-
-	pthread_mutex_lock(philo->rules->mut_end);
-	result = philo->rules->end;
-	pthread_mutex_unlock(philo->rules->mut_end);
-	return (result);
-}
-
-int read_dead(t_philo *philo)
-{
-	int result;
-
-	pthread_mutex_lock(philo->mut_dead);
-	result = philo->rules->end;
-	pthread_mutex_unlock(philo->mut_dead);
-	return (result);
-}
-
-void	set_is_dead(t_philo *philo)
-{
-	pthread_mutex_lock(philo->mut_dead);
-	philo->is_dead = 1;
-	pthread_mutex_unlock(philo->mut_dead);
-}
-
 int	check_death(t_philo *philo)
 {
-
-	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat) > philo->rules->time_to_die)
+	if ((calculate_current_time_ms(philo->start_time) - philo->time_last_eat)
+		> philo->rules->time_to_die)
 	{
-		if (read_dead(philo) == 0 && read_end(philo) == 0 && check_nb_meals(philo) == 0)
+		if (read_dead(philo) == 0 && read_end(philo) == 0
+			&& check_nb_meals(philo) == 0)
 		{
 			set_is_dead(philo);
 			printf("\033[1;31m%ld %d died\n\033[0m",
 				calculate_current_time_ms(philo->start_time), philo->id + 1);
 		}
-		pthread_mutex_lock(philo->rules->mut_end);
-		/*if (philo->rules->end == 0)
-		{*/
-			philo->rules->end = 1;
-		/*}*/
-		pthread_mutex_unlock(philo->rules->mut_end);
-		
-		if(philo->for_right == 1)
+		set_end(philo);
+		if (philo->for_right == 1)
 		{
 			pthread_mutex_unlock(philo->chopstick_right);
 			philo->for_right = 0;
-
 		}
 		if (philo->for_left == 1)
 		{
@@ -73,42 +40,10 @@ int	check_death(t_philo *philo)
 	return (0);
 }
 
-int	check_nb_meals(t_philo *philo)
+static void	put_right_chpostick(t_philo *philo)
 {
-	if (philo->nb_of_eat == philo->rules->nb_of_meal)
-	{
-		return (1);
-	}
-	return (0);
-}
-
-void	take_right_chopstick(t_philo *philo)
-{
-	if (read_end(philo) == 0 && philo->for_right == 0)
-	{
-		pthread_mutex_lock(philo->chopstick_right);
-		philo->for_right = 1;
-		if (read_end(philo) == 0)
-		{
-			printf("%ld %d has taken a fork\n",
-				calculate_current_time_ms(philo->start_time),
-				philo->id + 1);
-		}
-	}
-}
-
-void	take_left_chopstick(t_philo *philo)
-{
-	if (read_end(philo) == 0 && philo->for_left == 0 && philo->rules->number_of_philo > 1) //ATTENTION BIEN UTILE D UTILISER LE 2EME CHECK ????
-	{
-		pthread_mutex_lock(philo->chopstick_left);
-		philo->for_left = 1;
-		if (read_end(philo) == 0)
-		{
-			printf("%ld %d has taken a fork\n",
-				calculate_current_time_ms(philo->start_time), philo->id + 1);
-		}
-	}
+	pthread_mutex_unlock(philo->chopstick_right);
+	philo->for_right = 0;
 }
 
 void	eat(t_philo *philo)
@@ -117,8 +52,8 @@ void	eat(t_philo *philo)
 	{
 		take_right_chopstick(philo);
 		take_left_chopstick(philo);
-
-		if (read_end(philo) == 0 && philo->for_left == 1 && philo->for_right == 1)
+		if (read_end(philo) == 0 && philo->for_left == 1
+			&& philo->for_right == 1)
 		{
 			printf("%ld %d is eating\n",
 				calculate_current_time_ms(philo->start_time), philo->id + 1);
@@ -126,43 +61,16 @@ void	eat(t_philo *philo)
 			ft_usleep(philo->rules->time_to_eat, philo);
 		}
 		if (read_end(philo) == 0 && philo->rules->number_of_philo > 1)
-		{
 			philo->nb_of_eat += 1;
-		}
 		if (philo->rules->number_of_philo > 1)
 		{
 			if (philo->for_right == 1)
-			{
-				pthread_mutex_unlock(philo->chopstick_right);
-				philo->for_right = 0;
-			}
+				put_right_chpostick(philo);
 			if (philo->for_left == 1)
 			{
 				pthread_mutex_unlock(philo->chopstick_left);
 				philo->for_left = 0;
 			}
-		}
-	}
-}
-
-void	have_a_nape(t_philo *philo)
-{
-	if (read_end(philo) == 0 && check_nb_meals(philo) == 0 && philo->rules->number_of_philo > 1)
-	{
-		printf("%ld %d is sleeping\n",
-			calculate_current_time_ms(philo->start_time), philo->id + 1);
-		ft_usleep(philo->rules->time_to_sleep, philo);
-	}
-}
-
-void	think(t_philo *philo)
-{
-	if (read_end(philo) == 0 && check_nb_meals(philo) == 0 && philo->rules->number_of_philo > 1)
-	{
-		if (read_end(philo) == 0)
-		{
-			printf("%ld %d is thinking\n",
-				calculate_current_time_ms(philo->start_time), philo->id + 1);
 		}
 	}
 }
@@ -185,16 +93,9 @@ void	*routine_philosopher(void *philo)
 			think(cpy_philo);
 		}
 		if (check_nb_meals (cpy_philo) == 1)
-		{
 			break ;
-		}
 		if (read_end(cpy_philo) == 1)
-		{
-			//printf("%d : stopped\n", cpy_philo->id);
-			break;
-		}
-
+			break ;
 	}
-	//printf("Philo %d : PROCESS ENDED\n", cpy_philo->id + 1);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 13:17:20 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/25 15:12:44 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/28 13:30:22 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ time_t	ft_time(void)
 void	ft_usleep(time_t time_in_ms, t_philo *philo)
 {
 	time_t	current_time;
-	(void)	philo;
 
+	(void) philo;
 	current_time = ft_time();
 	while ((ft_time() - current_time) <= time_in_ms)
 	{

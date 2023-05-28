@@ -6,7 +6,7 @@
 /*   By: fcoindre <fcoindre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 17:30:36 by fcoindre          #+#    #+#             */
-/*   Updated: 2023/05/26 18:22:09 by fcoindre         ###   ########.fr       */
+/*   Updated: 2023/05/28 13:34:07 by fcoindre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ void	free_mut_ends(t_philo **tab_philo)
 		free (tab_philo[i]->mut_dead);
 		i++;
 	}
-
 }
 
 void	free_tab_philo(t_philo **tab_philo)
