@@ -1,0 +1,441 @@
+# Philosopher
+
+[Threads, mutex et programmation concurrente en C - codequoi](https://www.codequoi.com/threads-mutex-et-programmation-concurrente-en-c/)
+
+[[Operating System] The Dining Philosophers Problem](https://medium.com/@jinghua.shih/operating-system-the-dining-philosophers-problem-6f35f210a4e2)
+
+# Comment utiliser des thread
+
+```c
+#include <pthread.h>
+#include <stdio.h>
+
+void *routine(void *value)
+{
+	int *cpy_ptr_value = value;
+	int cpy_value;
+	cpy_value = *cpy_ptr_value;
+
+	printf("Une citation quelconque  %d\n", cpy_value);
+	return (NULL);
+
+}
+void *routine2(void *value)
+{
+	int *cpy_ptr_value = value;
+	int cpy_value;
+	cpy_value = *cpy_ptr_value;
+
+	printf("Vivre et laisser mourir  %d\n", cpy_value);
+	return (NULL);
+
+}
+
+int main()
+{
+	pthread_t	tid1;
+	pthread_t	tid2;
+
+	int	thread_1;
+	int	thread_2;
+
+	thread_1 = 1;
+	thread_2 = 2;
+
+	pthread_create(&tid1, NULL, routine, &thread_1);
+	pthread_create(&tid2, NULL, routine2, &thread_2);
+
+	pthread_join(tid1, NULL);
+	pthread_join(tid2, NULL);
+
+	return 0;
+}
+```
+
+# Exemple de Data Race
+
+```c
+#include <pthread.h>
+#include <stdio.h>
+#define MAX 100000
+
+typedef struct s_test_philo {
+
+	int *count;
+	int id_thread;
+
+} t_test_philo;
+
+void *routine(void *test_philo)
+{
+	t_test_philo *cpy_test_philo = (t_test_philo *) test_philo;
+	int i;
+
+	printf("Début de processus pour le thread : %d\n", cpy_test_philo->id_thread);
+	
+	i = 0;
+	while (i < MAX)
+	{
+		(*(cpy_test_philo->count))++;
+		//printf("WHAT %d\n", *cpy_ptr_value);
+		i++;
+	}
+	printf("Fin de processus %d pour le thread %d\n", *(cpy_test_philo->count), cpy_test_philo->id_thread);
+	
+	return (NULL);
+}
+
+int main()
+{
+	pthread_t	tid1;
+	pthread_t	tid2;
+
+	int shared_value;
+	shared_value = 0;
+	
+	t_test_philo	test_philo;
+	test_philo.count = &shared_value;
+	test_philo.id_thread = 1;
+	
+	t_test_philo	test_philo2;
+	test_philo2.count = &shared_value;
+	test_philo2.id_thread = 2;
+	
+	pthread_create(&tid1, NULL, routine, &test_philo);
+	pthread_create(&tid2, NULL, routine, &test_philo2);
+
+	pthread_join(tid1, NULL);
+	pthread_join(tid2, NULL);
+
+	printf("shared value = %d\n", shared_value);
+
+	return 0;
+}
+```
+
+# Utilisation de Mutex
+
+```c
+#include <pthread.h>
+#include <stdio.h>
+#define MAX 21000
+
+typedef struct s_test_philo {
+
+	int				count;
+	pthread_mutex_t	count_mutex;
+
+} t_test_philo;
+
+void *routine(void *test_philo)
+{
+	t_test_philo *cpy_test_philo = (t_test_philo *) test_philo;
+	int i;
+
+	printf("Début de processus %d\n", cpy_test_philo->count);
+	
+	i = 0;
+	while (i < MAX)
+	{
+		pthread_mutex_lock(&cpy_test_philo->count_mutex);
+		(cpy_test_philo->count)++;
+		pthread_mutex_unlock(&cpy_test_philo->count_mutex);
+		i++;
+	}
+	printf("Fin de processus %d\n", cpy_test_philo->count);
+	return (NULL);
+}
+
+int main()
+{
+	pthread_t	tid1;
+	pthread_t	tid2;
+	
+	t_test_philo	test_philo;
+	test_philo.count = 0;
+	pthread_mutex_init(&(test_philo.count_mutex), NULL);
+
+	pthread_create(&tid1, NULL, routine, &test_philo);
+	pthread_create(&tid2, NULL, routine, &test_philo);
+
+	pthread_join(tid1, NULL);
+	pthread_join(tid2, NULL);
+
+	printf("shared value = %d\n", test_philo.count);
+
+	pthread_mutex_destroy(&test_philo.count_mutex);
+
+	return 0;
+}
+```
+
+# Exemple de Deadblock
+
+```c
+#include <pthread.h>
+#include <stdio.h>
+#define MAX 21000
+
+typedef struct s_test_philo {
+	
+	int				count;
+	pthread_mutex_t	lock_01;
+	pthread_mutex_t	lock_02;
+
+} t_test_philo;
+
+void *routine_thread1 (void *test_philo)
+{
+	t_test_philo *cpy_test_philo = (t_test_philo *) test_philo;
+	// int i;
+
+	printf("Le thread 1 veut bloquer le lock1\n");
+	pthread_mutex_lock(&(cpy_test_philo->lock_01));
+	printf("Le thread 1 bloque le lock1\n");
+
+	printf("Le thread 1 veut bloquer le lock2\n");
+	pthread_mutex_lock(&(cpy_test_philo->lock_02));
+	printf("Le thread 1 bloque le lock2\n");
+
+	cpy_test_philo->count += 1;
+
+	printf("Le thread 1 veut debloquer le lock2\n");
+	pthread_mutex_unlock(&(cpy_test_philo->lock_02));
+	printf("Le thread 1 debloque le lock2\n");
+
+	printf("Le thread 1 veut debloquer le lock1\n");
+	pthread_mutex_unlock(&(cpy_test_philo->lock_01));
+	printf("Le thread 1 debloque le lock1\n");
+
+	printf("TERMINE POUR LE THREAD 1\n\n");
+
+	return (NULL);
+}
+
+void *routine_thread2 (void *test_philo)
+{
+	t_test_philo *cpy_test_philo = (t_test_philo *) test_philo;
+	// int i;
+
+	printf("Le thread 2 veut bloquer le lock2\n");
+	pthread_mutex_lock(&(cpy_test_philo->lock_02)); //le script  attendra jusqu' a ce que le mutex soit blocable
+	printf("Le thread 2 bloque le lock2\n");
+
+	printf("Le thread 2 veut bloquer le lock1\n");
+	pthread_mutex_lock(&(cpy_test_philo->lock_01));
+	printf("Le thread 2 bloque le lock1\n");
+
+	cpy_test_philo->count += 1;
+
+	printf("Le thread 2 veut debloquer le lock1\n");
+	pthread_mutex_unlock(&(cpy_test_philo->lock_01));
+	printf("Le thread 2 debloque le lock1\n");
+
+	printf("Le thread 2 veut debloquer le lock2\n");
+	pthread_mutex_unlock(&(cpy_test_philo->lock_02));
+	printf("Le thread 2 debloque le lock2\n");
+
+	printf("TERMINE POUR LE THREAD 2\n\n");
+
+	return (NULL);
+}
+
+int main()
+{
+	pthread_t	tid1;
+	pthread_t	tid2;
+	
+	t_test_philo	test_philo;
+	test_philo.count = 0;
+	pthread_mutex_init(&(test_philo.lock_01), NULL);
+	pthread_mutex_init(&(test_philo.lock_02), NULL);
+
+	pthread_create(&tid1, NULL, routine_thread1, &test_philo);
+	pthread_create(&tid2, NULL, routine_thread2, &test_philo);
+
+	pthread_join(tid2, NULL);
+	pthread_join(tid1, NULL);
+
+	printf("shared value = %d\n", test_philo.count);
+
+	pthread_mutex_destroy(&test_philo.lock_01);
+	pthread_mutex_destroy(&test_philo.lock_02);
+
+	return 0;
+}
+```
+
+# gettimeofday()
+
+```c
+#include <pthread.h>
+#include <stdio.h>
+#define MAX 21000
+
+typedef struct s_test_philo {
+	
+	int				count;
+	pthread_mutex_t	lock_01;
+	pthread_mutex_t	lock_02;
+
+} t_test_philo;
+
+void *routine_thread1 (void *test_philo)
+{
+	t_test_philo *cpy_test_philo = (t_test_philo *) test_philo;
+	// int i;
+
+	printf("Le thread 1 veut bloquer le lock1\n");
+	pthread_mutex_lock(&(cpy_test_philo->lock_01));
+	printf("Le thread 1 bloque le lock1\n");
+
+	printf("Le thread 1 veut bloquer le lock2\n");
+	pthread_mutex_lock(&(cpy_test_philo->lock_02));
+	printf("Le thread 1 bloque le lock2\n");
+
+	cpy_test_philo->count += 1;
+
+	printf("Le thread 1 veut debloquer le lock2\n");
+	pthread_mutex_unlock(&(cpy_test_philo->lock_02));
+	printf("Le thread 1 debloque le lock2\n");
+
+	printf("Le thread 1 veut debloquer le lock1\n");
+	pthread_mutex_unlock(&(cpy_test_philo->lock_01));
+	printf("Le thread 1 debloque le lock1\n");
+
+	printf("TERMINE POUR LE THREAD 1\n\n");
+
+	return (NULL);
+}
+
+void *routine_thread2 (void *test_philo)
+{
+	t_test_philo *cpy_test_philo = (t_test_philo *) test_philo;
+	// int i;
+
+	printf("Le thread 2 veut bloquer le lock2\n");
+	pthread_mutex_lock(&(cpy_test_philo->lock_02)); //le script  attendra jusqu' a ce que le mutex soit blocable
+	printf("Le thread 2 bloque le lock2\n");
+
+	printf("Le thread 2 veut bloquer le lock1\n");
+	pthread_mutex_lock(&(cpy_test_philo->lock_01));
+	printf("Le thread 2 bloque le lock1\n");
+
+	cpy_test_philo->count += 1;
+
+	printf("Le thread 2 veut debloquer le lock1\n");
+	pthread_mutex_unlock(&(cpy_test_philo->lock_01));
+	printf("Le thread 2 debloque le lock1\n");
+
+	printf("Le thread 2 veut debloquer le lock2\n");
+	pthread_mutex_unlock(&(cpy_test_philo->lock_02));
+	printf("Le thread 2 debloque le lock2\n");
+
+	printf("TERMINE POUR LE THREAD 2\n\n");
+
+	return (NULL);
+}
+
+int main()
+{
+	pthread_t	tid1;
+	pthread_t	tid2;
+	
+	t_test_philo	test_philo;
+	test_philo.count = 0;
+	pthread_mutex_init(&(test_philo.lock_01), NULL);
+	pthread_mutex_init(&(test_philo.lock_02), NULL);
+
+	pthread_create(&tid1, NULL, routine_thread1, &test_philo);
+	pthread_create(&tid2, NULL, routine_thread2, &test_philo);
+
+	pthread_join(tid2, NULL);
+	pthread_join(tid1, NULL);
+
+	printf("shared value = %d\n", test_philo.count);
+
+	pthread_mutex_destroy(&test_philo.lock_01);
+	pthread_mutex_destroy(&test_philo.lock_02);
+
+	return 0;
+}
+```
+
+# Algo pour manager les philosophers (deprecated)
+
+Ceci est une très mauvaise idée. A ne pas reproduire !
+
+```c
+#include <stdio.h>
+#include <pthread.h>
+#include <sys/time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+time_t	calculate_current_time_ms (time_t start_time_ms)
+{
+	struct timeval current_time;
+	time_t	current_time_ms;
+	time_t	result;
+
+	gettimeofday(&current_time, NULL);
+	current_time_ms = (current_time.tv_sec * 1000) + (current_time.tv_usec / 1000);
+	result = current_time_ms - start_time_ms;
+	return (result);
+}
+
+time_t	ft_time(void)
+{
+	struct		timeval	tv;
+	time_t		time_in_mils;
+
+	gettimeofday(&tv, NULL);
+	time_in_mils = tv.tv_sec * 1000 + (tv.tv_usec / 1000);
+	return (time_in_mils);
+}
+
+void	ft_usleep(time_t time_in_ms)
+{
+	time_t	current_time;
+
+	current_time = ft_time();
+	while ((ft_time() - current_time) <= time_in_ms)
+	{
+		usleep(25);
+		if ((ft_time() - current_time) >= time_in_ms)
+			break ;
+	}
+}
+
+int main()
+{
+	int id_philo;
+	int	nb_philo;
+	int id_tour;
+	int nb_tour;
+
+	printf("ft_time = %ld\n", ft_time());
+
+	time_t test = ft_time();
+	ft_usleep(200);
+	printf("ft_time = %ld\n", calculate_current_time_ms(test));
+
+	nb_philo = 3;
+	nb_tour = 5;
+
+	id_tour = 0;
+	while (id_tour < nb_tour)
+	{
+		printf("Tour %d\n", id_tour);
+		id_philo = 0;
+		while (id_philo < nb_philo)
+		{			
+			printf("id_philo = %d => %d\n", id_philo, ((id_tour + id_philo) % nb_philo) % 2);
+			id_philo++;
+		}
+		printf("\n");	
+		id_tour++;
+	}
+}
+```
