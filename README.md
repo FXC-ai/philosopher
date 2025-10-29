@@ -158,8 +158,7 @@ Il ajoute 1 à cette valeur.
 
 Il écrit le résultat à la même adresse mémoire.
 
-Le problème :
-Ces trois opérations ne sont pas atomiques, c’est-à-dire qu’elles peuvent être interrompues par un autre thread au milieu du processus.
+Le problème : ces trois opérations ne sont pas atomiques, c’est-à-dire qu’elles peuvent être interrompues par un autre thread au milieu du processus.
 
 ### Exemple concret
 
@@ -175,28 +174,25 @@ Imaginons que shared_value vaut 42.
 
 Résultat : la variable n’a été incrémentée qu’une seule fois, alors que deux incréments étaient attendus.
 
-Ce phénomène est appelé une condition de course (race condition).
-C’est un comportement non déterministe : selon la vitesse du processeur et le moment où chaque thread s’exécute, la valeur finale changera.
+Ce phénomène est appelé une condition de course (race condition). C’est un comportement non déterministe : selon la vitesse du processeur et le moment où chaque thread s’exécute, la valeur finale changera.
 
 ## Comprendre la ligne clé : (*cpy_test_philo->count)++
 
-Cette syntaxe peut paraître compliquée, mais elle signifie simplement :
+Cette syntaxe peut paraître compliquée, mais elle signifie simplement : « Incrémente la valeur pointée par le pointeur count ».
 
-« Incrémente la valeur pointée par le pointeur count ».
+### Décomposition :
 
-Décomposition :
+``` c cpy_test_philo             ```  → pointeur vers une structure t_test_philo.
 
-```c cpy_test_philo             ```  → pointeur vers une structure t_test_philo.
+``` c cpy_test_philo->count      ```  → champ count de la structure, c’est un pointeur vers un entier (int *).
 
-```c cpy_test_philo->count      ```  → champ count de la structure, c’est un pointeur vers un entier (int *).
+``` c (*cpy_test_philo->count)   ```  → valeur entière pointée (ici shared_value).
 
-```c (*cpy_test_philo->count)   ```  → valeur entière pointée (ici shared_value).
-
-```c (*cpy_test_philo->count)++ ```  → incrémente cette valeur.
+``` c (*cpy_test_philo->count)++ ```  → incrémente cette valeur.
 
 # Utilisation de Mutex
 
-```c
+``` c
 #include <pthread.h>
 #include <stdio.h>
 #define MAX 21000
