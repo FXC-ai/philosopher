@@ -113,6 +113,111 @@ int main()
 }
 ```
 
+
+🧵 Comprendre le comportement du code multi-thread en C
+🔍 Sorties observées
+
+Lorsqu’on exécute le programme suivant, on obtient des résultats différents d’une exécution à l’autre :
+``` bash
+Début de processus pour le thread : 1
+Début de processus pour le thread : 2
+Fin de processus 92913 pour le thread 1
+Fin de processus 182290 pour le thread 2
+shared value = 182290
+```
+
+ou parfois :
+
+Début de processus pour le thread : 1
+Début de processus pour le thread : 2
+Fin de processus 100000 pour le thread 1
+Fin de processus 200000 pour le thread 2
+shared value = 200000
+
+⚠️ Pourquoi la valeur finale change-t-elle ?
+
+On remarque que la valeur partagée (shared_value) n’est jamais exactement la même à la fin de l’exécution.
+La raison est simple : la variable partagée n’est pas protégée.
+
+🧠 Explication
+
+Les deux threads accèdent simultanément à la même variable shared_value sans aucune synchronisation (pas de mutex, pas de verrou).
+Chaque thread exécute la ligne :
+
+(*cpy_test_philo->count)++;
+
+
+Ce qui se déroule en plusieurs étapes internes :
+
+Le thread lit la valeur actuelle de shared_value.
+
+Il ajoute 1 à cette valeur.
+
+Il écrit le résultat à la même adresse mémoire.
+
+Le problème :
+Ces trois opérations ne sont pas atomiques, c’est-à-dire qu’elles peuvent être interrompues par un autre thread au milieu du processus.
+
+💥 Exemple concret
+
+Imaginons que shared_value vaut 42.
+
+Le thread 1 lit 42.
+
+Le thread 2 lit aussi 42 (presque au même instant).
+
+Le thread 1 écrit 43.
+
+Le thread 2 écrit lui aussi 43.
+
+Résultat : la variable n’a été incrémentée qu’une seule fois, alors que deux incréments étaient attendus.
+
+Ce phénomène est appelé une condition de course (race condition).
+C’est un comportement non déterministe : selon la vitesse du processeur et le moment où chaque thread s’exécute, la valeur finale changera.
+
+🧩 Comprendre la ligne clé : (*cpy_test_philo->count)++
+
+Cette syntaxe peut paraître compliquée, mais elle signifie simplement :
+
+« Incrémente la valeur pointée par le pointeur count ».
+
+Décomposition :
+
+cpy_test_philo → pointeur vers une structure t_test_philo.
+
+cpy_test_philo->count → champ count de la structure, c’est un pointeur vers un entier (int *).
+
+(*cpy_test_philo->count) → valeur entière pointée (ici shared_value).
+
+++ → incrémente cette valeur.
+
+Autrement dit :
+
+(*cpy_test_philo->count)++;
+
+
+est équivalent à :
+
+(* (cpy_test_philo->count))++;
+
+
+et signifie : ajoute 1 à la variable partagée.
+
+⚠️ Attention :
+Si on écrivait cpy_test_philo->count++, on incrémenterait le pointeur lui-même, pas la valeur pointée.
+Cela déplacerait le pointeur vers la prochaine case mémoire, provoquant un comportement indéfini.
+
+✅ En résumé
+Concept	Explication
+shared_value	Variable globale partagée par les deux threads
+cpy_test_philo->count	Pointeur vers cette variable
+(*cpy_test_philo->count)++	Incrémente la valeur partagée
+cpy_test_philo->count++	Déplacerait le pointeur (⚠️ faux ici)
+Problème observé	Condition de course due à l’absence de synchronisation
+Solution	Protéger la section critique avec un mutex ou une variable atomique
+
+Souhaite-tu que je te montre la version corrigée du code avec un pthread_mutex pour garantir que shared_value soit bien incrémentée à 200000 à chaque exécution ?
+
 # Utilisation de Mutex
 
 ```c
