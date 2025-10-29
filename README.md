@@ -165,13 +165,13 @@ Ces trois opérations ne sont pas atomiques, c’est-à-dire qu’elles peuvent 
 
 Imaginons que shared_value vaut 42.
 
-Le thread 1 lit 42.
+* Le thread 1 lit 42.
 
-Le thread 2 lit aussi 42 (presque au même instant).
+* Le thread 2 lit aussi 42 (presque au même instant).
 
-Le thread 1 écrit 43.
+* Le thread 1 écrit 43.
 
-Le thread 2 écrit lui aussi 43.
+* Le thread 2 écrit lui aussi 43.
 
 Résultat : la variable n’a été incrémentée qu’une seule fois, alors que deux incréments étaient attendus.
 
