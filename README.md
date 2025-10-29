@@ -182,13 +182,13 @@ Cette syntaxe peut paraître compliquée, mais elle signifie simplement : « Inc
 
 ### Décomposition :
 
-``` c cpy_test_philo             ```  → pointeur vers une structure t_test_philo.
+``` cpy_test_philo             ```  → pointeur vers une structure t_test_philo.
 
-``` c cpy_test_philo->count      ```  → champ count de la structure, c’est un pointeur vers un entier (int *).
+``` cpy_test_philo->count      ```  → champ count de la structure, c’est un pointeur vers un entier (int *).
 
-``` c (*cpy_test_philo->count)   ```  → valeur entière pointée (ici shared_value).
+``` (*cpy_test_philo->count)   ```  → valeur entière pointée (ici shared_value).
 
-``` c (*cpy_test_philo->count)++ ```  → incrémente cette valeur.
+``` (*cpy_test_philo->count)++ ```  → incrémente cette valeur.
 
 # Utilisation de Mutex
 
