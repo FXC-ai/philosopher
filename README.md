@@ -152,11 +152,11 @@ Chaque thread exécute la ligne :
 
 Ce qui se déroule en plusieurs étapes internes :
 
-Le thread lit la valeur actuelle de shared_value.
+* Le thread lit la valeur actuelle de shared_value.
 
-Il ajoute 1 à cette valeur.
+* Il ajoute 1 à cette valeur.
 
-Il écrit le résultat à la même adresse mémoire.
+* Il écrit le résultat à la même adresse mémoire.
 
 Le problème : ces trois opérations ne sont pas atomiques, c’est-à-dire qu’elles peuvent être interrompues par un autre thread au milieu du processus.
 
